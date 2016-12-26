@@ -1,0 +1,2967 @@
+<!DOCTYPE html>
+
+<!-- set the default language as English -->
+<html lang="en">
+
+<head>
+
+	<!-- tags for Search Engine Optimization -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1024">
+	<meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
+	<meta name="description" content="You are being watched! Knowledge, encryption and privacy tools to protect you against global mass surveillance.">   
+
+	<!-- title -->
+	<title>隱私工具 - 加密安全對抗全球巨量監控</title>
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- css stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/flag-icon.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/sortable-theme-bootstrap.css" rel="stylesheet" />
+	<link href="css/custom.css?v=1" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+<![endif]-->
+
+	<!-- Open Graph Protocol tags for SEO -->
+	<meta property="og:title" content="Privacy Tools | Encryption against global mass surveillance" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.privacytools.io/" />
+	<meta property="og:image" content="https://www.privacytools.io/img/layout/ogimage.jpg" />
+	<meta property="og:description" content="You are being watched! Knowledge, encryption and privacy tools to protect you against global mass surveillance."
+	/>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="privacytools.io" />
+
+</head>
+
+<body>
+
+	<!-- navigation starts -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav">
+
+					<!-- home icon in the navigation bar -->
+					<li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+
+					<!-- drop down menu - Provider -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">服務供應商<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#ukusa">避兔使用以美國與英國為基地的網路服務</a></li>
+							<li><a href="#vpn">虛擬私人網路(VPN)</a></li>
+							<li><a href="#email">私密電郵</a></li>
+							<li><a href="#wc">令狀金絲雀</a></li>
+							<li><a href="#cloud">加密的雲端儲存服務</a></li>
+							<li><a href="#social">分散化社交網路</a></li>
+							<li><a href="#dns">域名系統 (DNS)</a></li>
+							<li><a href="#search">尊重用戶隱私的搜尋引撃</a></li>
+						</ul>
+					</li>
+
+					<!-- drop down menu - Browser -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">瀏覧器<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#browser">推薦</a></li>
+							<li><a href="#fingerprint">指紋</a></li>
+							<li><a href="#webrtc">WebRTC IP 漏洞</a></li>
+							<li><a href="#addons">瀏覧器火狐隱私附加元件</a></li>
+							<li><a href="#about_config">相關的隱私設定調整</a></li>
+						</ul>
+					</li>
+
+					<!-- drop down menu - Software -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">軟體<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#clients">電郵軟體</a></li>
+							<li><a href="#messaging">電郵替代工具</a></li>
+							<li><a href="#im">即時通訊</a></li>
+							<li><a href="#voip">影音通訊</a></li>
+							<li><a href="#pw">密碼管理</a></li>
+							<li><a href="#encrypt">檔案加密</a></li>
+							<li><a href="#sync">安全的檔案同步</a></li>
+							<li><a href="password.html">安全的密碼產生器</a></li>
+							<li><a href="#network">Self Contained Network</a></li>
+							<li><a href="#mycloud">自搭的雲端伺服器</a></li>
+							<li><a href="#notebook">數位筆記本</a></li>
+							<li><a href="#paste">Paste Services</a></li>
+							<li><a href="#productivity">生產力工具</a></li>
+							<li><a href="#win10">不要使用Windows 10</a></li>
+						</ul>
+					</li>
+
+					<!-- drop down menu - OS -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OS作業系統<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#os">桌機筆電作業系統</a></li>
+							<li><a href="#live_os">光碟隨身碟開機作業系統</a></li>
+							<li><a href="#mobile_os">手機作業系統</a></li>
+							<li><a href="#firmware">路由器軔體</a></li>
+						</ul>
+					</li>
+
+					<!-- drop down menu - Participate -->
+					<li><a href="#participate">參與</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分享<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="mailto:?subject=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&body=https://www.privacytools.io/">email轉寄</a></li>
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.privacytools.io">Facebook</a></li>
+							<li><a href="https://twitter.com/share?text=Knowledge%20and%20tools%20to%20protect%20your%20privacy%20against%20global%20mass%20surveillance%20&amp;url=https://www.privacytools.io/&amp;via=privacytoolsIO">Twitter</a></li>
+							<li><a href="https://plus.google.com/share?url=https://www.privacytools.io">Google+</a></li>
+							<li><a href="http://reddit.com/submit?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance">reddit</a></li>
+							<li><a href="https://www.linkedin.com/shareArticle?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance">LinkedIn</a></li>
+							<li><a href="http://www.stumbleupon.com/submit?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance">StumbleUpon</a></li>
+							<li><a href="http://sharetodiaspora.github.io/?title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&url=https://www.privacytools.io">Diaspora*</a></li>
+						</ul>
+					</li>
+					<li><a href="https://twitter.com/privacytoolsIO">Twitter</a></li>
+					<li><a href="donate.html">捐款贊助</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navigation ends here -->
+
+
+	<div class="container theme-showcase" role="main">
+
+		<p class="text-right">
+			<a data-toggle="tooltip" data-placement="bottom" data-original-title="Translations of privacytools.io were done by volunteers. They might be not up to date.">其它語言:</a> 
+<span class="flag-icon flag-icon-us" style="margin-left:5px;"></span> <a href="https://privacytools.io/">English</a>
+<span class="flag-icon flag-icon-es" style="margin-left:5px;"></span> <a href="https://victorhck.gitlab.io/privacytools-es/">Español</a> 
+<span class="flag-icon flag-icon-de" style="margin-left:5px;"></span> <a href="https://privacytools.it-sec.rocks/">Deutsch</a>
+
+		</p>
+
+		<div class="jumbotron">
+			<!-- header just below the navigation bar -->
+			<h1><a href="https://www.privacytools.io/" title="privacy tools"><img src="img/layout/logo.png" class="img-responsive" alt="privacytools.io"></a></h1>
+			<p>你正在被人盯著。私人和國家支持的組織正在監控與記錄你的線上活動。 這裏提供一些知識與工具以保護個人隱私抵抗全球巨量監控。</p>
+			<!-- end header just below the navigation bar -->
+		</div>
+
+		<!-- quote by Glenn Greenwald located below the header -->
+		<div class="page-header">
+			<h1>隱私? 我無不可告人之處</h1>
+		</div>
+		<blockquote>
+			<p>
+				<a href="http://www.ted.com/talks/glenn_greenwald_why_privacy_matters" title="Glenn Greenwald - Why privacy matters - TED Talk"><img src="img/layout/Glenn-Greenwald-Why-privacy-matters.jpg" class="img-responsive pull-right" alt="Glenn Greenwald: Why privacy matters" style="margin-left:20px;"></a>
+				過去十多個月來, 每當我在全球各地討論這個議題的時候, 每次總是有人會這樣對我說："我並不擔心隱私被侵犯因為我沒什麼不可告人之處"我也對他們回應相同的答覆。我拿了一支筆，寫下自己的電子郵件，然後說： "這上面是我的電子郵件，我希望當你回到家之後，把你自己所有的電郵帳號和密碼都寄給我。不是只提供你工作上使用那個一本正經的電子郵件,而是全部的電郵。這樣我可以在線上用你的帳號來了解你的一舉一動，然後把我認為有趣的事物公開出來。不管怎樣，如果你不是個壞人，如果你沒做過壞事，你應該也沒什麼不可告人之處。" <strong>然而從來沒有一個人回應我這項提議</strong></p>
+			<footer>Glenn Greenwald <cite title="Why privacy matters - TED Talk"><a href="http://www.ted.com/talks/glenn_greenwald_why_privacy_matters">為何隱私重要 - TED 演講</a></cite></footer>
+		</blockquote>
+
+		<h4>進一步閱讀:</h4>
+		
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Nothing_to_hide_argument">Nothing to hide argument (Wikipedia)</a></li>
+			<li><a href="https://www.reddit.com/r/privacy/comments/3hynvp/how_do_you_counter_the_i_have_nothing_to_hide/">How do you counter the "I have nothing to hide?" argument? (reddit.com)</a></li>
+		</ul>
+		<!-- end quote by Glenn Greenwald located below the header -->
+
+		<!--
+<div class="page-header text-center">
+<h1>Privacy-Respecting Search Engine</h1>
+</div>
+
+<p>
+<img src="img/layout/privatesearch.png" class="center-block img-responsive" alt="privatesearch.io">
+</p>
+<p class="text-center">
+</p><form method="POST" action="https://www.privatesearch.io/" id="search_form" role="search">
+<div class="input-group col-md-8 col-md-offset-2">
+<input type="search" name="q" class="form-control input-lg" id="q" placeholder="Search for..." autocomplete="off" value="">
+<span class="input-group-btn">
+<button type="submit" formtarget="_blank" class="btn btn-default input-lg"><span class="hide_if_nojs"><span class="glyphicon glyphicon-search"></span></span><span class="hidden active_if_nojs">start search</span></button>
+</span>
+</div>
+</form>
+
+<p></p>
+
+<p class="text-center text-muted">example search: <a href="https://www.privatesearch.io/?q=Edward%20Snowden">Edward Snowden</a></p>
+<p class="text-center"><a href="https://www.privatesearch.io/"><strong>privatesearch.io</strong></a> is our new privacy-respecting and highly customizable search engine with excellent results. it's open source and doesn't have ads, logs or tracking.</p>
+
+<hr>
+<br />
+-->
+
+		<!-- Global Mass Surveillance - The Fourteen Eyes -->
+
+		<a class="anchor" name="ukusa"></a>
+		<div class="page-header">
+			<h1><a href="#ukusa" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 全球巨量監控 - 十四雙眼</h1>
+		</div>
+
+		<img src="img/layout/UKUSA.png" class="img-responsive pull-right" alt="UKUSA Agreement" style="margin-left:10px;">
+
+		<p>UKUSA 協議是英國, 美國, 澳洲, 加拿大與紐西蘭五國之間的合作協議要共同來收集、分析和分享情報資訊。這個聯盟的成員, 即所知的<a href="http://www.giswatch.org/en/communications-surveillance/unmasking-five-eyes-global-surveillance-practices">五眼聯盟</a>,
+			聚焦在取得和分析來自全世界各地的情報。而這五眼國家同意<a href="http://www.pbs.org/newshour/rundown/an-exclusive-club-the-five-countries-that-dont-spy-on-each-other/">彼此之間不如敵對國那樣地互相監控</a>, 由Snowden 所揭露的資訊顯示，有些五眼聯盟成員會監控對方國家的人民<a href="http://www.theguardian.com/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa">並相互分享情報</a>以<a href="http://www.theguardian.com/politics/2013/jun/10/nsa-offers-intelligence-british-counterparts-blunkett">規避國內法令約束</a>不淮監控自己國家的公民規定。五眼聯盟也與其它不同的國家集團合作以分享情資 (其組成了九眼集團和十四眼集團等), 總之五眼國家和其它國家成員會對彼此互相進行情報監控。</p>
+
+		<br>
+
+		<!-- Chart of Five Eyes, Nine Eyes, and Fourteen Eyes -->
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">五眼聯盟</h3>
+					</div>
+					<div class="panel-body">
+						1. 澳洲 <div class="pull-right"><span class="flag-icon flag-icon-au"></span></div>
+						<br /> 2. 加拿大 <div class="pull-right"><span class="flag-icon flag-icon-ca"></span></div>
+						<br /> 3. 紐西蘭<div class="pull-right"><span class="flag-icon flag-icon-nz"></span></div>
+						<br /> 4. 英國<div class="pull-right"><span class="flag-icon flag-icon-gb"></span></div>
+						<br /> 5. 美國 <div class="pull-right"><span class="flag-icon flag-icon-us"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">九眼集團</h3>
+					</div>
+					<div class="panel-body">
+						6. 丹麥 <div class="pull-right"><span class="flag-icon flag-icon-dk"></span></div>
+						<br /> 7. 法國 <div class="pull-right"><span class="flag-icon flag-icon-fr"></span></div>
+						<br /> 8. 荷蘭 <div class="pull-right"><span class="flag-icon flag-icon-nl"></span></div>
+						<br /> 9. 挪威 <div class="pull-right"><span class="flag-icon flag-icon-no"></span></div>
+						<br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">十四眼集團</h3>
+					</div>
+					<div class="panel-body">
+						10. 比利時 <div class="pull-right"><span class="flag-icon flag-icon-be"></span></div>
+						<br /> 11. 德國 <div class="pull-right"><span class="flag-icon flag-icon-de"></span></div>
+						<br /> 12. 義大利 <div class="pull-right"><span class="flag-icon flag-icon-it"></span></div>
+						<br /> 13. 西班牙 <div class="pull-right"><span class="flag-icon flag-icon-es"></span></div>
+						<br /> 14. 瑞典 <div class="pull-right"><span class="flag-icon flag-icon-se"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end Chart of Five Eyes, Nine Eyes, and Fourteen Eyes -->
+
+		<a class="anchor" name="usa"></a>
+		<h3>為何不推薦使用以美國為基地的網路服務呢?</h3>
+
+		<img src="img/layout/USA.png" class="img-responsive pull-right" alt="USA" style="margin-left:10px;">
+
+		<p>我們不建議採用位於美國的網路服務，因為這個國家的監控項目,使用了<a href="https://www.eff.org/issues/national-security-letters/faq">國家安全信件</a> (NSLs) 並伴隨著不對外開放的法庭程序, 其禁止收到NSLs者談論這份官方請求。這讓政府可以<a href="https://www.schneier.com/blog/archives/2013/08/more_on_the_nsa.html">祕密地強迫</a>企業同意完全讓國家來取用客戶的資料，而把私人企業的網路服務轉化成一種巨量監控的工具。</p>
+
+		<p>某一個例子就是<a href="http://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order">Lavabit</a> – 這是一家提供不接續的安全電子郵件服務公司，由Ladar Levison所創辦。美國聯邦調查局FBI發現Snowden使用其服務後，便向<a href="http://motherboard.vice.com/blog/lavabit-founder-ladar-levison-discusses-his-federal-battle-for-privacy">Lavabit要求</a>交出他的使用記錄。當然Lavabit 沒有保留系統日誌記錄而郵件內容是經過加密後才儲存,FBI發出了（不公開法庭）的傳票要取得Lavabit的SSL服務密鑰。有了SSL 密鑰就可讓他們取用Lavabit所有客戶的通訊記錄(包含元數據和未加密的郵件內容) 而不只是Snowden的資料。</p>
+
+		<p>最後, Levison 交出了SSL密鑰並在同時<a href="http://www.theguardian.com/commentisfree/2014/may/20/why-did-lavabit-shut-down-snowden-email">關閉</a> 他們的伺服器。美國政府當時<a href="http://www.cnbc.com/id/100962389">威脅要逮捕Levison</a>,認為他關閉Lavabit服務是違反了法院命令</p>
+
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://www.bestvpn.com/the-ultimate-privacy-guide/#avoidus">Avoid all US and UK based services</a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Surespot#History">Proof that warrant canaries work based on the surespot example.</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/UKUSA_Agreement">http://en.wikipedia.org/wiki/UKUSA_Agreement</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order">http://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order</a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Key_disclosure_law">https://en.wikipedia.org/wiki/Key_disclosure_law</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Portal:Mass_surveillance">http://en.wikipedia.org/wiki/Portal:Mass_surveillance</a></li>
+		</ul>
+
+
+		<a class="anchor" name="vpn"></a>
+		<div class="page-header">
+			<h1><a href="#vpn" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> VPN提供額外的隱私層保護</h1>
+		</div>
+		<div class="alert alert-success" role="alert">
+			<strong>在此所列的供應商都不在美國境內，他們都使用加密，接受Bitcoin付款, 支援OpenVPN 而且沒有記錄用戶活動政策。</strong>
+		</div>
+
+<br>
+
+		<!-- START VPN TABLE -->
+
+					<table class="sortable-theme-bootstrap" data-sortable>
+						<thead>
+							<tr>
+								<th data-sortable="true">整理的 VPN供應適表格</th>
+								<th data-sortable="true">年費</th>
+								<th data-sortable="true">免費試用</th>
+								<th data-sortable="true" title="Number of Servers"># 伺服器數量</th>
+								<th data-sortable="true">司法管轄區</th>
+								<th data-sortable="false">網站</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td data-value="AirVPN">
+									<a href="https://airvpn.org/"><img src="img/provider/AirVPN.gif" width="200" height="70"></a></td>
+								<td data-value="54">54 €</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>162</td>
+								<td><span class="flag-icon flag-icon-it"></span> 義大利</td>
+								<td><a href="https://airvpn.org/">AirVPN.org</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="AzireVPN">
+									<a href="https://www.azirevpn.com/"><img src="img/provider/AzireVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="47.5">45 €</td> <!-- Nord costs $48, 47.5 rounded is 48 => didn't round this one after converting currencies; Note: Currencies converted 2016-11-28 -->
+								<td><span class="label label-warning">No</span></td>
+								<td>5</td>
+								<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+								<td><a href="https://www.azirevpn.com/">AzireVPN.com</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="blackVPN">
+									<a href="https://www.blackvpn.com/"><img src="img/provider/blackVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="105">99 €</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>27</td>
+								<td><span class="flag-icon flag-icon-hk"></span> 香港</td>
+								<td><a href="https://www.blackvpn.com/">blackVPN.com</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="Cryptostorm">
+									<a href="https://cryptostorm.is/"><img src="img/provider/Cryptostorm.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="52">$ 52</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>18</td>
+								<td><span class="flag-icon flag-icon-is"></span> 冰島</td>
+								<td><a href="https://cryptostorm.is/">Cryptostorm.is</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="Doublehop.me">
+									<a href="https://doublehop.me/"><img src="img/provider/Doublehop.me.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="33">$ 33</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>6</td>
+								<td><span class="flag-icon flag-icon-sc"></span> 塞舌爾</td>
+								<td><a href="https://doublehop.me/">Doublehop.me</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="EarthVPN">
+									<a href="http://www.earthvpn.com/"><img src="img/provider/EarthVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="42">39,99 €</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>432</td>
+								<td><span class="flag-icon flag-icon-cy"></span> 北塞浦勒斯</td>
+								<td><a href="http://www.earthvpn.com/">EarthVPN.com</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="FrootVPN">
+									<a href="https://www.frootvpn.com/"><img src="img/provider/FrootVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="36">$ 35.88</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>27</td>
+								<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+								<td><a href="https://www.frootvpn.com/">FrootVPN.com</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="hide.me">
+									<a href="https://hide.me/"><img src="img/provider/hide.me.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="65">$ 65.04</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>88</td>
+								<td><span class="flag-icon flag-icon-my"></span> 馬來西亞</td>
+								<td><a href="https://hide.me/">hide.me</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="IVPN">
+									<a href="https://www.ivpn.net/"><img src="img/provider/IVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="99.96">$ 99.96</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>21</td>
+								<td><span class="flag-icon flag-icon-gi"></span> 直布羅陀</td>
+								<td><a href="https://www.ivpn.net/">IVPN.net</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="Mullvad">
+									<a href="https://mullvad.net/"><img src="img/provider/Mullvad.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="63">60 €</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>52</td>
+								<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+								<td><a href="https://mullvad.net/">Mullvad.net</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="NordVPN">
+									<a href="https://nordvpn.com/"><img src="img/provider/NordVPN.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="69">$ 69</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>475</td>
+								<td><span class="flag-icon flag-icon-pa"></span> 巴拿馬</td>
+								<td><a href="https://nordvpn.com/">NordVPN.com</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="oVPN.se">
+									<a href="https://www.ovpn.se/"><img src="img/provider/oVPN.se.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="84">$ 84</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>24</td>
+								<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+								<td><a href="https://www.ovpn.se/">oVPN.se</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="Perfect Privacy">
+									<a href="https://www.perfect-privacy.com/"><img src="img/provider/Perfect-Privacy.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="133">124.95 €</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>41</td>
+								<td><span class="flag-icon flag-icon-pa"></span> 巴拿馬</td>
+								<td><a href="https://www.perfect-privacy.com/">Perfect-Privacy.com</a></td>
+							</tr>
+
+<!--
+	"Warning: It has come to our attention that Privatoria are no longer supporting their service – its advised to try some other VPN provider." Source: https://www.deepdotweb.com/2016/01/03/privatoria-review/
+							<tr>
+								<td data-value="Privatoria">
+									<a href="https://privatoria.net/"><img src="img/provider/Privatoria.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="23">$ 22.8</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>22</td>
+								<td><span class="flag-icon flag-icon-cz"></span> Czech Republic</td>
+								<td><a href="https://privatoria.net/">Privatoria.net</a></td>
+							</tr>
+-->
+
+							<tr>
+								<td data-value="Proxy.sh">
+									<a href="https://proxy.sh/"><img src="img/provider/Proxy.sh.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="90">$ 90</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>300</td>
+								<td><span class="flag-icon flag-icon-sc"></span> 塞舌爾</td>
+								<td><a href="https://proxy.sh/">Proxy.sh</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="Trust.Zone">
+									<a href="https://trust.zone/"><img src="img/provider/Trust.Zone.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="39.95">$ 39.95</td>
+								<td><span class="label label-success">Yes</span></td>
+								<td>48</td>
+								<td><span class="flag-icon flag-icon-sc"></span> 塞舌爾</td>
+								<td><a href="https://trust.zone/">Trust.Zone</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="VPN.ht">
+									<a href="https://vpn.ht/"><img src="img/provider/VPN.ht.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="40">$ 39.99</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>122</td>
+								<td><span class="flag-icon flag-icon-hk"></span> 香港</td>
+								<td><a href="https://vpn.ht/">VPN.ht</a></td>
+							</tr>
+
+							<tr>
+								<td data-value="VPNTunnel">
+									<a href="https://vpntunnel.com/"><img src="img/provider/VPNTunnel.gif" width="200" height="70"></a>
+								</td>
+								<td data-value="35.88">$ 35.88</td>
+								<td><span class="label label-warning">No</span></td>
+								<td>80</td>
+								<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+								<td><a href="https://vpntunnel.com/">VPNTunnel.com</a></td>
+							</tr>
+
+						</tbody>
+					</table>
+
+
+		<!-- END VPN TABLE -->
+
+		<br>
+
+		<!-- yellow warning box about vpns and "no log" policies. -->
+		<div class="alert alert-warning" role="alert">
+			<strong>注意: 使用VPN服務並無法讓你匿名上網，但它可以提供較佳的隱私控制。VPN不是用來作違法活動的工具，不能依賴供應商的「不記錄用戶活動」政策。</strong>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<!-- bullet list of VPN Provider Criteria
+ -->
+					<h3>我們挑選VPN 供應商的標準</h3>
+					<ul>
+						<li>在美國境外或其它五眼聯盟以外的國家營運
+							<br>再者: <a href="https://www.bestvpn.com/the-ultimate-privacy-guide/#avoidus">避免挑選以英國和美國為基地的服務商。</a></li>
+						<li>支援OpenVPN軟體</li>
+						<li>接受比特幣, 現金, 借記卡或現金卡等付款方式</li>
+						<li>註冊帳號時不會求提供個人資訊，要需填用戶名稱、密碼與<a href="#email"><span class="glyphicon glyphicon-link"></span>電子郵件</a>即可</li>
+					</ul>
+					<p>我們和上列的VPN 供應商並無任何利益關聯，以求誠實地予以最佳推薦。</p>
+
+
+					<h3>更多的VPN 供應商</h3>
+					<p>
+						<a href="https://thatoneprivacysite.net/vpn-comparison-chart/">
+    無偏頗獨立，查證過的一百多家VPN 供應商名單資訊
+  </a>
+						<a href="https://www.reddit.com/r/privacytoolsIO/comments/43d4zs/you_guys_might_be_interested_in_this_a/">
+    (歡迎加入在Reddit上的討論)
+  </a>
+					</p>
+
+				</div>
+
+				<!-- bullet list of VPN articles -->
+				<div class="col-md-6"><span class="pull-right">
+<h3>相關的VPN資訊</h3>
+<ul>
+	<li><a href="https://torrentfreak.com/vpn-anonymous-review-160220/">Which VPN Services Take Your Anonymity Seriously? 2016</a><br />(<strong>Note:</strong> The providers listed first in the TorrentFreaks article are sponsored)</li>
+	<li><a href="http://torrentfreak.com/how-to-make-vpns-even-more-secure-120419/">How To Make VPNs Even More Secure</a></li>
+	<li><a href="https://blog.spideroak.com/20140124105217-vpn-privacy-anonymity">VPN, privacy and anonymity - SpiderOak</a></li>
+	<li><a href="https://vikingvpn.com/blogs/off-topic/beware-of-vpn-marketing-and-affiliate-programs">Beware of False Reviews - VPN Marketing and Affiliate Programs</a></li>
+	<li><a href="https://www.goldenfrog.com/take-back-your-internet/articles/7-myths-about-vpn-logging-and-anonymity">I am Anonymous When I Use a VPN - 7 Myths Debunked</a><br />(<strong>Note:</strong> While this is a good read, they also use the article for self promotion)</li>
+	<li><a href="http://torrentfreak.com/proxy-sh-vpn-provider-monitored-traffic-to-catch-hacker-130930/">Proxy.sh VPN Provider Sniffed Server Traffic to Catch Hacker</a></li>
+	<li><a href="https://proxy.sh/panel/knowledgebase.php?action=displayarticle&id=5">Ethical Policy - All of the reasons why Proxy.sh might enable logging</a></li>
+	<li><a href="https://www.ivpn.net/privacy">IVPN.net will collect your email and IP address after sign up</a><br />Read <a data-toggle="tooltip" data-placement="top" data-original-title="The IP collected at signup is only used for a few seconds by our fraud module and then discarded, it is not stored. Storing them would significantly increase our own liability and certainly would not be in our interest. You're absolutely welcome to signup using Tor or a VPN."> Email statement</a>from IVPN</li>
+	<li><a href="https://medium.com/@blackVPN/no-logs-6d65d95a3016">blackVPN announced to delete connection logs after disconnection</a></li>
+	<li><a href="https://gist.github.com/kennwhite/1f3bc4d889b02b35d8aa">Don't use LT2P IPSec, use other protocols.</a></li>
+</ul>
+</span></div>
+			</div>
+		</div>
+
+		<!-- warrant canary -->
+		<a class="anchor" name="wc"></a>
+		<div class="page-header">
+			<h1><a href="#wc" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 什麼叫做令狀金絲雀?</h1>
+		</div>
+		<img src="img/layout/warrant-canary.jpg" class="img-responsive pull-right" alt="Warrant Canary Example" style="margin-left:20px;">
+		<p>令狀金絲雀是有些組織公佈一份文件來聲明他們在一特定期間內，並未接到任何祕密的傳票。如果這份文件未能及時定期更新，那麼用戶可以假設該組織可能收到了不可公開的祕密傳票而應該停止使用他們提供的網路服務。</p>
+		<h4>相關案例:</h4>
+		<ol>
+			<li><a href="https://proxy.sh/canary">https://proxy.sh/canary</a></li>
+			<li><a href="https://www.ivpn.net/resources/canary.txt">https://www.ivpn.net/resources/canary.txt</a></li>
+			<li><a href="https://www.vpnsecure.me/files/canary.txt">https://www.vpnsecure.me/files/canary.txt</a></li>
+			<li><a href="https://www.bolehvpn.net/canary.html">https://www.bolehvpn.net/canary.html</a></li>
+			<li><a href="https://lokun.is/canary.txt">https://lokun.is/canary.txt</a></li>
+			<li><a href="https://www.ipredator.se/static/downloads/canary.txt">https://www.ipredator.se/static/downloads/canary.txt</a></li>
+		</ol>
+		<h4>相關資訊</h4>
+		<ul>
+			<li><a href="https://www.eff.org/de/deeplinks/2014/04/warrant-canary-faq">Warrant Canary Frequently Asked Questions</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Warrant_canary#Companies_and_organizations_with_warrant_canaries">Companies and organizations with warrant canaries</a></li>
+		</ul>
+
+		<!-- browsers -->
+		<a class="anchor" name="browser"></a>
+		<div class="page-header">
+			<h1><a href="#browser" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 瀏覧器推薦</h1>
+		</div>
+
+		<div class="row">
+
+			<!-- browsers - firefox -->
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Mozilla Firefox</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Firefox.png" align="right" style="margin-left:5px;">Firefox火狐瀏覧器是一個快速、可靠、開源且尊重用戶隱私的上網工具。別忘了依照我們的建議來調整火狐底下的設定的: <a href="#webrtc"><span class="glyphicon glyphicon-link"></span> WebRTC</a> 以及 <a href="#about_config"><span class="glyphicon glyphicon-link"></span> about:config</a> 和安裝<a href="#addons"><span class="glyphicon glyphicon-link"></span> 隱私保護附加元件</a>.</p>
+						<p>
+							<a href="https://www.firefox.com/">
+								<button type="button" class="btn btn-success">下載源: firefox.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, BSD.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- browsers - brave -->
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Brave</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Brave.png" align="right" style="margin-left:5px;">新問世的開源瀏覧器"Brave" 會自動地封鎖廣告與追踪器, 其效能比你目前所用的瀏覧器更為快速安全。Brave為基於Chromium所開發的軟體.</p>
+						<p>
+							<a href="https://www.brave.com/">
+								<button type="button" class="btn btn-info">下載源: brave.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, iOS.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- IceCat removed
+<div class="col-sm-4">
+<div class="panel panel-info">
+<div class="panel-heading">
+<h3 class="panel-title">GNU IceCat</h3>
+</div>
+<div class="panel-body">
+<p><img src="img/tools/IceCat.png" align="right" style="margin-left:5px;">GNU IceCat is a good choice for privacy related matters. It is a free software rebranding of the Mozilla Firefox web browser distributed by the GNU Project. IceCat comes with pre-installed privacy add-ons.</p>
+<p><a href="http://www.gnu.org/software/gnuzilla/"><button type="button" class="btn btn-info">Download: www.gnu.org</button></a></p>
+<p>OS: Windows, Mac, Linux, Android.</p>
+</div>
+</div>
+</div>
+-->
+
+			<!-- browsers - tor browser bundle -->
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Tor洋䓤瀏覧器</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Tor-Project.png" align="right" style="margin-left:5px;">如果你需要額外的匿名層保護，則Tor瀏覧器就是你最佳的選項。它是利用火狐瀏覧器作進一步的調配，其事先默設安裝好了一些隱私保護的附加元件、加密與進階的代理器
+						</p>
+						<p>
+							<a href="https://www.torproject.org/">
+								<button type="button" class="btn btn-warning">下載源: torproject.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, <a href="https://mike.tig.as/onionbrowser/">iOS</a>, <a href="https://www.torproject.org/docs/android.html.en">Android</a>, <a href="https://github.com/torbsd/openbsd-ports">OpenBSD.</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- Browser Fingerprint -->
+		<a class="anchor" name="fingerprint"></a>
+
+		<!-- heading -->
+		<div class="page-header">
+			<h1><a href="#fingerprint" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 瀏覧器指紋 - 你的瀏覧器設定是否獨一無二?</h1>
+		</div>
+
+		<!-- yellow warning message about the browser sending unique information -->
+		<div class="alert alert-warning" role="alert">
+			<strong>你使用的瀏覧器傳送了許多資訊，在數千百萬使用者當中可以容易地辨識出不同人。</strong>
+		</div>
+
+		<!-- fingerprint image to the right of the paragraphs -->
+		<img src="img/layout/browser-fingerprint.jpg" class="img-responsive pull-right" alt="Fingerprint image" style="margin-left:20px;">
+
+		<!-- first paragraph -->
+		<p>當訪問一個網站時，瀏覧器會自行地送出一些它的設定資訊，例如有哪些字型可用，瀏覧器類型、安裝的附加元件等。如果這些組合出來的資訊非常獨特，很容易讓其它人不需要cookies小程式就可以辨識與追踪你。電子前鋒基金會EFF創建了一個<a href="https://panopticlick.eff.org/">Panopticlick</a>工具來測試瀏覧器的獨特程度</p>
+
+		<!-- First orange "test your browser now" button -->
+		<p>
+			<a href="https://panopticlick.eff.org/">
+				<button type="button" class="btn btn-warning">立即測試你正在用的瀏覧器吧</button>
+			</a>
+		</p>
+
+		<!-- second paragraph -->
+		<p>你需要找出<strong>大多數瀏覧器</strong>會回報什麼資料,然後利用相同的人口資訊，再把這些變數放回你的瀏覧器當中。這意謂著和其它人使用相同的字體、外掛元件、附加元件等，以擴大設定基礎。你也該利用<a href="https://addons.mozilla.org/firefox/addon/random-agent-spoofer/">欺瞞的用戶代理字串</a>以符合最大的使用者基數。你需要有相同的設定啟動和取消，例如DNT與WebGL功能。這樣讓你使用的瀏覧器看起來會像每個人用的差不多。取消JavaScript, 使用Linux, 或是進一步使用TBB, 會讓你的瀏覧器從大多數群眾中曝顯出來。</p>
+
+		<!-- third paragraph -->
+		<p>現代的網頁瀏覧器未曾依確保個人在萬維網的隱私安全來打造。若很擔心瀏覧器留下的獨特特徵指紋辨識，最實際的作法是使用<a href="#addons"><span class="glyphicon glyphicon-link"></span>免費的外掛軟體</a>像是Privacy Badger, uBlock Origin 與 Disconnect。
+			它們不只提供你網路自由，也保護你上網的隱私保護。你不妨進一步了解使用這些工具，會比試著操弄瀏覧器指紋更為容易方便。</p>
+
+		<!-- related information links -->
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://panopticlick.eff.org/browser-uniqueness.pdf">How Unique Is Your Web Browser? Peter Eckersley, EFF.</a></li>
+			<li><a href="https://www.reddit.com/r/privacytoolsIO/comments/35pqyl/new_section_browser_fingerprint_is_your_browser/">Join our discussion on reddit.com about browser fingerprinting.</a></li>
+			<li><a href="#addons"><span class="glyphicon glyphicon-link"></span> Our Firefox privacy add-ons section.</a></li>
+			<li><a href="https://www.browserleaks.com/">BrowserLeaks.com</a> - Web browser security testing tools, that tell you what exactly personal identity data may be leaked without any permissions when you surf the Internet.</li>
+		</ul>
+
+		<!-- WebRTC IP Leak Test -->
+		<a class="anchor" name="webrtc"></a>
+		<div class="page-header">
+			<h1><a href="#webrtc" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> WebRTC IP漏洞測試 - 你的IP位置是否遭到洩漏?</h1>
+		</div>
+
+		<!-- red alert message about WebRTC being a new communication protocol... -->
+		<div class="alert alert-danger" role="alert">
+			<strong>WebRTC 是一種新的通訊協議，其依靠JavaScript程式。它可能會洩漏VPN用戶真實的IP位置資訊。</strong>
+		</div>
+
+		<!-- first sentence -->
+		<p>有些軟體，如NoScript 可以阻止這個漏洞。但為了安全起見，也許直接關閉這個協議也是不錯的作法。</p>
+
+		<!-- orange "Test your Browser now" button -->
+		<p>
+			<a href="webrtc.html">
+				<button type="button" class="btn btn-warning">立即測試你正在用的瀏覧器吧</button>
+			</a>
+		</p>
+
+		<!-- heading: How to disable WRTC in Firefox? -->
+		<h3>如何在火狐瀏覧器下取消WebRTC?</h3>
+
+		<!-- steps on manually disabling WRTC in Firefox -->
+		<p>In short: Set "media.peerconnection.enabled" to "false" in "about:config".</p>
+		<p><strong>說明:</strong></p>
+		<ol>
+			<li>在瀏覧器的網址列輸入 "about:config" 並點擊enter鍵.</li>
+			<li>點擊"I'll be careful, I promise!"按鈕</li>
+			<li>搜尋"media.peerconnection.enabled"</li>
+			<li>雙擊這條資訊, "Value"欄位現在應該變成了"false"</li>
+			<li>完成了.再作一次WebRTC漏洞測試吧</li>
+		</ol>
+
+		<p>如果要確認每一個與WebRTC相關設定真的關閉了，可以再進行以下的設定更動:</p>
+		<ol>
+			<li>media.peerconnection.turn.disable = true</li>
+			<li>media.peerconnection.use_document_iceservers = false</li>
+			<li>media.peerconnection.video.enabled = false</li>
+			<li>media.peerconnection.identity.timeout = 1</li>
+		</ol>
+		<p>現在你已百分百地將WebRTC功能取消了。</p>
+
+		<!-- the "Test your Browser again" button -->
+		<p>
+			<a href="webrtc.html">
+				<button type="button" class="btn btn-primary">再次測試你的瀏覧器吧</button>
+			</a>
+		</p>
+
+		<!-- steps to manually disable WebRTC in Chrome -->
+		<h3>如何來解決Google Chrome底下的WebRTC漏洞呢 ?</h3>
+		<p>目前還找不到解決方法, 只有一個外掛工具但它很容易被躲過。還是使用火狐瀏覧器吧。</p>
+
+		<h3>那其它的瀏覧器呢?</h3>
+		<p>蘋果iOS作業系統下的Chrome, Internet Explorer 與 Safari 目前尚未採用WebRTC。 <a href="#browser"><span class="glyphicon glyphicon-link"></span> 不過我們還是建議在各種設備上最好還是使用火狐瀏覧器。</a></p>
+
+
+		<!-- Firefox add-ons -->
+		<a class="anchor" name="addons"></a>
+
+		<div class="page-header">
+			<h1><a href="#addons" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 優質的火狐瀏覧器隱私保護附加元件</h1>
+		</div>
+
+		<div class="alert alert-success" role="alert">
+			<strong>利用優質的火狐瀏覧器附加元件來改善隱私保護</strong>
+		</div>
+
+
+		<!--
+		<h3>Stop tracking with "Disconnect"</h3>
+
+		<img src="img/addons/Privacy-Badger.gif" class="img-responsive pull-left" alt="Privacy Badger" style="margin-right:30px;">
+		<p><strong>Privacy Badger</strong> is a browser add-on that stops advertisers and other third-party trackers from secretly tracking where you go and what pages you look at on the web. Privacy Badger automatically blocks that advertiser from loading any more content in your browser.
+		<br />
+		<a href="https://addons.mozilla.org/firefox/addon/privacy-badger-firefox/">https://addons.mozilla.org/firefox/addon/privacy-badger-firefox/</a></p>
+		<br />
+
+
+		<img src="img/addons/Disconnect.gif" class="img-responsive pull-left" alt="Disconnect" style="margin-right:30px;">
+		<p>Founded in 2011 by former Google engineers and a consumer-and privacy-rights attorney. The addon is open source and loads the pages you go to 27% faster and stops tracking by 2,000+ third-party sites. It also keeps your searches private. If you are planning to install "uBlock Origin" make sure to install "Disconnect" first. <strong>Alternative to Disconnect:</strong> <a href="https://addons.mozilla.org/firefox/addon/privacy-badger-firefox/">Privacy Badger by EFF</a>
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/disconnect/">https://addons.mozilla.org/firefox/addon/disconnect/</a>
+			</p>
+-->
+		<h3>利用"uBlock Origin"來封鎖廣告與追踪器</h3>
+		<img src="img/addons/uBlock.gif" class="img-responsive pull-left" alt="uBlock" style="margin-right:30px;">
+		<p>它是一個有效 <a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode">寛頻譜的封鎖器</a> 容易在記憶體上執行，也比一般市面上的封鎖器更可負載到上千個過濾器當中。這套軟體並沒有商業化的打算而且是完全<a href="https://github.com/gorhill/uBlock/">開源</a>。不只在火狐，uBlock Origin也可以用在其它的瀏覧器如Safari, Opera, Chromium等等。不像AdBlock Plus, uBlock並沒有所謂的<a href="https://adblockplus.org/acceptable-ads">"可接受的廣告"</a>.
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/ublock-origin/">https://addons.mozilla.org/firefox/addon/ublock-origin/</a>
+		</p>
+
+<!--
+		<h3>Hinder Browser Fingerprinting with "Random Agent Spoofer"</h3>
+		<img src="img/addons/Random-Agent-Spoofer.gif" class="img-responsive pull-left" alt="Random Agent Spoofer" style="margin-right:30px;">
+		<p>A privacy enhancing firefox addon which aims to hinder browser fingerprinting. It does this by changing the browser/device profile on a timer. Source code: <a href="https://github.com/dillbyrne/random-agent-spoofer">GitHub.</a>
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/random-agent-spoofer/">https://addons.mozilla.org/firefox/addon/random-agent-spoofer/</a></p>
+-->			
+
+		<h3>利用"Self-Destructing Cookies"自動刪除Cookies</h3>
+		<img src="img/addons/Self-Destructing-Cookies.gif" class="img-responsive pull-left" alt="Self-Destructing Cookies" style="margin-right:30px;">
+		<p>自動地移除儲存開啟的分頁中不需再使用的cookies。連同徘徊期間、以及用來監視用戶的資訊都會被清除。
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/self-destructing-cookies/">https://addons.mozilla.org/firefox/addon/self-destructing-cookies/</a></p>
+
+
+		<h3>使用"HTTPS Everywhere"加密連線</h3>
+		<img src="img/addons/HTTPS-Everywhere.gif" class="img-responsive pull-left" alt="HTTPS Everywhere" style="margin-right:30px;">
+		<p>Firefox, Chrome, Opera 都支援的瀏覧器延伸元件，可以對一些主要網站之間的網路連線予以加密，讓你的瀏覧更為安全。它是Tor計畫與電子前鋒基金會EFF的一個合作專案。
+			<br />
+			<a href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a></p>
+
+		<h3>利用"Decentraleyes"來關閉內容傳遞網路</h3>
+		<img src="img/addons/Decentraleyes.gif" class="img-responsive pull-left" alt="HTTPS Everywhere" style="margin-right:30px;">
+		<p>在本地機器上仿效內容傳遞網路以攔截對外請求，找出所需的資源再將其注入環境下。這些步驟會同時自發自動地發生而不必事前的設定。原始碼: <a href="https://github.com/Synzvato/decentraleyes">GitHub.</a>
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/decentraleyes/">https://addons.mozilla.org/firefox/addon/decentraleyes/</a></p>
+
+		<br>
+
+		<div class="alert alert-warning" role="alert">
+			<strong>下面的附加元件要求與使用者之間的許多互動才能設定成功。有些網站除非你已有設好了這些附加元件否則無法順利工作。</strong>
+		</div>
+		<!--
+<h3>Stop cross-site requests with "Request Policy"</h3>
+<img src="img/addons/Request-Policy.gif" class="img-responsive pull-left" alt="Request Policy" style="margin-right:30px;">
+<p>Many websites integrate features which let other websites track you, such as Facebook Like Buttons or Google Analytics. Request Policy gives you control over the requests that websites make to other websites. This gives you greater and more fine grained control over the information that you leak online.
+<br />
+<a href="https://requestpolicycontinued.github.io/">https://requestpolicycontinued.github.io/</a>
+</p>
+-->
+		<h3>利用uMatrix來停止跨站的請求</h3>
+		<img src="img/addons/uMatrix.gif" class="img-responsive pull-left" alt="uMatrix" style="margin-right:30px;">
+		<p>許多網站或整合一些功能讓其它別的網站也可以追踪你，例如臉書的按贊鈕或是Google流量分析工具。uMatrix 則讓你可以掌握造訪網站上來自其它網站的追踪請求，賦予更佳更大的決定權力來控制你願意在網路上流出的資料。<br />
+			<a href="https://addons.mozilla.org/firefox/addon/umatrix/">https://addons.mozilla.org/firefox/addon/umatrix/</a>
+		</p>
+	<h3>利用"NoScript Security Suite"套件完整控制</h3>
+		<img src="img/addons/NoScript.gif" class="img-responsive pull-left" alt="NoScript" style="margin-right:30px;">
+		<p>
+			高度客制化的外掛工具可以選擇讓Javascript, Java, 與 Flash只能在所信任的網站上執行。但它並不適合一般的用戶，需要足夠知識才能進行適當設定。
+			<br />
+			<a href="https://addons.mozilla.org/firefox/addon/noscript/">https://addons.mozilla.org/firefox/addon/noscript/</a>
+		</p>
+
+
+		<!-- about:config tweaks for Firefox -->
+		<a class="anchor" name="about_config"></a>
+
+		<div class="page-header">
+			<h1><a href="#about_config" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> FireFox: "about:config"的隱私設定調整</h1>
+		</div>
+
+		<div class="alert alert-success" role="alert">這部份是關於<strong>about:config</strong>的隱私設定調整整理。我們將示範如何強化火孤瀏覧器的隱私保護。</div>
+
+		<!-- preparation list -->
+		<h3>準備:</h3>
+		<ol>
+			<li>在瀏覧器的網址列輸入 "about:config" 並點擊enter鍵</li>
+			<li>點擊"I'll be careful, I promise!"按鈕</li>
+			<li>依照下方的指示操作...</li>
+		</ol>
+
+		<!-- Getting started list -->
+		<h3>開始動手:</h3>
+
+		<ol>
+			<li>privacy.trackingprotection.enabled = true</li>
+			<ul>
+				<li>Mozilla新內鍵的追踪保護功能</li>
+			</ul>
+
+			<li>geo.enabled = false</li>
+			<ul>
+				<li>取消地理定位資料</li>
+			</ul>
+
+			<li>browser.safebrowsing.phishing.enabled = false</li>
+			<ul>
+				<li>取消Google安全瀏覧與防釣魚保護。這會有安全上的風險，但可改善隱私。</li>
+			</ul>
+
+			<li>browser.safebrowsing.malware.enabled = false</li>
+			<ul>
+				<li>取消Google安全瀏覧的惡意軟體檢查，有安全上的風險，但可改善隱私。</li>
+			</ul>
+
+			<li>dom.event.clipboardevents.enabled = false</li>
+			<ul>
+				<li>取消讓網站在當你從某網頁中複制、貼上是剪下任何內容時，會發出通知。這會讓他們知道網頁的哪一部份被挑選。</li>
+			</ul>
+
+			<li>network.cookie.cookieBehavior = 1</li>
+			<ul>
+				<li>取消cookies</li>
+				<li>0 = Accept all cookies by default</li>
+				<li>1 = Only accept from the originating site (block third party cookies)</li>
+				<li>2 = Block all cookies by default</li>
+			</ul>
+
+			<li>network.cookie.lifetimePolicy = 2</li>
+			<ul>
+				<li>cookies在期間結束後會被刪除</li>
+				<li>0 = Accept cookies normally</li>
+				<li>1 = Prompt for each cookie</li>
+				<li>2 = Accept for current session only</li>
+				<li>3 = Accept for N days</li>
+			</ul>
+
+			<li>browser.cache.offline.enable = false</li>
+			<ul>
+				<li>取消離線的緩存快取資料</li>
+			</ul>
+
+			<li>browser.send_pings = false</li>
+			<ul>
+				<li>這個屬性會協助網站來追踪訪問者的點擊動作。</li>
+			</ul>
+
+			<li>webgl.disabled = true</li>
+			<ul>
+				<li>WebGL 有潛在的安全風險<a href="http://security.stackexchange.com/questions/13799/is-webgl-a-security-concern">來源</a></li>
+			</ul>
+
+			<li>dom.battery.enabled = false</li>
+			<ul>
+				<li>網站所有人可以追踪訪問者設置的電池狀態<a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/">來源</a></li>
+			</ul>
+
+			<li>browser.sessionstore.max_tabs_undo = 0</li>
+			<ul>
+				<li>即便設定讓瀏覧器不要保留訪問記錄,但是所關閉的分頁會暫停在選單上 -&gt; History -&gt; 最近關閉的分頁Recently Closed Tabs.</li>
+			</ul>
+		</ol>
+
+		<!-- related information -->
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://ffprofile.com/">ffprofile.com</a> - Helps you to create a Firefox profile with the defaults you like.</li>
+			<li><a href="http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences">mozillazine.org</a> - Security and privacy-related preferences. </li>
+			<li><a href="https://github.com/pyllyukko/user.js">user.js Firefox hardening stuff</a> - This is a user.js configuration file for Mozilla Firefox that's supposed to harden Firefox's settings and make it more secure.</li>
+			<li><a href="https://addons.mozilla.org/firefox/addon/privacy-settings/">Privacy Settings</a> - A Firefox addon to alter built-in privacy settings easily with a toolbar panel.</li>
+		</ul>
+
+		<a class="anchor" name="email"></a>
+		<div class="page-header">
+			<h1><a href="#email" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 具隱私意識的電郵服務提供商- 與本站無利害關聯</h1>
+		</div>
+
+		<div class="alert alert-success" role="alert">
+			<strong>這裏列出的供應商都在美國境外營運並且支援 <a data-toggle="tooltip" data-placement="bottom" data-original-title="When sending or receiving emails, if both the sending and receiving servers support TLS encryption, the email is sent between servers using an encrypted connection.">SMTP TLS.</a> 這份表格經過整理。絕不要隨意信任任何公司，多利用加密通訊。</strong>
+		</div>
+
+		<br>
+
+		<table class="sortable-theme-bootstrap" data-sortable>
+			<thead>
+				<tr>
+					<th data-sortable="true">電郵服務</th>
+					<th data-sortable="true">成立時間</th>
+					<th data-sortable="true">伺服器位置</th>
+					<th data-sortable="true">空間容量</th>
+					<th data-sortable="true">價格 / 年費</th>
+					<th data-sortable="true">Bitcoin</th>
+					<th data-sortable="true">加密功能</th>
+					<th data-sortable="true">自定網域</th>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td data-value="OpenMailBox">
+						<a href="https://www.openmailbox.org/"><img src="img/provider/OpenMailBox.gif" width="200" height="70">
+							<br />OpenMailBox.org</a>
+					</td>
+					<td data-value="2013">2013</td>
+					<td><span class="flag-icon flag-icon-fr"></span> 法國</td>
+					<td data-value="1000">1 GB</td>
+					<td data-value="0"><span class="label label-warning">免費</span></td>
+					<td data-value="1"><span class="label label-success">接受</span></td>
+					<td data-value="1"><span class="label label-success">內鍵</span></td>
+					<td data-value="0"><span class="label label-primary">無</span></td>
+				</tr>
+
+				<tr>
+					<td data-value="ProtonMail">
+						<a href="https://www.protonmail.ch/"><img src="img/provider/ProtonMail.ch.gif" width="200" height="70">
+							<br />ProtonMail.ch</a>
+					</td>
+					<td data-value="2013">2013</td>
+					<td><span class="flag-icon flag-icon-ch"></span> 瑞士</td>
+					<td data-value="500">500 MB</td>
+					<td data-value="0"><span class="label label-warning">免費</span></td>
+					<td data-value="1"><span class="label label-success">接受</span></td>
+					<td data-value="1"><span class="label label-success">內鍵</span></td>
+					<td data-value="1"><span class="label label-success">有</span></td>
+				</tr>
+
+				<!-- removed ruggedinbox: ssl certificate expired
+<tr>
+<td data-value="RuggedInbox"><a href="https://ruggedinbox.com/"><img src="img/provider/RuggedInbox.gif" width="200" height="70"><br />RuggedInbox.com</a></td>
+<td data-value="2014">2014</td>
+<td>Bulgaria</td>
+<td data-value="200">200 MB</td>
+<td data-value="0"><span class="label label-warning">Free</span></td>
+<td><span class="label label-success">Accepted</span></td>
+<td><span class="label label-primary">No</span></td>
+<td><span class="label label-primary">No</span></td>
+</tr>
+-->
+
+				<tr>
+					<td data-value="Tutanota">
+						<a href="https://www.tutanota.com/"><img src="img/provider/Tutanota.gif" width="200" height="70">
+							<br />Tutanota.com</a>
+					</td>
+					<td data-value="2011">2011</td>
+					<td><span class="flag-icon flag-icon-de"></span> 德國</td>
+					<td data-value="1000">1 GB</td>
+					<td data-value="0"><span class="label label-warning">免費</span></td>
+					<td data-value="0"><span class="label label-primary">無</span></td>
+					<td data-value="1"><span class="label label-success">內鍵</span></td>
+					<td data-value="1"><span class="label label-success">有</span></td>
+				</tr>
+
+				<tr>
+					<td data-value="Mailfence">
+						<a href="https://www.mailfence.com/"><img src="img/provider/Mailfence.gif" width="200" height="70">
+							<br />Mailfence.com</a>
+					</td>
+					<td data-value="2013">2013</td>
+					<td><span class="flag-icon flag-icon-be"></span> 比利時</td>
+					<td data-value="200">200 MB</td>
+					<td data-value="0"><span class="label label-warning">免費</span></td>
+					<td data-value="1"><span class="label label-success">接受</span></td>
+					<td data-value="1"><span class="label label-success">內鍵</span></td>
+					<td data-value="1"><span class="label label-success">有</span></td>
+				</tr>
+
+				<tr>
+					<tr>
+						<td data-value="mailbox.org">
+							<a href="https://www.mailbox.org/"><img src="img/provider/mailbox.org.gif" width="200" height="70">
+								<br />mailbox.org</a>
+						</td>
+						<td data-value="2014">2014</td>
+						<td><span class="flag-icon flag-icon-de"></span>德國</td>
+						<td data-value="2000">2 GB</td>
+						<td data-value="13">12 €</td>
+						<td data-value="1"><span class="label label-success">接受</span></td>
+						<td data-value="1"><span class="label label-success">內鍵</span></td>
+						<td data-value="1"><span class="label label-success">有</span></td>
+					</tr>
+
+					<tr>
+						<tr>
+							<td data-value="Posteo">
+								<a href="https://www.posteo.de/"><img src="img/provider/Posteo.gif" width="200" height="70">
+									<br />Posteo.de</a>
+							</td>
+							<td data-value="2009">2009</td>
+							<td><span class="flag-icon flag-icon-de"></span> 德國</td>
+							<td data-value="2000">2 GB</td>
+							<td data-value="13">12 €</td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="1"><span class="label label-success">內鍵</span></td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="Runbox">
+								<a href="https://runbox.com/"><img src="img/provider/runbox.gif" width="200" height="70">
+									<br />Runbox.com</a>
+							</td>
+							<td data-value="1999">1999</td>
+							<td><span class="flag-icon flag-icon-no"></span>挪威</td>
+							<td data-value="1000">1 GB</td>
+							<td data-value="20">$ 19.95</td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="1"><span class="label label-success">有</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="Neomailbox">
+								<a href="https://www.neomailbox.com/"><img src="img/provider/Neomailbox.gif" width="200" height="70">
+									<br />Neomailbox.com</a>
+							</td>
+							<td data-value="2003">2003</td>
+							<td><span class="flag-icon flag-icon-ch"></span> Switzerland</td>
+							<td data-value="1000">1 GB</td>
+							<td data-value="50">$ 49.95</td>
+							<td data-value="1"><span class="label label-success">接受</span></td>
+							<td data-value="1"><span class="label label-success">內鍵</span></td>
+							<td data-value="1"><span class="label label-success">有</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="CounterMail">
+								<a href="https://www.countermail.com/"><img src="img/provider/CounterMail.gif" width="200" height="70">
+									<br />CounterMail.com</a>
+							</td>
+							<td data-value="2010">2010</td>
+							<td><span class="flag-icon flag-icon-se"></span> 瑞典</td>
+							<td data-value="500">500 MB</td>
+							<td data-value="59">$ 59</td>
+							<td data-value="1"><span class="label label-success">接受</span></td>
+							<td data-value="1"><span class="label label-success">內鍵</span></td>
+							<td data-value="1"><span class="label label-success">有</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="StartMail">
+								<a href="https://www.startmail.com/"><img src="img/provider/StartMail.gif" width="200" height="70">
+									<br />StartMail.com</a>
+							</td>
+							<td data-value="2014">2014</td>
+							<td><span class="flag-icon flag-icon-nl"></span> 荷蘭</td>
+							<td data-value="10000">10 GB</td>
+							<td data-value="60">$ 59.95</td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="1"><span class="label label-success">內鍵</span></td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="Kolab Now">
+								<a href="https://www.kolabnow.com/"><img src="img/provider/Kolab-Now.gif" width="200" height="70">
+									<br />KolabNow.com</a>
+							</td>
+							<td data-value="2010">2010</td>
+							<td><span class="flag-icon flag-icon-ch"></span> 瑞士</td>
+							<td data-value="2048">2 GB</td>
+							<td data-value="60">$ 60</td>
+							<td data-value="1"><span class="label label-success">接受</span></td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="1"><span class="label label-success">有</span></td>
+						</tr>
+
+						<tr>
+							<td data-value="CryptoHeaven">
+								<a href="http://www.cryptoheaven.com/"><img src="img/provider/CryptoHeaven.gif" width="200" height="70">
+									<br />CryptoHeaven.com</a>
+							</td>
+							<td data-value="2001">2001</td>
+							<td><span class="flag-icon flag-icon-ca"></span> 加拿大</td>
+							<td data-value="200">200 MB</td>
+							<td data-value="66">$ 66</td>
+							<td data-value="0"><span class="label label-primary">無</span></td>
+							<td data-value="1"><span class="label label-success">內鍵</span></td>
+							<td data-value="1"><span class="label label-success">有</span></td>
+						</tr>
+
+					</tr>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+
+		<h3>尚在開發階段的有趣電子郵供應商</h3>
+		<ul>
+			<li><a href="https://www.confidantmail.org/">Confidant Mail</a> - 開源，非-SMTP 的密碼式電郵系統，可以最佳化大型檔案附件。對一般電郵與網路檔案下載，它是另一個安全且防範垃圾郵件的替代選項。其利用GNU Privacy Guard (GPG) 進行內容加密與認證，利用TLS 1.2 產生的暫用密鑰來進行傳輸加密。</li>
+		</ul>
+
+
+		<h3>利用Mail-in-a-Box來打造自家電郵供應</h3>
+		<a href="https://mailinabox.email/"><img src="img/provider/Mail-in-a-Box.gif" class="img-responsive pull-left" alt="Mail-in-a-Box" style="margin-right:10px;"></a>
+		<p>利用這個易於佈署的郵件伺服器工具箱，更進一步地掌控自己的電子郵件安全。Mail-in-a-Box讓你透過一些簡單的步驟來設置自己的電郵伺服器，就有點像是打造一個自己專屬的gmail,但可以完全由自己從頭到尾掌控。技術上來看, Mail-in-a-Box把新興的雲端電腦變成了一個可工作的郵件伺服器。並不需要技術專家才能作好設定。<strong>進一步資訊請見: <a href="https://mailinabox.email/">https://mailinabox.email/</a></strong></p>
+
+		<h3>私密的電郵工具</h3>
+		<ul>
+			<li><a href="http://www.gpg4usb.org/">gpg4usb</a> - 容易使用的小型隨身編輯器軟體，可用來加密與解密任何文字訊息或檔案。Windows 與Linux可用。</li>
+			<li><a href="https://www.mailvelope.com/">Mailvelope</a> - 一個瀏覧器外掛元件，依循OpenPGP 加密標準，可以進行網頁電郵的加密通訊。</li>
+			<li><a href="https://www.enigmail.net/">Enigmail</a> - Thunderbird/Seamonkey電郵軟體上的安全外掛元件。依循OpenPGP 加密標準，讓用戶可作為電郵撰寫、接收郵件上加密或簽章功能。</li>
+			<li><a href="https://addons.mozilla.org/thunderbird/addon/torbirdy/">TorBirdy</a> - 這個外掛元件可讓Thunderbird郵件設定以連上Tor匿名網路。</li>
+			<li><a href="https://emailprivacytester.com/">Email Privacy Tester</a> - 這個工具會傳送一封電郵到你的地址以進行相關安全隱私測試。</li>
+		</ul>
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="http://www.wired.com/2011/10/ecpa-turns-twenty-five/">Aging ‘Privacy’ Law Leaves Cloud E-Mail Open to Cops</a> - 存放在雲端超過6個月以上的電郵資料被視為棄置，故情資單位可在無法院令狀下取調。使用外部的電子郵件軟體如Thunderbird 或 Enigmail,把電郵下載到本地端電腦儲存，不要把它們存留在郵件伺服器上</li>
+			<li><a href="https://forum.openmailbox.org/viewtopic.php?id=390">OpenMailBox keeps one year logs of meta-data</a> - Forum discussion, reply of the server admin.</li>
+			<li><a href="https://www.eff.org/deeplinks/2012/04/may-firstriseup-server-seizure-fbi-overreaches-yet-again">With May First/Riseup Server Seizure, FBI Overreaches Yet Again</a></li>
+			<li><a href="http://www.autistici.org/ai/crackdown/">Autistici/Inventati server compromised</a> - The cryptographic services offered by the Autistici/Inventatio伺服器所提供的密碼服務曾在15th June 2004年6月15日受到破壞，但到一年後2005年6月21日才被發現。這段期間，任何一個郵箱的查詢, 郵件警察可能已監看了autistici.org/inventati.org.上整整一年當中每一位用戶的私人通訊戕況。</li>
+		</ul>
+
+		<a class="anchor" name="clients"></a>
+		<div class="page-header">
+			<h1><a href="#clients" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>電郵客戶端軟體</h1>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Thunderbird雷鳥</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Thunderbird.png" alt="Thunderbird" align="right" style="margin-left:5px;">Mozilla Thunderbird是一個免費、開源、跨平台的電郵、新聞與聊天軟體，由Mozilla 基金會開發維護。 Thunderbird 是電子郵件、新聞群組、新聞推送訂閱與聊天(支援XMPP, IRC, Twitter)的客戶端軟體.</p>
+						<p>
+							<a href="https://mozilla.org/thunderbird">
+								<button type="button" class="btn btn-success">網站: mozilla.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, BSD.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Claws Mail</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Claws-Mail.png" alt="Claws Mail" align="right" style="margin-left:5px;">Claws Mail是一個免費開源, 使用GTK+桌面環境為基礎的電郵與新聞軟體。它提供了簡單的設定和豐富的功能，也包括Windows底下的加密套件包。</p>
+						<p>
+							<a href="http://www.claws-mail.org/">
+								<button type="button" class="btn btn-info">網站: claws-mail.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, BSD, Solaris, Unix.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<!--
+<div class="col-sm-4">
+<div class="panel panel-warning">
+<div class="panel-heading">
+<h3 class="panel-title">Whiteout Mail</h3>
+</div>
+<div class="panel-body">
+<p><img src="img/tools/Whiteout-Mail.gif" alt="Whiteout Mail" align="right" style="margin-left:5px;">Whiteout Mail is an open source  email solution with strong end-to-end encryption that is really easy to use and runs on all of your devices. Keeping your emails safe has never been so easy. You can also get a new email address.</p>
+<p><a href="https://whiteout.io/"><button type="button" class="btn btn-warning">Website: whiteout.io</button></a></p>
+<p>OS: Chrome, Android, iOS, Web.</p>
+</div>
+</div>
+</div>
+-->
+
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://github.com/k9mail/k-9/releases">K-9 Mail</a> - 安卓手機上的獨立電郵應用程式，其同時支援POP3與IMAP協議的郵箱, 但目前只支援IMAP的推送郵件功能.</li>
+			<li><a href="https://www.gnupg.org/">GNU Privacy Guard</a> - 電郵加密， GnuPG 為基於GPL 授權版本的PGP密碼套件軟體的替代選擇。Mac OS X作業系統<a href="https://gpgtools.org/">可使用GPGTools。</a></li>
+			<li><a href="https://www.mailpile.is/">Mailpile (Beta)</a> - 一個現代, 快速的網頁用戶端軟體，提供友善的加密與隱私功能。</li>
+		</ul>
+
+		<a class="anchor" name="messaging"></a>
+		<div class="page-header">
+			<h1><a href="#messaging" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>另類電子郵件</h1>
+		</div>
+		<div class="row">
+			
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">I2P-Bote</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/I2P.png" alt="I2P-Bote" align="right" style="margin-left:5px;">I2P-Bote 是一個完全去中心化的分散式電郵系統。它支援不同的身份識別也不會曝露郵件表頭資訊。到2015年為止，它仍處在測試版本，可以透過網頁介面應用程式或IMAP與SMTP來取用。所有bote-mails 電郵是採端對端透明加密或是可以選擇利用傳送者的私鑰進行數位簽名</p>
+						<p>
+							<a href="https://i2pbote.xyz/">
+								<button type="button" class="btn btn-success">網站: i2pbote.xyz</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, F-Droid.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Bitmessage</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Bitmessage.png" alt="Bitmessage" align="right" style="margin-left:5px;">Bitmessage是一種點對點的通訊協議，被用來傳送加密訊息給單一或多名訂閱者。它是去中心化與無信任，其意指用戶不必要信任任何根憑證授權的實體。它採用強度高的認證授權，讓送件者的訊息無法被欺騙，目的在於能將非訊息內容的資料予以隱藏。</p>
+						<p>
+							<a href="https://bitmessage.org/">
+								<button type="button" class="btn btn-info">網站: bitmessage.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">RetroShare</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/RetroShare.png" alt="RetroShare" align="right" style="margin-left:5px;">Retroshare 可建立朋友間的加密通訊連線，沒有人可以監控你。Retroshare 是一個完全分散化的設計，這代表著它沒有任何中心控制的伺服器。它完全為開源和免費。它沒有任何成本、廣告或是服務協議。</p>
+						<p>
+							<a href="http://retroshare.sourceforge.net/">
+								<button type="button" class="btn btn-warning">網站: retroshare.sourceforge.net</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" name="search"></a>
+		<div class="page-header">
+			<h1><a href="#search" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>重視用戶隱私的搜尋引撃</h1>
+		</div>
+
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你目前仍在使用Google, Bing 或 Yahoo等搜尋引撃，或許是時候考慮其它的替代選項了。</strong>
+		</div>
+
+		<div class="row">
+
+
+        <div class="col-sm-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">searx</h3>
+            </div>
+            <div class="panel-body">
+              <p><img src="img/provider/searx.jpg" alt="searx" align="right" style="margin-left:5px;">An <a href="https://github.com/asciimoo/searx">開源</a>元搜尋引撃, 總合來自其它搜尋引撃的查詢結果但不會儲存用戶的資訊，不留活動記錄、無廣告也不會追踪。</p>
+
+              <p>
+	              <a href="https://searx.me/"><button type="button" class="btn btn-success">網站: searx.me</button></a>
+	              <a href="https://github.com/asciimoo/searx/wiki/Searx-instances"><button type="button" class="btn btn-success">實例清單</button></a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+			<!-- /.col-sm-4 -->
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Qwant</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/provider/Qwant.png" alt="Qwant" align="right" style="margin-left:5px;">Qwant's 的哲學是基於二大原則: 不對用戶進行追踪也沒有過濾氣泡。Qwant是2013年二月開始從法國起步. <a href="https://www.qwant.com/privacy">它的隱私權政策</a></p>
+
+						<p>
+							<a href="https://www.qwant.com/">
+								<button type="button" class="btn btn-info">網站: qwant.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- /.col-sm-4 -->
+
+
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">StartPage</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/provider/StartPage.png" alt="StartPage" align="right" style="margin-left:5px;">它是Google搜尋引撃的查詢結果，但有完全的隱私保護措施。Behind StartPage背後是一家歐洲公司，他們自2006年起就很重視隱私課題。</p>
+
+						<p>
+							<a href="https://www.startpage.com/">
+								<button type="button" class="btn btn-warning">網站: startpage.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>火狐附加元件</h3>
+		<ul>
+						<li>
+				<a href="https://addons.mozilla.org/firefox/addon/google-search-link-fix/">Google search link fix</a> - 它是一個火狐的附加元件可以預防Google與Yandex 搜尋引撃在用戶點撃了搜尋結果連結後進行調整。這可以在複製連結上會有所幫助，但也可以防止搜尋引撃來記錄你的點撃狀況。 (<ahref="https://github.com/palant/searchlinkfix">Open Source</a>)
+			</li>
+		</ul>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li>
+				<a href="https://metager.de/en/">MetaGer</a> - 一個開源的元搜尋引撃,其總站位在德國。它關注於保護用戶隱私。
+			</li>
+
+			<li>
+				<a href="https://www.ixquick.eu/">ixquick.eu</a> - Returns 可以傳回多個搜尋引撃的前十個搜尋結果，其基地是在美國與荷蘭。
+			</li>
+		</ul>
+
+
+		<a class="anchor" name="im"></a>
+		<div class="page-header">
+			<h1><a href="#im" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 加密的即時通訊</h1>
+		</div>
+
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你目前用的即時通訊是：WhatsApp, Viber, LINE, Telegram 或 Threema，或許是時候考慮找其它替代軟體了</strong>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">手機: Signal</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">Signal是由<a href="https://whispersystems.org/">Open Whisper Systems</a>所開發的手機應用程式。它提供了即時訊息端點到端點之間的加密。Signal是一套免費開源的軟體，任何人都可以審查它的原始碼。它同時也支援團體聊天的加密功能。這個開發團隊是靠社群的捐款與獎助，而Signal不會插入廣告也不須花錢就可以安裝使用。</p>
+						<p>
+							<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">
+								<button type="button" class="btn btn-success">Android: google.com</button>
+							</a>
+							<a href="https://itunes.apple.com/app/id874139669">
+								<button type="button" class="btn btn-success">iOS: apple.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Android, iOS.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">桌機版: Ricochet</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Ricochet.png" style="margin-left:5px;" align="right">Ricochet利用<a href="#browser"><span class="glyphicon glyphicon-link"></span> Tor網路</a> 來連接聯絡人而不是依賴訊息伺服器。它會建立一個隱藏的服務，用來與聯終人線上會談而不必揭露出你的來源和位置。不採用一般的使用者名稱, 用戶會拿到一個特別的網址，它長得像這樣：<em>ricochet:rs7ce36jsj24ogfw</em>. 而Ricochet的其它用戶可以利用這個獨特的網址來傳送加入請求，徵求你的同意被加入聯絡人名單上。</p>
+						<p>
+							<a href="https://ricochet.im/">
+								<button type="button" class="btn btn-info">下載: ricochet.im</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Off-the-Record不保留記錄的ChatSecure</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/ChatSecure.png" style="margin-left:5px;" align="right">ChatSecure是一個免費開源的訊息應用程式，它的特色是支援XMPP協議的不保留記錄加密功能。用戶可利用在Google上現有的帳戶來連線，在公用XMPP伺服器上設立新帳號（包含透過TOR網路）, 或是連到你自家有額外安全的伺服器上。ChatSecure 只採用知名的開源密碼學資源庫來維護通訊對話的安全私密。</p>
+						<p>
+							<a href="https://www.chatsecure.org/">
+								<button type="button" class="btn btn-warning">下載: chatsecure.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Android, iOS.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://crypto.cat/">Cryptocat</a> - 加密的開源通訊軟體，支援檔案分享和多設備的帳號使用。也同樣支援跨平台的作業系統如Windows, Linux and Mac.</li>
+			<li><a href="http://kontalk.org/">Kontalk</a> - 由社群發起的即時通訊網路，支援端點對端點間的通訊加密。不管是用戶端到伺服器端或是伺服器之間的通道都採完全加密。</li>
+			<li><a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations">Conversations</a> - 運行於Android 4.0+版本以上的智慧型手機，Jabber/XMPP開源的客戶端通訊軟體。透過OMEMO, OTR 或 openPGP等方式來支援端點對端點間的通訊加密。</li>
+			<li><a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support">List of OTR Clients - Wikipedia</a></li>
+		</ul>
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://motherboard.vice.com/read/ricochet-encrypted-messenger-tackles-metadata-problem-head-on">Ricochet, the Messenger That Beats Metadata, Passes Security Audit | Motherboard</a></li>
+			<li><a href="https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/">Chatting in Secret While We're All Being Watched - firstlook.org</a></li>
+		</ul>
+
+		<a class="anchor" name="voip"></a>
+		<div class="page-header">
+			<h1><a href="#voip" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>加密的影音即時通</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你還在使用Skype, Viber 或 Google Hangouts 這些影音會議即時通訊軟體，不妨考慮其它的替代品吧。</strong>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">行動版Signal</h3>
+					</div>
+
+					<div class="panel-body">
+						<p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">Signal是由<a href="https://whispersystems.org/">Open Whisper Systems</a>所開發的手機應用程式。它提供了即時訊息端點到端點之間的加密。Signal是一套免費開源的軟體，任何人都可以審查它的原始碼。</p>
+						<p>
+							<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">
+								<button type="button" class="btn btn-success">Android: google.com</button>
+							</a>
+							<a href="https://itunes.apple.com/app/id874139669">
+								<button type="button" class="btn btn-success">iOS: apple.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: iOS, Android.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Linphone</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Linphone.png" alt="Linphone" align="right" style="margin-left:5px;">Linphone 是一個開源 SIP 電話，它可利用網路服務來撥打免費語音電話, 其能運行在手機與桌機環境和網頁瀏覧器。它支援ZRTP的端點到端點之間的影像加密通訊。</p>
+						<p>
+							<a href="http://www.linphone.org/">
+								<button type="button" class="btn btn-info">下載: linphone.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: iOS, Android, Windows Phone, Linux, Windows, Mac, Browser (Web)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Jitsi</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Jitsi.png" alt="Jitsi" align="right" style="margin-left:5px;">Jitsi是免費開源的多平台網路電話(VoIP), 視訊會議與即時通訊等功能應用程式。它支援多種即時通訊與網路電話協議，包括聊天協議所開放承認的不保留記錄功能(OTR).</p>
+						<p>
+							<a href="https://jitsi.org/">
+								<button type="button" class="btn btn-warning">下載: jitsi.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://tox.chat/">Tox</a> - 免費開源，點對點，加密的即時訊息和視訊通話軟體。</li>
+			<li><a href="http://www.ring.cx/">Ring (前身為SFLphone)</a> - 讓用戶完整掌控通訊時的隱私層級。</li>
+		</ul>
+
+		<a class="anchor" name="cloud"></a>
+		<div class="page-header">
+			<h1><a href="#cloud" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>加密的雲端儲存服務</h1>
+		</div>
+
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你目前使用的是Dropbox, Google Drive, Microsoft OneDrive 或 Apple iCloud等雲端儲存服務，不妨從這裏挑選其它替代方案。</strong>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Seafile - 100 GB 空間，月費$10</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Seafile.png" alt="Seafile" align="right" style="margin-left:5px;">Seafile 提供100 GB 儲存空間，每月收費$10，但也可以讓用戶選挑自行架設在自己的機器上。若使用他們的雲端服務，則用戶的資料是存放在德國或是美國Amazon雲端服務上面。它利用用戶選擇的密碼進行加密。</p>
+						<p>
+							<a href="http://seafile.com/">
+								<button type="button" class="btn btn-success">網站: seafile.com</button>
+							</a>
+						</p>
+						<p>客戶端OS作業系統: Windows, Mac, Linux, iOS, Android. 伺服器作業系統: Linux, Raspberry Pi, Windows.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Nextcloud - 選擇你的主機服務</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/provider/Nextcloud.png" alt="Nextcloud" align="right" style="margin-left:5px;">和Dropbox有相同的功能, 但最大的差異在Nextcloud是一套免費而開的軟體，它可讓任何人自行架設與操作而不必如私用伺服器那般地收取費用，也沒有空間容量或連接客戶端數量的限制。</p>
+						<p>
+							<a href="https://nextcloud.com/">
+								<button type="button" class="btn btn-info">網站: nextcloud.com</button>
+							</a>
+						</p>
+						<p>客戶端OS作業系統: Windows, Mac, Linux, BSD, Unix, iOS, Android, Fire OS. 伺服器作業系統: Linux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Least Authority S4 - 專家用</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/provider/S4.jpg" alt="S4" align="right" style="margin-left:5px;">S4 (Simple Secure Storage Service)是Least Authority所開發，提供認證與安全的個人或企業用的場外備份系統。在客戶端有100%的安全加密，而且其程式碼開放透明。租用其服務的月費是 $25無容量上限，不過其主機是使用美國境內的Amazon S3平台伺服器。</p>
+						<p>
+							<a href="https://leastauthority.com/">
+								<button type="button" class="btn btn-warning">網站: leastauthority.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki/Installation">Linux</a>, <a href="https://tahoe-lafs.org/trac/tahoe-lafs/browser/trunk/docs/quickstart.rst"> Windows, Mac, OpenSolaris, BSD.</a> (安裝需要高手協助。)</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://cryptomator.org/">Cryptomator</a> - Free client-side AES encryption for your cloud files. Open source software: No backdoors, no registration.</li>
+		</ul>
+
+		<a class="anchor" name="mycloud"></a>
+		<div class="page-header">
+			<h1><a href="#mycloud" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 自行架設的雲端伺服器軟體</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你目前使用的是Dropbox, Google Drive, Microsoft OneDrive 或 Apple iCloud等雲端儲存服務，不妨從考慮自行架設自家的雲端系統</strong>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Seafile</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Seafile.png" alt="Seafile" align="right" style="margin-left:5px;">Seafile是一套檔案加設軟體系統，其存放在中央伺服器的檔案可以透過Seafile，同步到個人電腦或手機上。也可以透過伺服器主機的網頁版介面來取用檔案。</p>
+						<p>
+							<a href="http://seafile.com/">
+								<button type="button" class="btn btn-success">網站: seafile.com</button>
+							</a>
+						</p>
+						<p>客戶端作業系統: Windows, Mac, Linux, iOS, Android. 伺服器作業系統: Linux, Raspberry Pi, Windows.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Pydio</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Pydio.png" alt="Pydio" align="right" style="margin-left:5px;">Pydio是一款開源的軟體，可以立即將任何伺服器(on premise, NAS, cloud IaaS or PaaS)轉變成檔案共享平台。它可作為SaaS Boxes and Drives的替代品，給予用戶更多的掌控、安全，隱私保護和有利的成本控管。</p>
+						<p>
+							<a href="https://pyd.io/">
+								<button type="button" class="btn btn-info">網站: pyd.io</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, iOS, Android.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Tahoe-LAFS</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Tahoe-LAFS.png" alt="Tahoe-LAFS" align="right" style="margin-left:5px;">Tahoe-LAFS 是一套免費開放，去中心化的雲端儲存系統。它讓用戶的資料散佈在多台伺服器上，所以即便其中有些伺服器故障出問題或是受到攻擊，整個檔案儲存仍然會繼續正常運行，保障用戶的安全和隱私。</p>
+						<p>
+							<a href="https://www.tahoe-lafs.org/">
+								<button type="button" class="btn btn-warning">Website: tahoe-lafs.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>值得一提</h3>
+		<ul>
+			<li>
+				<a href="https://nextcloud.com/">Nextcloud</a> - 免費開源軟體，任何人皆可自由地安裝和操作到私人伺服器上，而無空間容量或連接客戶端數量的限制。</li>
+		</ul>
+		<a class="anchor" name="sync"></a>
+		<div class="page-header">
+			<h1><a href="#sync" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 安全的檔案同步軟體</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">SparkleShare</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/SparkleShare.png" alt="SparkleShare" align="right" style="margin-left:5px;">SparkleShare 在自己的電腦上建立一個特別的資料夾，用戶可把遠端主機的資料夾（或專案）存放到這個資料夾底下。這些專案會保持自動與主機以及其它的加入的資料夾同群一起更新檔案新增、移除或編輯等最新狀態。</p>
+						<p>
+							<a href="http://sparkleshare.org/">
+								<button type="button" class="btn btn-success">網站: sparkleshare.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Syncany</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Syncany.png" alt="Syncany" align="right" style="margin-left:5px;">Syncany 可讓用戶備份與分享工作站上的某些資料夾，它是一個開源的軟體且提供資料加密功能，對儲存類型與供給上提供了很大的彈性。檔案在上傳到主機前會先經過加密手續。</p>
+						<p>
+							<a href="https://www.syncany.org/">
+								<button type="button" class="btn btn-info">網站: syncany.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Syncthing</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Syncthing.png" alt="Syncthing" align="right" style="margin-left:5px;">Syncthing 用來替換商用同步軟體與雲端服務，它開放、值得信任且去中心化。你的資料就是你的資料，當事人有權選擇它要存放在哪裏，是否要與其它第三者分享以及資料如何在網路上被傳遞。</p>
+						<p>
+							<a href="https://syncthing.net/">
+								<button type="button" class="btn btn-warning">網站: syncthing.net</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, BSD, Solaris.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>值得一提</h3>
+		<ul>
+			<li>
+				<a href="https://git-annex.branchable.com/">git-annex</a> - 可用git來管理檔案,但不入用git來檢察檔案內容。這聽起來似乎有點矛盾，但當在處理大型檔案上這方法就很好用，尤其是考慮到記憶體大小、時間和硬碟空間。
+			</li>
+		</ul>
+		<a class="anchor" name="pw"></a>
+		<div class="page-header">
+			<h1><a href="#pw" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 密碼管理工具</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你還在用1Password, LastPass, Roboform 或 iCloud Keychain等密碼管理軟體，或許該考慮從這裏挑選另一種工具吧。</strong>
+		</div>
+		<div class="row">
+
+
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">跨平台的Master Password</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Master-Password.jpg" alt="Master Password" align="right" style="margin-left:5px;">Master Password 是利用原生的密碼產生演算法，保證你的密碼不會遺失。密碼不是以儲存方式留著:它們依照你的名字、網站和主密碼的需求而產生，沒有同步，沒有備分也不需要網路連線。	</p>
+						<p>
+							<a href="https://ssl.masterpasswordapp.com/">
+								<button type="button" class="btn btn-success">網站: masterpasswordapp.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, iOS, Android, Web.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">KeePass / KeePassX - Local</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/KeePass.png" alt="KeePass" align="right" style="margin-left:5px;">KeePass是一款開源而免費的密碼管理工具，有助於用安全的方式來管理各種密碼。所有的密碼都放在一個資料庫下，用主密碼或密鑰檔案上鎖。這個資料庫會以最安全最佳的加密演算方式，也就是AES and Twofish予以加密進行，請一步資料請參見: <a href="http://www.keepassx.org/">KeePassX</a>.</p>
+						<p>
+							<a href="http://keepass.info/download.html">
+								<button type="button" class="btn btn-info">網站: keepass.info</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, iOS, Android, BSD.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Encryptr 雲端版</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Encryptr.png" alt="Encryptr" align="right" style="margin-left:5px;">Encryptr 簡單好用，它可在雲端儲存用戶的敏感資料，如密碼，信用卡資訊和個人識別號碼或是授權碼等等。然而因為它依Crypton架講的零知識證明所建構，它能確保只有唯一的用戶可以讀取這些保密的資訊。</p>
+						<p>
+							<a href="https://spideroak.com/solutions/encryptr">
+								<button type="button" class="btn btn-warning">網站: spideroak.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android.</p>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li>
+				<a href="password.html	">Secure Password Generator</a> - 可產生獨特、客制、高品質密碼強度的密碼字串，好讓用戶安全採用。
+			</li>
+
+			<li>
+				<a href="http://www.supergenpass.com/">SuperGenPass</a> - 以主密碼和訪問網站的網域名作為「種子」，並利用單方哈希演算法(base-64 MD5)。 這個演算法所算出來生的結果就是你的密碼。只要記得一組密碼(即“主密碼”), SGP就可以用它來產生用戶造訪網站上的獨特、複雜登入密碼。所產生的密碼永遠不會被保留或傳送，可在多台電腦上使用SGP而不必「同步」任何資料。
+			</li>
+
+			<li>
+				<a href="http://pwsafe.org/">Password Safe</a> - 不管答案是1還是100，Password Safe 讓你可以安全地建立一個安全又加密的用戶與密碼清單。利用Password Safe 你只要記得一組自選的主密碼以打開讀取這份密碼清單。
+			</li>
+		</ul>
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=yzGzB-yYKcc">Edward Snowden on Passwords - YouTube</a></li>
+		</ul>
+		
+		
+		<!-- Key disclosure law -->
+		<a class="anchor" name="kdl"></a>	
+		<div class="page-header">
+			<h1><a href="#kdl" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>密鑰上繳法規</h1>
+		</div>
+
+
+		<h3>密鑰上繳法 - 誰被要求將加密密鑰交給政府當局?</h3>
+		<p>強制性的（依法一定要協助） <a href="https://en.wikipedia.org/wiki/Key_disclosure_law">密鑰上繳法</a>可要求個人把加密密鑰上交給執法單位以利其進行調查。這些法令的執行方式依國情不同而異，但通常會要求有法院令狀。抵抗密鑰上繳法令的方式包括利用隱寫術以及將資料以似是而非的否認方式予以加密。</p>
+
+
+		<p><a href="https://en.wikipedia.org/wiki/Steganography">Steganography隱寫術</a>涉及將一些敏感資訊（其可能會予以加密）隱藏在原始的資料當中。(例如：將圖片檔案加密後隱藏到聲音檔底下。)利用似是而非的否認法，則是把資料以預防敵方有破解的可能再予以加密 (例如, 單一密碼也許可解密良性的資料和另一個密碼，而另一個密碼則可用來解密原資料當中的敏感資料。)</p>	
+		<br>
+
+		<!-- Chart of key disclosure law in some countries -->
+		<div class="row">
+			
+			<div class="col-sm-4">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">採用密鑰上繳法的國家</h3>
+					</div>
+					<div class="panel-body">
+						1. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Antigua_and_Barbuda">安提瓜和巴布達</a> <div class="pull-right"><span class="flag-icon flag-icon-ag"></span></div>
+						<br /> 2. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Australia">澳洲</a> <div class="pull-right"><span class="flag-icon flag-icon-au"></span></div>
+						<br /> 3. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Belgium">比利時</a> <div class="pull-right"><span class="flag-icon flag-icon-be"></span></div>
+						<br /> 4. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Canada">加拿大</a> <div class="pull-right"><span class="flag-icon flag-icon-ca"></span></div>
+						<br /> 5. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Finland">芬蘭</a> <div class="pull-right"><span class="flag-icon flag-icon-fi"></span></div>
+						<br /> 6. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#France">法國</a> <div class="pull-right"><span class="flag-icon flag-icon-fr"></span></div>
+						<br /> 7. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#India">印度</a> <div class="pull-right"><span class="flag-icon flag-icon-in"></span></div>
+						<br /> 8. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#South_Africa">南非</a> <div class="pull-right"><span class="flag-icon flag-icon-za"></span></div>
+						<br /> 9. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#United_Kingdom">英國</a> <div class="pull-right"><span class="flag-icon flag-icon-gb"></span></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">可能會採用密鑰上繳法的國家</h3>
+					</div>
+					<div class="panel-body">
+						1. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#New_Zealand">紐西蘭</a> (不明) <div class="pull-right"><span class="flag-icon flag-icon-nz"></span></div>
+						<br /> 2. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Sweden">瑞典</a> (草案提出) <div class="pull-right"><span class="flag-icon flag-icon-se"></span></div>
+						<br /> 3. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#The_Netherlands">荷蘭</a> (人們知道使用某個系統也許會被下令要分享出他們所知道的東西, <strong>但是這個法則並不適用在疑犯身上</strong>) <div class="pull-right"><span class="flag-icon flag-icon-nl"></span></div>
+						<br /> 4. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#United_States">美國</a> (請見下方相關資訊) <div class="pull-right"><span class="flag-icon flag-icon-us"></span></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">密鑰上繳法不適用的國家</h3>
+					</div>
+					<div class="panel-body">
+						1. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Czech_Republic">捷克</a> <div class="pull-right"><span class="flag-icon flag-icon-cz"></span></div>
+						<br /> 2. <a href="https://en.wikipedia.org/wiki/Key_disclosure_law#Poland">波蘭</a> <div class="pull-right"><span class="flag-icon flag-icon-pl"></span></div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end Chart of key disclosure law in some countries -->
+
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Key_disclosure_law">Wikipedia page on key disclosure law</a></li>
+			<li><a href="https://law.stackexchange.com/questions/1523/can-a-us-citizen-be-required-to-provide-the-authentication-key-for-encrypted-dat">law.stackexchange.com question about key disclosure law in US</a></li>
+			<li><a href="https://www.youtube.com/watch?v=Jt7D4AIfqlQ">DEFCON 20: Crypto and the Cops: the Law of Key Disclosure and Forced Decryption</a></li>
+		</ul>
+		
+		<a class="anchor" name="encrypt"></a>
+		<div class="page-header">
+			<h1><a href="#encrypt" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 檔案加密系統</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你尚未對使用中的硬碟、電子郵件或檔案庫予以加密，你應該趕快從這挑選一個加密軟體。</strong>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">VeraCrypt - 磁碟加密</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/VeraCrypt.png" alt="VeraCrypt" align="right" style="margin-left:5px;">VeraCrypt 可取得程式碼的免費軟體工具，用來進行快速加密。它可以為一個檔案建立一個虛擬的加密磁碟、加密磁區或是在開機前授權設定整個設備的硬碟都予以加密。VeraCrypt 源自目前已無進展的TrueCrypt專案。它最初的發佈是2013年6月23日。據開發者表示，原本TrueCrypt程式碼在審查後發現的問題已經解決，大幅地改善了安全性。</p>
+						<p>
+							<a href="https://veracrypt.codeplex.com/">
+								<button type="button" class="btn btn-success">網站: veracrypt.codeplex.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">GNU Privacy Guard - 電郵加密</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/GnuPG.png" alt="GnuPG" align="right" style="margin-left:5px;">GnuPG是採GPL 授權，替代PGP 密碼學軟體套件。GnuPG 可兼容RFC 4880, 它是一個目前IETF OpenPGP 標準軌道規格。目前PGP (以及Veridis' Filecrypt)的版本可以和 GnuPG以及其它 OpenPGP兼容系統互交操作。GnuPG 是自由軟體基金會GNU 軟體專案中的一部份，曾接受德國政府的經費贊助。 <a href="https://gpgtools.org/">GPGTools for Mac OS X.</a></p>
+						<p>
+							<a href="https://www.gnupg.org/">
+								<button type="button" class="btn btn-info">網站: gnupg.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, BSD.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">PeaZip - 檔案庫加密</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/PeaZip.png" alt="PeaZip" align="right" style="margin-left:5px;">PeaZip 是由Giorgio Tani所開發的一套免費開源的檔案管理與檔案庫軟體。它支援原生的PEA 檔案庫格式(特色為壓縮、多組磁區分割、彈性化節授權加密和一致的檢驗格式)以及其它的主流格式。其特別關注在開放格式，目前有支援181 檔案延伸格式 (5.5.1版本).</p>
+						<p><strong>Mac 選項:</strong> <a href="http://www.kekaosx.com/">Keka</a> 是一個免費的檔歸建軟體</p>
+						<p>
+							<a href="http://www.peazip.org/">
+								<button type="button" class="btn btn-warning">網站: peazip.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Linux, BSD.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://cryptomator.org/">Cryptomator</a> - 免費客戶端的雲端檔案AES 加密工具。其為開源軟體，沒有後門也無須註冊。</li>
+			<li><a href="https://minilock.io/">miniLock</a> - Browser plugin for Google Chrome / Chromium 瀏覧器的外掛，可用一組密碼來加密檔案，其開發者是來自Cryptocat</li>
+			<li><a href="https://www.aescrypt.com/">AES Crypt</a> - 使用強力256-位元的加密演算法, AES Crypt 可以安全地保護最敏感的重要資料檔案，可使用在Windows, Mac, Linux 與 Android平台上。</li>
+			<li><a href="https://diskcryptor.net/">DiskCryptor</a> - 可為Windows系統作整顆硬碟或分割磁區的加密系統，包括加密某個分割磁區或是作業系統所安裝的硬碟。</li>
+		</ul>
+
+		<a class="anchor" name="network"></a>
+		<div class="page-header">
+			<h1><a href="#network" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 自足網路</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你現在瀏覧的都是<a href="https://en.wikipedia.org/wiki/Surface_Web">表網Clearnet</a>而你希望能夠連入<a href="https://en.wikipedia.org/wiki/Dark_web">Dark web深網</a>，這部份正是為你所準備的。</strong>
+		</div>
+		<div class="row">
+			
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Tor Project</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Tor-Project.png" alt="Tor Project" align="right" style="margin-left:5px;"> Tor網路是由一群自願營運的伺服器社群，來讓人們可以改善其在互聯網上的隱私和安全。  Tor用戶利用這個網路來連結到一系列虛擬的隧道而不是採直接的連接方式。這樣可讓組織和個人在公共網路上分享資訊而不會傷害自身的隱私。Tor也是一個能有效避開網路審查的工具。</p>
+						<p>
+							<a href="https://www.torproject.org/">
+								<button type="button" class="btn btn-success">網站: torproject.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, <a href="https://mike.tig.as/onionbrowser/">iOS</a>, <a href="https://www.torproject.org/docs/android.html.en">Android</a>, <a href="https://github.com/torbsd/openbsd-ports">OpenBSD.</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">I2P Anonymous Network</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/I2P.png" alt="I2P" align="right" style="margin-left:5px;">The Invisible Internet Project (I2P) 是一個電腦網路層，它可讓應用程式相互安全化名地傳送訊息。它可用匿名的網站瀏覧、聊天、網誌和檔案傳送。這個軟體所執行的這層叫作I2P路由，當電腦運行I2P時，即稱之為I2P節點。它是免費開源的軟體，其發佈版本有多種授權方式。</p>
+						<p>
+							<a href="https://geti2p.net/">
+								<button type="button" class="btn btn-info">網站: geti2p.net</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, F-Droid.</p>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">The Freenet Project自由網專案</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Freenet.png" alt="Freenet" align="right" style="margin-left:5px;">Freenet是一個點對點的平台以進行內容審查的抵抗通訊。它採用去中心化的分散式資料儲存來保存和傳送資訊，也有自由免費軟體套件可以用來在網路上進行發表或是通訊而不必擔心審查。自由網和一些它的相關工具一開始是由Ian Clarke所設計,他認為自由網的目的乃在於透過頑強的匿名保護，提供互聯網的言論自由空間。</p>
+						<p>
+							<a href="https://freenetproject.org/">
+								<button type="button" class="btn btn-warning">網站: freenetproject.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://retroshare.net/">RetroShare</a> - 開源跨平台, 朋友對朋友之間的安全，去中心式的通訊平台。</li>
+			<li><a href="https://gnunet.org/">GNUnet</a> - GNUnet 為全球分散式網路提供了一個堅實的基礎，以確保其安全和隱私保護。</li>
+		</ul>
+		<a class="anchor" name="social"></a>
+		<div class="page-header">
+			<h1><a href="#social" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 去中心的社交網路</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong> 如果你還在使用如Facebook, Twitter 或 Google+的社交網站，不妨從這裏挑選一個替代方案。</strong>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">diaspora*</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/diaspora.png" alt="diaspora*" align="right" style="margin-left:5px;"> diaspora* 基於三大核心哲學: 去中心化, 自由和隱私。它希望能引起大家關切由中心所控制社交網站下的隱私問題，所以可以讓用戶自行架設伺服器 (或稱 "pod")來控制內容，而各個伺服器可以再自行互動分享動態更新、照片或其它的資料。
+						</p>
+						<p>
+							<a href="https://diasporafoundation.org/">
+								<button type="button" class="btn btn-success">網站: diasporafoundation.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Friendica</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Friendica.png" alt="Friendica" align="right" style="margin-left:5px;">Friendica 強調在隱私控制上的仔細設定，它是一個容易安裝在伺服器上的軟體，以期待盡可能出現更多其它的社交網路聯邦。
+							Friendica 用戶可以從Facebook, Twitter, Diaspora, GNU social, App.net, Pump.io 等等多項社交網路服務來整合其聯絡人的名單到自己的社交時間流。</p>
+						<p>
+							<a href="http://friendica.com/">
+								<button type="button" class="btn btn-info">網站: friendica.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">GNU social</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/GNU-social.png" alt="GNU social" align="right" style="margin-left:5px;">While offering functionality similar to Twitter, GNU social 的功能有點類似推特，但希望能為微型網誌社群，提供更開放、互相服持的分散化溝通功能。企業或個人可以自行安裝GNU social在自家機器上，以控管自己的服務與資料數據。著名的公共網站如： <a href="https://quitter.se/">quitter.se</a> and <a href="https://gnusocial.no">gnusocial.no</a>.</p>
+						<p>
+							<a href="https://gnu.io/social/try/">
+								<button type="button" class="btn btn-warning">網站: gnu.io</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>相關資訊</h3>
+		<ul>
+			<li><a href="https://www.facebook.com/help/delete_account">Delete your Facebook account</a> - Direct link to delete your Facebook account without being able to reactivate it again.</li>
+			<li><a href="http://deletefacebook.com/">How To Permanently Delete A Facebook Account</a> - This guide will take you through a smooth and successful Facebook account deletion.</li>
+		</ul>
+
+
+		<a class="anchor" name="dns"></a>
+		<div class="page-header">
+			<h1><a href="#dns" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 網域名系統 (DNS)</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">DNSCrypt - Tool</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/DNSCrypt.png" alt="DNSCrypt" align="right" style="margin-left:5px;">這是一個強化用戶端與網域名解析器之間的通訊安全協議。DNSCrypt協議利用高速高安全的橢圓曲線密碼學，其有點類似 DNSCurve,但更關注在客戶端與第一級解析器之間的連線通訊安全。</p>
+						<p>
+							<a href="http://dnscrypt.org/">
+								<button type="button" class="btn btn-info">網站: dnscrypt.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, iOS with Jailbreak.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">OpenNIC - Service</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/OpenNIC.png" alt="OpenNIC" align="right" style="margin-left:5px;">OpenNIC是一個另類的網路資訊中心/或稱替代的DNS根區，其列名自身是CANN與其註冊局的替代品。如同其它的替代式根域名系統，採用OpenNIC-主機的域名無法被其它網路上大多數使用者所造訪。只有透過在某個 DNS 解析器上的特殊設定才能讓人可以訪問，但一般很少有網路服務供應商會作這樣的設定。</p>
+						<p>
+							<a href="http://www.opennicproject.org/">
+								<button type="button" class="btn btn-warning">網站: opennicproject.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Cross-platform.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://github.com/quidsup/notrack">NoTrack</a> - 一個DNS伺服器可以封鎖某些追踪網站。目前僅運行在Debian 與 Ubuntu的作業系統下</li>
+			<li><a href="https://namecoin.info/">Namecoin</a> - 去中心的DNS 開源的資訊註冊與傳送系統，其利用比特幣的密碼貨幣所開發的系統。</li>
+		</ul>
+
+
+		<a class="anchor" name="notebook"></a>
+		<div class="page-header">
+			<h1><a href="#notebook" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>網路筆記</h1>
+		</div>
+		
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你仍然在使用如Evernote, Google Keep 或 Microsoft OneNote，或許可以考慮嚐試這裏推薦的軟體來替換一下。</strong>
+		</div>		
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Laverna</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Laverna.png" alt="Laverna" align="right" style="margin-left:5px;">Laverna以 JavaScript開發的網頁筆記應用程式，它支援Markdown 語法編輯和加密功能。這個應用程式將筆記儲存在瀏覧器的資料庫上，只有你能取用，所以既安全又能保護隱私。</p>
+						<p>
+							<a href="https://laverna.cc/">
+								<button type="button" class="btn btn-success">網站: laverna.cc</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Turtl</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Turtl.png" alt="Turtl" align="right" style="margin-left:5px;">Turtl可以作筆記、網址書籤和儲存敏感專案的文件。它可讓工作伙伴共享密碼，追踪你所寫的文章。Turtl讓文件保持安全，只有你和有分享權限者可以看到。 </p>
+						<p>
+							<a href="https://turtlapp.com/">
+								<button type="button" class="btn btn-info">網站: turtlapp.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android.</p>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Simplenote</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Simplenote.png" width="120" height="120" alt="Simplenote" align="right" style="margin-left:5px;">Simplenote 便於作筆記，列清單、整理想法等功能。你建立的筆記可以免費在任何一台設置上進行同步，它的使用體驗很快速又有效，只須開啟快速地記下一些想法，一切就搞定了。 <a href="https://simplenote.com/help/#encryption">Does not support client-side encryption.</a></p>
+						<p>
+							<a href="https://simplenote.com/">
+								<button type="button" class="btn btn-warning">Website: simplenote.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, Android, iOS.</p>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://paperwork.rocks/">Paperwork</a> - 開源，提供自行架設方案，須利用PHP / MySQL servers.</li>
+		</ul>
+
+<a class="anchor" name="paste"></a>    
+      <div class="page-header">
+        <h1><a href="#paste" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>原始碼儲存服務</h1> 
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Ghostbin</h3>
+            </div>
+            <div class="panel-body">
+              <p><img src="img/tools/Ghostbin.png" alt="Ghostbin" align="right" style="margin-left:5px;">Ghostbin有加密功能和期間限制，授權用戶有1MB空間可編寫筆記和網路便利貼。 用戶可建置自己的帳號來追踪自己的剪貼資料。</p>
+              
+              <p><a href="https://ghostbin.com/" target="_blank"><button type="button" class="btn btn-success">網站: ghostbin.com</button></a></p>          
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->  
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">PrivateBin</h3>
+            </div>
+            <div class="panel-body">
+              <p><img src="img/tools/PrivateBin.png" alt="PrivateBin" align="right" style="margin-left:5px;">PrivateBin是一個迷你、開源的原始碼儲存應用程式，它的伺服器對存入的資料採取零知識證明方式保存， 瀏覧器再透過使用256bit AES進行加密和解密。</p>
+              
+              <p><a href="https://privatebin.info/" target="_blank"><button type="button" class="btn btn-info">網站: privatebin.info</button></a></p>         
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->            
+        <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">0bin</h3>
+            </div>
+            <div class="panel-body">
+              <p><img src="img/tools/0bin.png" alt="0bin" align="right" style="margin-left:5px;">0bin是一個客戶端的原始碼儲存加密工具，其運行不需要資料庫 。0bin能讓任何人來架設原始碼儲存工具，它可以貼入任何類型的原始碼內容存放。</p>
+              
+              <p><a href="https://0bin.net/" target="_blank"><button type="button" class="btn btn-warning">網站: 0bin.net</button></a></p>          
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->  
+      </div>      
+
+<h3>值得一提</h3>
+<ul>
+	<li><a href="https://hastebin.com/" target="_blank">hastebin.com</a> - Haste是一個利用node.js寫成的開源原始碼儲存軟體，可輕易地安裝在任何網路機器上。</li>          
+</ul>
+
+		<a class="anchor" name="productivity"></a>
+		<div class="page-header">
+			<h1><a href="#productivity" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 生產力工具</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Etherpad</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Etherpad.png" alt="Etherpad" align="right" style="margin-left:5px;">Etherpad 是一個可以高度自定的開源線上編輯器，它提供了即時的協同編輯功能。Etherpad 可以讓你即時地在線上協力編寫文件，在你的瀏覧器上就像是有多名參與者共同在編寫一份文章、發佈消息或是任務清單等等功能。</p>
+						<p>
+							<a href="http://etherpad.org/">
+								<button type="button" class="btn btn-success">網站: etherpad.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">EtherCalc</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/EtherCalc.png" alt="EtherCalc" align="right" style="margin-left:5px;">EtherCalc是一個網頁版的試算表，其資料存在網頁上，使用者可以同一時間在同一個檔案上進行編輯而其變動會立即呈現在螢幕上。
+							它可用來作為共用的庫存統計、問卷表單、清單管理、腦力激盪等工具。</p>
+						<p>
+							<a href="https://ethercalc.net/">
+								<button type="button" class="btn btn-info">網站: ethercalc.net</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, GNU/Linux, FreeBSD, Browser.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">ProtectedText</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/ProtectedText.png" alt="ProtectedText" align="right" style="margin-left:5px;">ProtectedText是一開源的網頁應用程式，它可以在瀏覧器上加密與解密文字檔案而其密碼(或稱其哈希值)絕不會送回到伺服器。
+							- 因此若密鑰和密碼則文字內容無法被解密，就算有關當局拿到文字檔也沒用。它無cookies, 無期間，不用註冊也不會對用戶進行追踪。</p>
+						<p>
+							<a href="https://www.protectedtext.com/">
+								<button type="button" class="btn btn-warning">網站：protectedtext.com</button>
+							</a>
+						</p>
+						<p>OS作業系統: 支援各式瀏覧器</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://dudle.inf.tu-dresden.de/privacy/">dudle</a> - 是一個線上行程安排的應用程式，其為免費和開源。很方便用來安排會議時間或進行小型的線上調查。它不收集電郵或須註冊即可使用。</li>
+		</ul>
+
+
+
+		<a class="anchor" name="os"></a>
+		<div class="page-header">
+			<h1><a href="#os" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 電腦作業系統</h1>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong>如果你目前還在使用微軟Windows 或是蘋果電腦OS X的作業系統，或許該考慮其它替代選項了。</strong>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Qubes OS</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Qubes-OS.png" alt="Qubes OS" align="right" style="margin-left:5px;">Qubes 是一個開源的作業系統，其設計為桌機型電腦提供更堅強的安全保護。Qubes是以Xen為基礎, X 視窗系統桌面環境與Linux,它可以執行大多數的Linux 應用程式以及適用大部份的Linux的硬體效能驅動。</p>
+						<p>
+							<a href="https://www.qubes-os.org/">
+								<button type="button" class="btn btn-success">網站: qubes-os.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Debian</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Debian.png" alt="Debian" align="right" style="margin-left:5px;">Debian有點像 Unix的電腦操作系統，它是Linux 的發佈版本之一，其由自由免費的軟體所組成，大部份的軟體都是採用GNU一般公共授權。有一群人長期地投入Debian 專案的開發維護。</p>
+						<p>
+							<a href="https://www.debian.org/">
+								<button type="button" class="btn btn-info">網站: debian.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Trisquel</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Trisquel.png" alt="Trisquel" align="right" style="margin-left:5px;">Trisquel 是一個從Ubuntu分家出來的Linux作業系統。這個專案希望能發展一個完全免費的軟體系統而不依靠商用軟體或軔體，故其採用Linux-libre, 這是一a version of the Linux kernel核心版本，若為非免費的程式碼(位元型大型物件 binary blobs)即會被移除。</p>
+						<p>
+							<a href="http://trisquel.info/">
+								<button type="button" class="btn btn-warning">網站: trisquel.info</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>警告</h3>
+		<ul>
+			<li><a href="#win10"><span class="glyphicon glyphicon-link"></span> 不要用Windows 10 - 它是隱私侵害的夢魘</a></li>
+		</ul>
+
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://www.openbsd.org/">OpenBSD</a> - 推動免費，多平台，類似像4.4BSD-based UNIX的作業系統開發專案。強調可移動性、標準化、正確性、主動安全與整合的密碼學系統。</li>
+			<li><a href="https://www.archlinux.org/">Arch Linux</a> - 一套簡約,輕量的Linux發行版本。它組合了主要的免費和開源的軟體，支持社群投入。<a href="https://www.parabola.nu/">Parabola</a> 則是Arch Linux的全面開源版本.</li>
+			<li><a href="https://www.whonix.org/">Whonix</a> - 其以Debian GNU/Linux 為基礎，更強調安全關注的Linux 發行版本。它希望能提供網路上的隱私保護，安全與匿名性。這個作業系統由二個虛擬機器組成, 一個是"工作站"一個是Tor "閘門道". 所有的通訊都被迫要透過Tor 網路來完成。</li>
+		</ul>
+
+		<a class="anchor" name="live_os"></a>
+		<div class="page-header">
+			<h1><a href="#live_os" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>光碟隨身碟開機自生作業系統</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Tails</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Tails.gif" alt="Tails" align="right" style="margin-left:5px;">Tails 是一個自生作業系統，可以利用DVD, 隨身碟或SD記憶卡來啟動大多數電腦開機。它希望可以保留隱私與匿名，協助人們可以匿名地使用網路以及逃過網路審查，它的網路連結是透過Tor 網路; 不會在用過的電腦上留下使用㾗跡。它使用最新的密碼學工具來加密檔案，電子郵件和即時通訊。</p>
+						<p>
+							<a href="https://tails.boum.org/">
+								<button type="button" class="btn btn-success">網站: tails.boum.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">KNOPPIX</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/KNOPPIX.png" alt="KNOPPIX" align="right" style="margin-left:5px;">Knoppix 是一個以Debian為基礎的開源作業系統，設計來直接透過CD / DVD (Live CD) 或USB碟身碟(Live USB)來執行。它是這類自生系統當中的先行者。當開始某個程式時，它會從移動式裝置來載入並把它解壓縮到隨機記憶體上，這佪解壓縮過程透明而快速。</p>
+						<p>
+							<a href="http://www.knopper.net/knoppix/">
+								<button type="button" class="btn btn-info">網站: knopper.net</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Puppy Linux</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Puppy-Linux.png" alt="Puppy Linux" align="right" style="margin-left:5px;">Puppy Linux 是一個簡輕的Linux 發行版本，其關注於便於使用以及最小化記憶㾗跡。整套系統可以透過隨機記憶體來執行，目前的版本大約佔210 MB空間。在啟動作業系統後，它可允許移除開機的媒介。</p>
+						<p>
+							<a href="http://puppylinux.org/">
+								<button type="button" class="btn btn-warning">網站: puppylinux.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://distro.ibiblio.org/tinycorelinux/">Tiny Core Linux</a> - 小型迷你的作業系統，主要在提供給使用BusyBox與 FLTK的系統利用.這個發行版以其輕量與極簡而出名(15 MB), 其利用延申套件來提供額外的功能。</li>
+		</ul>
+		<a class="anchor" name="mobile_os"></a>
+		<div class="page-header">
+			<h1><a href="#mobile_os" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 手機作業系統</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">CyanogenMod</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/CyanogenMod.png" alt="CyanogenMod" align="right" style="margin-left:5px;">CyanogenMod 是可安裝在智慧型手機與平版上的開源作業系統,以Android碼源加以改寫。它是基於Google所正式發佈的安卓系統加以開發，是一套免費開源的手機系統。</p>
+						<p>
+							<a href="http://www.cyanogenmod.org/">
+								<button type="button" class="btn btn-success">網站: cyanogenmod.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Ubuntu Mobile</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Ubuntu-Touch.png" alt="Ubuntu Mobile" align="right" style="margin-left:5px;">Ubuntu Mobile 是Ubuntu 作業系統的手機版，由Canonical UK Ltd與Ubuntu 社群進行開發。它主要的設計著眼於移動裝置的觸控螢幕，如智慧型手機與平版電腦。</p>
+						<p>
+							<a href="http://www.ubuntu.com/mobile">
+								<button type="button" class="btn btn-info">網站: ubuntu.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Sailfish OS</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Sailfish-OS.png" alt="Sailfish OS" align="right" style="margin-left:5px;">Sailfish OS 是一種手機作業系統，結合了：Linux 核心以符合於某些特定的硬體平台使用, 開源的Mer 核心中介件, Jolla的商業的使用介面以及其它第三方的元件.</p>
+						<p>
+							<a href="https://sailfishos.org/">
+								<button type="button" class="btn btn-warning">網站: sailfishos.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+
+			
+		</div>
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://www.replicant.us/">Replicant</a> - 基於安卓的開源作業系統,希望能更換所有的商用元件以免費軟體作取代。</li>
+			<li><a href="https://copperhead.co/android/downloads">Copperhead</a> - 以安卓手機平台為基礎的硬派開源作業系統，可在某些Nexus設置上使用。</li>
+			<li><a href="http://omnirom.org/">OmniROM</a> - 為智慧型手機與平版電腦，以安卓手機平台為基礎的開源作業系統.</li>
+		</ul>
+		
+		<a class="anchor" name="firmware"></a>
+		<div class="page-header">
+			<h1><a href="#firmware" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 開源的路由器軔體</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">OpenWrt</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/OpenWrt.png" alt="OpenWrt" align="right" style="margin-left:5px;">OpenWrt是一套利用Linux核心的作業系統(特別是一種「嵌入式」作業系統),主要用於一些路由網路流量的設備上。它主要的構成是由Linux 核心, util-linux, uClibc 和 BusyBox.這些元素都已經過尺寸的最佳調適，以符合家用路由器這類的小型設備與其有限的記憶體容量與儲存空間。</p>
+						<p>
+							<a href="https://openwrt.org/">
+								<button type="button" class="btn btn-success">網站: openwrt.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">pfSense</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/pfSense.png" alt="pfSense" align="right" style="margin-left:5px;">pfSense 是利用FreeBSD所開發的一套用於防火牆/路由器上的開源軔體。它安裝在電腦上可變成網路上防火牆/路由器功能，並以其可靠與不輸給商用軟體的強大功能而著稱。pfSense通常佈署在週邊的防火牆、路由器、無線接取器、DHCP伺服器, DNS伺服器, 以及VPN 末端點。</p>
+						<p>
+							<a href="https://www.pfsense.org/">
+								<button type="button" class="btn btn-info">網站: pfsense.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">LibreWRT</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/LibreWRT.png" alt="LibreWRT" align="right" style="margin-left:5px;">LibreWRT 是一套以GNU/Linux-libre授權的發佈版本，利用最小的資源裝置在電腦上，例如 Ben Nanonote, 利用ath9k 的無線路由器以及其它強調尊重用戶自由與免費軟體的硬體設備上。自由軟體基金會即在其接取器和路由器上安裝LibreWRTIt，以提供辦公室內移動電腦設備的網路連線。</p>
+						<p>
+							<a href="http://librewrt.org/">
+								<button type="button" class="btn btn-warning">網站: librewrt.org</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="http://www.openbsd.org/">OpenBSD</a> - 此乃推動免費，多平台，類似像4.4BSD-based UNIX的作業系統開發專案。強調可移動性、標準化、正確性、主動安全與整合的密碼學系統</li>
+			<li><a href="http://www.dd-wrt.com/">DD-WRT</a> - 利用Linux為無線路由器與無線接取器所開發的軔體。它可和多種路由器和接取器模式相容。</li>
+		</ul>
+
+
+		<a class="anchor" name="win10"></a>
+		<div class="page-header">
+			<h1><a href="#win10" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 不要使用Windows 10 - 它是隱私侵害的夢魘</h1>
+		</div>
+
+		<div class="alert alert-warning" role="alert">
+			<strong>微軟在Windows 10引入了一些新的亮點功能，例如Cortana。然而大多部分這些東西正在侵害你的隱私權。</strong>
+		</div>
+
+		<img src="img/layout/Windows-10-Privacy.jpg" class="img-responsive pull-right" alt="Windows 10 Privacy" style="margin-left:10px;">
+
+		<ol>
+			<strong><li>系統會默認預設為啟動資料同步</li></strong>
+			<ul>
+				<li>瀏網記錄與打開的網站</li>
+			</ul>
+			<ul>
+				<li>應用程式設定</li>
+			</ul>
+			<ul>
+				<li>WiFi熱點名稱和密碼 </li>
+			</ul>
+
+			<strong><li>你的機子被默設標記了一個獨一的廣告識別碼</li></strong>
+			<ul>
+				<li>用它第三方廣告商或網路商可對你進行個人化廣告服務</li>
+			</ul>
+
+			<strong><li>Cortana可以收集你的任何資料</li></strong>
+			<ul>
+				<li>鍵盤記錄, 搜尋與麥克風輸入</li>
+			</ul>
+			<ul>
+				<li>日曆資料</li>
+			</ul>
+			<ul>
+				<li>聆聽什麼音樂</li>
+			</ul>
+			<ul>
+				<li>信用卡資訊</li>
+			</ul>
+			<ul>
+				<li>購買行為</li>
+			</ul>
+
+			<strong><li>微軟可以收集任何個人資料</li></strong>
+			<ul>
+				<li>用戶身份識別</li>
+			</ul>
+			<ul>
+				<li>密碼</li>
+			</ul>
+			<ul>
+				<li>人種族群資訊</li>
+			</ul>
+			<ul>
+				<li>興趣與習慣</li>
+			</ul>
+			<ul>
+				<li>使用數據</li>
+			</ul>
+			<ul>
+				<li>聯絡者與人際關係</li>
+			</ul>
+			<ul>
+				<li>地點地理資訊</li>
+			</ul>
+			<ul>
+				<li>電子郵件、即時通訊的內容,通話記錄與聲音影像記錄</li>
+			</ul>
+
+			<strong><li>你的資料可能被他人使用</li></strong>
+			<ul>
+				<li>下載Windows 10時,你授予了微軟公司可以將上述資料分享給第三者，不管有無取得你的同意。</li>
+			</ul>
+		</ol>
+
+
+			<p>
+				<a href="http://www.winprivacy.de/english-home/">
+					<button type="button" class="btn btn-warning">下載: W10Privacy</button>
+				</a>
+			</p>
+
+			這個工具利用一些已知的方式來設法取消Windows 10底下主要的追踪監控功能。
+
+			<br>
+
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+
+						<h3>有些好消息</h3>
+						<ul>
+							<li><a href="https://github.com/Nummer/Destroy-Windows-10-Spying/releases">破壞Win10的間諜監測活動</a> - 開源工具. <a href="http://dws.wzor.net/">正式官網</a></li>
+							<li><a href="http://www.ghacks.net/2015/08/14/comparison-of-windows-10-privacy-tools/">比較Windows 10 隱私工具</a> - ghacks.net</li>
+							<li><a href="https://fix10.isleaked.com/">解決Windows 10 隱私設定問題。</a> - fix10.isleaked.com</li>
+							<li><a href="http://arstechnica.com/information-technology/2015/08/windows-10-doesnt-offer-much-privacy-by-default-heres-how-to-fix-it/">Windows 10原廠預設上並未提供太多的隱私保護: 這裏有些解決的對應方法。</a> - Ars Technica.</li>
+							<li><a href="https://www.reddit.com/r/Windows10/comments/3f38ed/guide_how_to_disable_data_logging_in_w10">指南: 如何取消W10底下的活動記錄.</a></li>
+
+						</ul>
+
+
+
+					</div>
+
+					<div class="col-md-6"><span class="pull-right">
+<h3>更多壞消息</h3>
+
+<ul>
+	<li><a href="http://thehackernews.com/2016/02/microsoft-windows10-privacy.html">
+經過隱私設定調整後，Windows 10 每天會傳送5500多次你的使用資料</a> - The Hacker News.</li>
+	<li><a href="http://arstechnica.com/information-technology/2015/08/even-when-told-not-to-windows-10-just-cant-stop-talking-to-microsoft/">僅管要求Windows 10不可，但它仍繼續回傳資訊到微軟。難怪隱私權倡議者只好自我武裝防備起來抵抗。</a> - Ars Technica.</li>
+	<li><a href="https://www.techdirt.com/articles/20150820/06171332012/windows-10-reserves-right-to-block-pirated-games-unauthorized-hardware.shtml">Windows 10 保留可封鎖盗版遊戲與「未經授權的」硬體之權利。</a> - Techdirt.</li>
+
+</ul>
+</span></div>
+				</div>
+			</div>
+
+
+
+			<a class="anchor" name="quotes"></a>
+			<div class="page-header">
+				<h1><a href="#quotes" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>名人證言</h1>
+			</div>
+
+			<blockquote>
+				<p>主張你不在意個人隱私的權利因為你無不可告人之處，這就等同於你不在意言論自由因為你沒什麼事情可說。</p>
+				<footer>Edward Snowden on <cite title="Just days left to kill mass surveillance under Section 215 of the Patriot Act. We are Edward Snowden and the ACLU’s Jameel Jaffer. AUA."><a href="https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2">reddit</a></cite></footer>
+			</blockquote>
+
+			<blockquote>
+				<p>美國國安局建置了一套設施，其幾乎可以攔截任何通訊。這套設備的能力，大多數人類的通訊都會自動地被吸納進去而不是針對特定目標。如果我想要看你的電郵內容或是你老婆的電話，我只須要利用這套設備進行攔截，就可以取得你的電子郵件、密碼、電信通聯記錄、信用卡資料等等。我不想活在一個做這種勾當的社會裏，我不想要活在一個任何所做的事所說的話都被記錄下來的世界。這不是我願意去支持或是存活下來的地方。</p>
+				<footer>Edward Snowden in <cite title="Edward Snowden, NSA files source: 'If they want to get you, in time they will"><a href="http://www.theguardian.com/world/2013/jun/09/nsa-whistleblower-edward-snowden-why">The Guardian</a></cite></footer>
+			</blockquote>
+
+			<blockquote>
+				<p>我們都需要有地方可以去探索而不依靠別人施加在我們身上的眼光，只有在一個不必被放大檢視的地方我們才可以真正地測試出自己的極限。真正的私領域才能允許不同聲音、創造力和個人試探式的謊言。</p>
+				<footer>Glenn Greenwald in <cite title="Glenn Greenwald On Why Privacy Is Vital, Even If You 'Have Nothing To Hide"><a href="http://www.huffingtonpost.com/2014/06/20/glenn-greenwald-privacy_n_5509704.html">Huffington Post</a></cite></footer>
+			</blockquote>
+
+			<a class="anchor" name="resources"></a>
+			<div class="page-header">
+				<h1><a href="#resources" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>推薦的隱私保護資源</h1>
+			</div>
+
+
+			<h3>指南</h3>
+			<ul>
+				<li><a href="https://ssd.eff.org/"><strong>Surveillance Self-Defense by EFF</strong></a> - 利用安全的科技與採取安全的作法來防衛自身抵抗監控</li>
+				<li><a href="https://cryptoseb.pw/paper"><strong>The Crypto Paper</strong></a> - 給每一位互聯網使用者關於隱私,安全和匿名的建議</li>
+				<li><a href="https://emailselfdefense.fsf.org/en/"><strong>Email Self-Defense by FSF</strong></a> - 如何利用GnuPG 加密工具來抵抗監控</li>				
+				<li><a href="https://www.bestvpn.com/the-ultimate-privacy-guide/"><strong>The Ultimate Privacy Guide</strong></a> - 由bestVPN.com網站創建者所撰寫的優質隱私指南</li>
+				<li><a href="https://www.ivpn.net/privacy-guides"><strong>IVPN Privacy Guides</strong></a> - 這些隱私指南解釋了如何透過分隔與隔絕，來取得最大的自由度、隱私保護和匿名性。</li>
+				<li><a href="http://fried.com/privacy"><strong>The Ultimate Guide to Online Privacy</strong></a> - 完整詳實的"Ninja Privacy Tips（忍者隱私訣竅）"與超過150種工具</li>
+			</ul>
+
+			<h3>有用資訊</h3>
+			<ul>
+				<li><a href="https://www.reddit.com/r/privacytoolsIO/wiki/index"><strong>r/privacytoolsIO Wiki</strong></a> -我們在reddit上的維基頁資訊</li>
+				<li><a href="https://www.grc.com/securitynow.htm"><strong>Security Now!</strong></a> - Steve Gibson 與 Leo Laporte所製作的互聯網安全每週播客節目。</li>
+				<li><a href="http://www.jupiterbroadcasting.com/show/techsnap/"><strong>TechSNAP</strong></a> - 每週播出的播客節目，其涵蓋科技產業對一般人生活之影響的故事</li>				
+				<li><a href="https://keybase.io/"><strong>Keybase.io</strong></a> - 從某人的社交網站資料來安全地取得其公鑰。</li>
+				<li><a href="https://freedom.press/"><strong>Freedom of the Press Foundation</strong></a> - 從2012開始支持捍衛新聞自由致力於資訊透明和問責。</li>
+				<li><a href="http://www.erfahrungen.com/mit/anonymisierung/t/"><strong>Erfahrungen.com</strong></a> - 德文網站其檢視相關隱私服務的訊息動態</li>
+				<li><a href="https://tosdr.org/"><strong>Terms of Service; Didn't Read</strong></a> - “I have read and agree to the Terms”勾選已讀完用戶服務協議且予同意是互聯網上最大的謊言，這裏希望能改善這個問題。</li>
+			</ul>
+
+			<h3>工具</h3>
+			<ul>
+				<li><a href="http://ipleak.net/"><strong>ipleak.net</strong></a> - IP/DNS Detect - 有關你的IP資訊, 域名系統DNS,以及其它對外送出的請求資訊</li>
+				<li><a href="http://www.ghacks.net/2015/12/28/the-ultimate-online-privacy-test-resource-list/"><strong>The ultimate Online Privacy Test Resource List</strong></a> - 收錄互聯網上的一些網站，其可了解用戶所使用的瀏覧器是否有資訊漏洞。</li>
+				<li><a href="https://prism-break.org/"><strong>PRISM Break</strong></a> - 人人都享有隱私權，透過通訊加密或是斬斷對商用軟體服務的依賴來重新主張落實個人的隱私權利吧。</li>
+				<li><a href="https://securityinabox.org/"><strong>Security in-a-Box</strong></a> -為全世界人權捍衛者與社運人士所編寫整理的數位安全指南</li>
+				<li><a href="http://alternativeto.net/?license=opensource&platform=self-hosted&sort=likes"><strong>AlternativeTo.net</strong></a> - 大量收集了開源的線上或自行佈署的軟體工具，以替代商用軟體或服務。</li>
+				<li><a href="https://securedrop.org/"><strong>SecureDrop</strong></a> - 一套開源的吹哨揭密提交系統，新聞媒體組織可利用它來安全地接收來自匿名情報來源者的文件與通訊。其原創者為已過逝的 Aaron Swartz 而目前由新聞自由基金會Freedom of the Press Foundation來維護管理</li>
+				<li><a href="https://pack.resetthenet.org/"><strong>Reset The Net - Privacy Pack</strong></a> - 協助對抗終結巨量監控。利用這些工具來保護自己和朋友。</li>
+				<li><a href="http://www.secfirst.org/"><strong>Security First</strong></a> - Umbrella 是一個安卓手機上的應用程式，提供如何在一個敵意的環境下採行各種安全措施的建議。</li>
+			</ul>
+
+			<a class="anchor" name="participate"></a>
+			<div class="page-header">
+				<h1><a href="#participate" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 推廣本站並幫助更多人知道隱私保護</h1>
+			</div>
+
+			<a href="mailto:?subject=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&body=https://www.privacytools.io/" class="share-btn email" title="Email">
+				<i class="fa fa-envelope"></i>
+			</a>
+
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.privacytools.io" class="share-btn facebook" title="Facebook">
+				<i class="fa fa-facebook"></i>
+			</a>
+
+			<a href="https://twitter.com/share?text=Knowledge%20and%20tools%20to%20protect%20your%20privacy%20against%20global%20mass%20surveillance%20&amp;url=https://www.privacytools.io/&amp;via=privacytoolsIO" class="share-btn twitter" title="Twitter">
+				<i class="fa fa-twitter"></i>
+			</a>
+
+			<a href="https://plus.google.com/share?url=https://www.privacytools.io" class="share-btn google-plus" title="Google+">
+				<i class="fa fa-google-plus"></i>
+			</a>
+
+			<a href="http://reddit.com/submit?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn reddit" title="reddit">
+				<i class="fa fa-reddit"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/shareArticle?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn linkedin" title="LinkedIn">
+				<i class="fa fa-linkedin"></i>
+			</a>
+
+			<a href="http://www.stumbleupon.com/submit?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn stumbleupon" title="StumbleUpon">
+				<i class="fa fa-stumbleupon"></i>
+			</a>
+			
+			<a href="http://sharetodiaspora.github.io/?title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&url=https://www.privacytools.io" class="share-btn diaspora" title="Diaspora*">
+			        <i class="fa fa-asterisk"></i>
+                        </a>
+
+			<br>
+			<br>
+
+			<h3>複制網址與本站描述</h3>
+
+			<p>
+				<input type="text" value="www.privacytools.io - encryption against global mass surveillance" onclick="this.focus();this.select()" class="form-control input-lg">
+				<span class="help-block">為了更輕易地複製與貼上,請利用這個文字小物件作分享</span>
+			</p>
+
+
+			<div class="page-header">
+				<h1>透過參與提供建議與建議性的批評</h1>
+			</div>
+
+			<p>
+				It's important for a website like 像privacytools.io這類的網站能維持跟上時代是一個重要的工作。我們一方面要關注這裏介紹過的軟體是否有更新的消息，也要了解所推薦的服務供應商的新聞。我們試著作出最大的努力但我們並不完美而且互聯網每日變化快速。如果你有發現錯誤或是認為有些服務供應商不宜列上，或是想推薦其它未列出的供應商，或是對瀏覧器附加元件有所建議....... <strong> 請不吝告之我們</strong>						</p>
+		
+<br>
+			
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">在reddit上提出建議</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/icons/reddit.png" alt="reddit" align="right" style="margin-left:5px;">我們在reddit子社群上有一個活躍的社群，上面有最新的討論與意見交流. 立即加入! <a data-toggle="tooltip" data-placement="top" data-original-title="Warrant Canary has been removed by reddit">(Info)</a></p>
+						<p>
+							<a href="https://www.reddit.com/r/privacytoolsIO/">
+								<button type="button" class="btn btn-success">Website: reddit.com</button>
+							</a> 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">訂閱推特Follow on Twitter</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/icons/twitter.png" alt="Twitter" align="right" style="margin-left:5px;">從推特取得最新的隱私相關消息，歡迎訂閱我們的推特!</p>
+						<p>
+							<a href="https://twitter.com/privacytoolsIO">
+								<button type="button" class="btn btn-info">Website: twitter.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">GitHub開發團隊</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/icons/github.png" alt="GitHub" align="right" style="margin-left:5px;">本網站的原始碼寄放在GitHub.歡迎加入我們的開發團隊!</p>
+						<p>
+							<a href="https://github.com/privacytoolsIO/privacytools.io">
+								<button type="button" class="btn btn-warning">Website: github.com</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+			<p>這是一個社群計畫，我們希望能獻上關於更好隱私作法的最佳資訊。感謝你們的參與，這個計畫正需要大家一起來協助。</p>
+
+
+			<br>
+
+			<div class="page-header">
+				<h4>無廣告, 無Google 追踪分析器, 無利害關聯,無跨站請求</h4>
+			</div>
+			<p>
+
+				<a href="http://creativecommons.org/licenses/by-sa/4.0/" data-toggle="tooltip" data-placement="top" style="margin-right:30px;" data-original-title="This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."><img src="img/layout/creativecommons.png" style="margin-right:15px;">Creative Commons</a>
+
+				<a href="http://www.kopimi.com/" data-toggle="tooltip" data-placement="top" style="margin-right:30px;" data-original-title="kopimi (copyme), symbol showing that you want to be copied. use kopimi in your own fancy. kopimi may be put on homepages or blogs, in books, in software, as sound logos in music or whatever."><img src="img/layout/kopimi.gif" style="margin-right:15px;">kopimi (copyme)</a>
+
+				<a href="donate.html" data-toggle="tooltip" data-placement="top" data-original-title="Please support this project by donating Bitcoins. We are ad free and not affiliated with any providers. Your donation will cover our cost for server and domain."><img src="img/layout/Bitcoin.png" style="margin-right:15px;">捐款贊助:</a> <span style="margin-left:15px;">1EM2JEbQeoiZP4Cd4Pm2wgJcBPAWJBeijz</span> 或是使用<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7MPR5TEA9KJZY">PayPal.</a>
+
+			</p>
+
+			<p><em>privacytools.io是一個為社會現況激發的社群網站，它提供保護上網者資料安全的資訊。不要信任任何一家公司會善待保護隱私，時時刻刻作好加密防備。</em></p>
+		</p>
+	</div>
+
+	<!-- Start Piwik: This is an open-source analytics platform -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = "//www.privacytools.io/stats/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<noscript>
+		<p><img src="//www.privacytools.io/stats/piwik.php?idsite=1" style="border:0;" alt="" /></p>
+	</noscript>
+	<!-- End Piwik Code -->
+
+	<!-- add jQuery, Bootstrap, Sortable, and tooltip libraries  -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sortable.min.js"></script>
+	<script>
+		$(function() {
+			$("[data-toggle='tooltip']").tooltip();
+		});
+	</script>
+
+</body>
+
+</html>
