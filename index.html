@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=1024">
-	<meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
+	<meta name="keywords" content="隱私, 加密， 監控， privacy, anonymity, privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
 	<meta name="description" content="You are being watched! Knowledge, encryption and privacy tools to protect you against global mass surveillance.">   
 
 	<!-- title -->
@@ -80,7 +80,7 @@
 				<ul class="nav navbar-nav">
 
 					<!-- home icon in the navigation bar -->
-					<li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
 
 					<!-- drop down menu - Provider -->
 					<li class="dropdown">
@@ -121,7 +121,8 @@
 							<li><a href="#encrypt">檔案加密</a></li>
 							<li><a href="#sync">安全的檔案同步</a></li>
 							<li><a href="password.html">安全的密碼產生器</a></li>
-							<li><a href="#network">Self Contained Network</a></li>
+							<li><a href="#network">自足網路</a></li>
+                                                        <li><a href="#cryptocurrency">加密貨幣</a></li> 
 							<li><a href="#mycloud">自搭的雲端伺服器</a></li>
 							<li><a href="#notebook">數位筆記本</a></li>
 							<li><a href="#paste">Paste Services</a></li>
@@ -158,7 +159,7 @@
 						</ul>
 					</li>
 					<li><a href="https://twitter.com/privacytoolsIO">Twitter</a></li>
-					<li><a href="donate.html" style="color:white;"><button type="button" class="btn btn-default btn-xs"><strong>捐款贊助</strong> <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span></button></a></li>
+                                        <li><a href="donate.html" style="color:white;"><button type="button" class="btn btn-default btn-xs"><strong>捐款贊助</strong> <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span></button></a></li> 
 				</ul>
 			</div>
 		</div>
@@ -168,20 +169,13 @@
 
 	<div class="container theme-showcase" role="main">
 
-		<p class="text-right">
-			<a data-toggle="tooltip" data-placement="bottom" data-original-title="Translations of privacytools.io were done by volunteers. They might be not up to date.">其它語言:</a> 
-<span class="flag-icon flag-icon-us" style="margin-left:5px;"></span> <a href="https://privacytools.io/">English</a>
-<span class="flag-icon flag-icon-es" style="margin-left:5px;"></span> <a href="https://victorhck.gitlab.io/privacytools-es/">Español</a> 
-<span class="flag-icon flag-icon-de" style="margin-left:5px;"></span> <a href="https://privacytools.it-sec.rocks/">Deutsch</a>
-
-		</p>
-
 		<div class="jumbotron">
 			<!-- header just below the navigation bar -->
 			<h1><a href="https://www.privacytools.io/" title="privacy tools"><img src="img/layout/logo.png" class="img-responsive" alt="privacytools.io"></a></h1>
 			<p>你正在被人盯著。私人和國家支持的組織正在監控與記錄你的線上活動。 這裏提供一些知識與工具以保護個人隱私抵抗全球大規模監控。</p>
 			<!-- end header just below the navigation bar -->
 		</div>
+
                 <!-- start language and darknet selection -->
 		<p>
 			
@@ -193,7 +187,8 @@
 			
 			<span class="flag-icon flag-icon-de" style="margin-left:5px;"></span> <a href="https://privacytools.it-sec.rocks/">Deutsch</a>
 
-			<span style="margin-left:15px;">Darknet:</span> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Requires specific software to access." href="http://privacytools.i2p">I2P</a> 
+			<span style="margin-left:15px;">Darknet:</span> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Requires specific software to access: geti2p.net" href="http://privacytools.i2p/">I2P</a>, 
+			<a data-toggle="tooltip" data-placement="bottom" data-original-title="Requires specific software to access: zeronet.io" href="http://127.0.0.1:43110/14gSEpfWfF5Go7u5y7UidZQCnGa6eSBYZ9/">ZeroNet</a>
 		</p>	
 <!-- end language and darknet selection -->
 		<!-- quote by Glenn Greenwald located below the header -->
@@ -2026,7 +2021,7 @@
 
 		<a class="anchor" name="network"></a>
 		<div class="page-header">
-			<h1><a href="#network" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 自足網路</h1>
+			<h1><a href="#network" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 自足網路(Self Contained Network)</h1>
 		</div>
 		<div class="alert alert-warning" role="alert">
 			<strong>如果你現在瀏覧的都是<a href="https://en.wikipedia.org/wiki/Surface_Web">表網Clearnet</a>而你希望能夠連入<a href="https://en.wikipedia.org/wiki/Dark_web">Dark web深網</a>，這部份正是為你所準備的。</strong>
@@ -2093,6 +2088,69 @@
 			<li><a href="http://retroshare.net/">RetroShare</a> - 開源跨平台, 朋友對朋友之間的安全，去中心式的通訊平台。</li>
 			<li><a href="https://gnunet.org/">GNUnet</a> - GNUnet 為全球分散式網路提供了一個堅實的基礎，以確保其安全和隱私保護。</li>
 		</ul>
+                
+		<a class="anchor" name="cryptocurrency"></a>
+  		<div class="page-header">
+	  		<h1><a href="#cryptocurrency" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 加密貨幣</h1>
+		</div>
+
+  		<div class="row">
+	  		<div class="col-sm-4">
+	    			<div class="panel panel-success">
+			  		<div class="panel-heading">
+          					<h3 class="panel-title">比特幣</h3>
+			  		</div>
+					<div class="panel-body">
+						<p><img src="img/tools/Bitcoin.svg.png" alt="Bitcoin" align="right" style="margin-left:5px;">比特幣是一種匿名的加密貨幣可進行線上交易而不須註冊或提供任何個人資訊</p>
+						<p>
+							<a href="https://bitcoin.org/">
+								<button type="button" class="btn btn-success">網站: bitcoin.org</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux, BSD, Android, iOS.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">ZCash</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/zcash.png" alt="ZCash" align="right" style="margin-left:5px;">Zcash利用去中心的網路來建立公共區塊鏈(blockchain)，可讓付款完全保密。不像比特幣, Zcash 交易自動將區塊鏈上滙款者、收款者與交易額度的資訊隱藏起來。</p>
+						<p>
+							<a href="https://www.z.cash/">
+								<button type="button" class="btn btn-warning">網站: z.cash</button>
+							</a>
+						</p>
+						<p>OS作業系統: Linux.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">ShadowCash</h3>
+					</div>
+					<div class="panel-body">
+						<p><img src="img/tools/shadowcash-104x108.png" alt="ShadowCash" align="right" style="margin-left:5px;">ShadowCash 基於比特幣的碼源所建構的匿名加密貨幣，其特色是額外的密碼學技術，讓其無法追踪或連結交易資訊。這意謂著惡意的攻擊者無法辨識滙款人或收款人。 如同BitMessage，它也具有去中心的加密訊息功能。</p>
+						<p>
+							<a href="https://shadowproject.io/">
+								<button type="button" class="btn btn-info">網站: shadowproject.io</button>
+							</a>
+						</p>
+						<p>OS作業系統: Windows, Mac, Linux.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h3>值得一提</h3>
+		<ul>
+			<li><a href="https://www.dash.org/">Dash</a> - 開放安全關注隱私，可即時交易的數位貨幣。它無須等候即可讓人維持財務隱私地進行交易。</li>
+			<li><a href="https://getmonero.org/">Monero</a> Monero 安全私密無法追踪的貨幣，其軟體開源任何人可以自由取得。</li>
+		</ul>
+                  
 		<a class="anchor" name="social"></a>
 		<div class="page-header">
 			<h1><a href="#social" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> 去中心的社交網路</h1>
@@ -2940,8 +2998,8 @@
 			<p><em>privacytools.io是一個為社會現況激發的社群網站，它提供保護上網者資料安全的資訊。不要信任任何一家公司會善待保護隱私，時時刻刻作好加密防備。</em></p>
 		</p>
 	</div>
-
-	<!-- Start Piwik: This is an open-source analytics platform -->
+	
+    	<!-- Start Piwik: This is an open-source analytics platform -->
 	<script type="text/javascript">
 		var _paq = _paq || [];
 		_paq.push(['trackPageView']);
@@ -2964,6 +3022,7 @@
 		<p><img src="//www.privacytools.io/stats/piwik.php?idsite=1" style="border:0;" alt="" /></p>
 	</noscript>
 	<!-- End Piwik Code -->
+
 
 	<!-- add jQuery, Bootstrap, Sortable, and tooltip libraries  -->
 	<script src="js/jquery-1.11.2.min.js"></script>
