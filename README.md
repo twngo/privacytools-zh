@@ -10,34 +10,6 @@ It's important for a website like privacytools.io to be up-to-date. Keep an eye 
 
 You can submit your suggestions here on GitHub [(Issues)](https://github.com/privacytoolsIO/privacytools.io/issues) and also in our [subreddit](https://www.reddit.com/r/privacytoolsIO/). Thank you.
 
-
-#Contributing Guidelines
-Please read this before contributing.
-
-##Rules
-
-- Be nice and respectful.
-- English only.
-- Be constructive.
-
-##Quality over Quantity
-
-We're trying to keep it simple and promote the best tools, not all of them. Maximum are three software choices, but it's possible to add more under "Worth Mentioning" headlines. ([example](https://www.privacytools.io/#im)) 
-
-##Software Criteria
-
-- Open Source
-- Cross-platform
-- Easy to use
-- Privacy respecting
-
-There can be exeptions if no software is available that meet the criteria.
-
-##Images
-
-- Provider logos should be exactly 200 x 70 ([example](https://www.privacytools.io/img/provider/AirVPN.gif))
-- Tool logos should be exactly 120 x 120 ([example](https://www.privacytools.io/img/tools/ChatSecure.png))
-
 #Support privacytools.io
 
 - [Donate.](https://www.privacytools.io/donate.html)
@@ -48,6 +20,11 @@ There can be exeptions if no software is available that meet the criteria.
 #Community Translations
 - [Español](https://victorhck.gitlab.io/privacytools-es/) - [GitLab](https://gitlab.com/victorhck/privacytools-es)
 - [Deutsch](https://privacytools.it-sec.rocks/) - [GitHub](https://github.com/Anon215/privacytools.it-sec.rocks)
+- [English](https://privacytools.io) -  [GitHub](https://github.com/privacytoolsIO/privacytools.io)
+
+#About Tradtional Chinese version
+- [privacytools.io 正體中文版說明 ](https://blog.jxtsai.info/2016/12/27/privacytools-chinese/) 
+- [privacytools.io 正體中文網站]（https://privacytools.twngo.xyz）
 
 #License
 [GNU General Public License v3.0](https://github.com/privacytoolsIO/privacytools.io/blob/master/LICENSE.txt)
