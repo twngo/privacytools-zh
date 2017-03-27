@@ -2,6 +2,10 @@
 
 _Encryption Against Global Mass Surveillance._
 
+#About Simplified Chinese version
+
+- [privacytools.io 简体中文网站](https://cybermagicsec.github.io/privacytools-zh/) - [GitHub](https://github.com/cybermagicsec/privacytools-zh)
+
 #About Tradtional Chinese version
 
 - [privacytools.io 正體中文版說明 ](https://blog.jxtsai.info/2016/12/27/privacytools-chinese/) 
