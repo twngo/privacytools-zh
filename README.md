@@ -6,6 +6,7 @@ _Encryption Against Global Mass Surveillance._
 
 - [privacytools.io 正體中文版說明 ](https://blog.jxtsai.info/2016/12/27/privacytools-chinese/) 
 - [privacytools.io正體中文網站](https://privacytools.twngo.xyz/)
+- [rivacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
 
 
 #Support privacytools.io
@@ -19,7 +20,7 @@ _Encryption Against Global Mass Surveillance._
 - [Español](https://victorhck.gitlab.io/privacytools-es/) - [GitLab](https://gitlab.com/victorhck/privacytools-es)
 - [Deutsch](https://privacytools.it-sec.rocks/) - [GitHub](https://github.com/Anon215/privacytools.it-sec.rocks)
 - [English](https://privacytools.io) -  [GitHub](https://github.com/privacytoolsIO/privacytools.io)
-
+- [Simplified Chinese 簡體中文](https://cybermagicsec.github.io/privacytools-zh/) - [GitHub](https://github.com/cybermagicsec/privacytools-zh)
 
 #License
 [GNU General Public License v3.0](https://github.com/privacytoolsIO/privacytools.io/blob/master/LICENSE.txt)
