@@ -919,7 +919,7 @@
 		<ol>
 			<li>privacy.trackingprotection.enabled = true</li>
 			<ul>
-				<li>Mozilla新内建的追踪保护功能</li>
+				<li>Mozilla新内建的追踪保护功能，其利用 Disconnect.me 过滤名单, 但如果你已使用其它第三方的屏滤器如 uBlock Origin,其效能就会重复多余，因此你可以将之设为关闭。</li>
 			</ul>
 
 			<li>geo.enabled = false</li>
@@ -974,6 +974,12 @@
 				<li>WebGL 有潜在的安全风险<a href="http://security.stackexchange.com/questions/13799/is-webgl-a-security-concern">来源</a></li>
 			</ul>
 
+			<li>media.navigator.enabled = false</li>
+			<ul>
+                              <li>网站可以追踪用户上网设备里的麦克风和摄影机状态</li>
+                        </ul>
+			
+			
 			<li>dom.battery.enabled = false</li>
 			<ul>
 				<li>网站所有人可以追踪访问者设置的电池状态<a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/">來源</a></li>
@@ -2568,13 +2574,13 @@
 			<div class="col-sm-4">
 				<div class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">Ubuntu Mobile</h3>
+						<h3 class="panel-title">CopperheadOS</h3>
 					</div>
 					<div class="panel-body">
-						<p><img src="img/tools/Ubuntu-Touch.png" alt="Ubuntu Mobile" align="right" style="margin-left:5px;">Ubuntu Mobile 操作系统的手机版，由Canonical UK Ltd与Ubuntu 社群进行开发。它主要的设计着眼于移动设备的触控屏幕，如智能手机与平板电脑。</p>
+						<p><img src="img/tools/CopperheadOS.png" alt="CopperheadOS" align="right" style="margin-left:5px;">CopperheadOS 由 Copperhead Security 以 Android　架构开发出来的强化移动开源操作系統。它希望能提供更为安全与隐私注重的功能，故包含了更强固的kernel 核心与沙盒功能为某些应用程序提供隔离的安装环境。目前这套系统仅能适用安装于某几款 Nexus 设备。</p>
 						<p>
-							<a href="http://www.ubuntu.com/mobile">
-								<button type="button" class="btn btn-info">网站: ubuntu.com</button>
+							<a href="https://copperhead.co/android/">
+								<button type="button" class="btn btn-info">网站: copperhead.co</button>
 							</a>
 						</p>
 					</div>
