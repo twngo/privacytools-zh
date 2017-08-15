@@ -499,6 +499,15 @@
 								<td><a href="https://privatoria.net/">Privatoria.net</a></td>
 							</tr>
 -->
+							  <tr>
+                                                                <td data-value="ProtonVPN">
+                                                                     <a href="https://protonvpn.com/"><img src="img/provider/ProtonVPN.png" width="200" height="70"></a     >
+                                                                </td>
+                                                                <td data-value="0">免费</td>
+                                                                <td><span class="label label-success">Yes</span></td>
+                                                                <td>112</td>
+                                                                <td><span class="flag-icon flag-icon-ch"></span>瑞士</td>
+                                                        </tr>
 
 							<tr>
 								<td data-value="Proxy.sh">
@@ -919,38 +928,58 @@
 		<h3>开始动手:</h3>
 
 		<ol>
-			<li>privacy.trackingprotection.enabled = true</li>
+			<li>privacy.firstparty.isolate = true</li>
 			<ul>
-				<li>Mozilla新内建的追踪保护功能，其利用 Disconnect.me 过滤名单, 但如果你已使用其它第三方的屏滤器如 uBlock Origin,其效能就会重复多余，因此你可以将之设为关闭。</li>
+				<li><a href="https://wiki.mozilla.org/Security/Tor_Uplift">Tor Uplift</a>效用的结果, 它可隔绝主要访问网域中所有浏览器辨识器来源 (如 cookies), 并期能可阻挡跨域名的追踪。</li>
 			</ul>
 			<li>privacy.resistFingerprinting = true</li>
 			<ul>
 				<li><a href="https://wiki.mozilla.org/Security/Tor_Uplift">Tor Uplift</a> 效用的结果, 此偏好可让 Firefox m更能抵抗指纹辨识。</li>
 			</ul>
-			<li>privacy.firstparty.isolate = true</li>
+			<li>privacy.trackingprotection.enabled = true</li>
 			<ul>
-				<li><a href="https://wiki.mozilla.org/Security/Tor_Uplift">Tor Uplift</a>效用的结果, 它可隔绝主要访问网域中所有浏览器辨识器来源 (如 cookies), 并期能可阻挡跨域名的追踪。</li>
+				<li>Mozilla新内建的追踪保护功能，其利用 Disconnect.me 过滤名单, 但如果你已使用其它第三方的屏滤器如 uBlock Origin,其效能就会重复多余，因此你可以将之设为关闭。</li>
+			</ul>
+			<li>browser.cache.offline.enable = false</li>
+			<ul>
+				<li>取消离线的缓存快取资料</li>
+			</ul>
+			 <li>browser.safebrowsing.malware = false</li>
+			<ul>
+				<li>取消Google安全浏览的恶意软件检查。这会有安全上的风险，但可改善隐私。</li>
+			</ul>
+			<li>browser.safebrowsing.phishing.enabled = false</li>
+			<ul>
+				<li>取消Google安全浏览与防钓鱼保护。这会有安全上的风险，但可改善隐私。</li>
+			</ul>
+                        <li>browser.send_pings = false</li>
+			<ul>
+				<li>这个性能可让网站追踪访客的点击情況。</li>
+			</ul>
+                        <li>browser.sessionstore.max_tabs_undo = 0</li>
+ 			<ul>
+ 				<li>尽管 Firefox 设定为不记录浏览资讯，但在用户关闭浏览器分页之前，这些资讯仍会暂存在选单 -&gt; 浏览历史 -&gt; 近期关闭的分页 底下</li>
+ 			</ul>
+			<li>browser.urlbar.speculativeConnect.enabled = false</li>
+ 			<ul>
+ 				<li>关闭自动完成的 URLs 预载， 当用户在网址列输入资讯时，Firefox 会自行预载，有人担心这些浏览器自动建议的网址并非是用户想要连上的网站。 <a href="https://www.ghacks.net/2017/07/24/disable-preloading-firefox-autocomplete-urls/">来源</a></li>
+ 			</ul>
+ 			<li>dom.battery.enabled = false</li>
+ 			 <ul>
+ 				<li>网站主人可以追踪用户上网设备的电池状况。<a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/">来源</a></li>
+             </ul>
+			<li>dom.event.clipboardevents.enabled = false</li>
+			<ul>
+				<li>取消让网站在让你从某网页中复制、贴上是剪下任何内容時，会发出通知。这会让他们知道网页的哪一部份被挑选。</li>
 			</ul>
 			<li>geo.enabled = false</li>
 			<ul>
 				<li>取消地理定位资料</li>
 			</ul>
-
-			<li>browser.safebrowsing.phishing.enabled = false</li>
+                        <li>media.navigator.enabled = false</li>
 			<ul>
-				<li>取消Google安全浏览与防钓鱼保护。这会有安全上的风险，但可改善隐私。</li>
-			</ul>
-
-			<li>browser.safebrowsing.malware.enabled = false</li>
-			<ul>
-				<li>取消Google安全浏览的恶意软件检查，有安全上的风险，但可改善隐私。</li>
-			</ul>
-
-			<li>dom.event.clipboardevents.enabled = false</li>
-			<ul>
-				<li>取消让网站在让你从某网页中复制、贴上是剪下任何内容時，会发出通知。这会让他们知道网页的哪一部份被挑选。</li>
-			</ul>
-
+                               <li>网站可以跟踪用户上网设备里的麦克风和摄影机状态</li>
+                        </ul>
 			<li>network.cookie.cookieBehavior = 1</li>
 			<ul>
 				<li>取消cookies</li>
@@ -958,7 +987,6 @@
 				<li>1 = Only accept from the originating site (block third party cookies)</li>
 				<li>2 = Block all cookies by default</li>
 			</ul>
-
 			<li>network.cookie.lifetimePolicy = 2</li>
 			<ul>
 				<li>cookies在期间结束后会被刪除</li>
@@ -967,36 +995,9 @@
 				<li>2 = Accept for current session only</li>
 				<li>3 = Accept for N days</li>
 			</ul>
-
-			<li>browser.cache.offline.enable = false</li>
-			<ul>
-				<li>取消离线的缓存快取资料</li>
-			</ul>
-
-			<li>browser.send_pings = false</li>
-			<ul>
-				<li>这个属性会协助网站来追踪访问者的点击动作。</li>
-			</ul>
-
 			<li>webgl.disabled = true</li>
 			<ul>
 				<li>WebGL 有潜在的安全风险<a href="http://security.stackexchange.com/questions/13799/is-webgl-a-security-concern">来源</a></li>
-			</ul>
-
-			<li>media.navigator.enabled = false</li>
-			<ul>
-                              <li>网站可以追踪用户上网设备里的麦克风和摄影机状态</li>
-                        </ul>
-			
-			
-			<li>dom.battery.enabled = false</li>
-			<ul>
-				<li>网站所有人可以追踪访问者设置的电池状态<a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/">來源</a></li>
-			</ul>
-
-			<li>browser.sessionstore.max_tabs_undo = 0</li>
-			<ul>
-				<li>即便设置让浏览器不要保留访问记录,但是所关闭的分页会暂停在选单上 -&gt; History -&gt; 最近关闭的分页Recently Closed Tabs.</li>
 			</ul>
 		</ol>
 
