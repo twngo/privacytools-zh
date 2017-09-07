@@ -27,6 +27,11 @@ a.titleanchor {
 .jumbotron {
     padding: 10px 0px;
 }
+.footer {
+    margin-top: 10px;
+    padding: 10px 0px;
+    background-color:#eee 
+}
 
 .share-btn {
     display: inline-block;
