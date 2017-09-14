@@ -9,6 +9,10 @@ body {
   margin-bottom: 20px;
 }
 
+.theme-showcase > p {
+  min-height: 70px;
+}
+
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
