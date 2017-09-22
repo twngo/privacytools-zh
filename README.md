@@ -5,7 +5,7 @@ _Encryption Against Global Mass Surveillance._
 # About Chinese version
 
 - [privacytools.io 正體中文版說明 ](https://blog.jxtsai.info/2016/12/27/privacytools-chinese/) 
-- [privacytools.io正體中文網站](https://privacytools.twngo.xyz/)
+- [privacytools.io 正體中文網站](https://privacytools.twngo.xyz/)
 - [privacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
 
 
