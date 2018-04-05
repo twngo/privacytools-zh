@@ -21,6 +21,7 @@ _Encryption Against Global Mass Surveillance._
 - [Deutsch](https://privacytools.it-sec.rocks/) - [GitHub](https://github.com/Anon215/privacytools.it-sec.rocks)
 - [English](https://privacytools.io) -  [GitHub](https://github.com/privacytoolsIO/privacytools.io)
 - [Simplified Chinese 簡體中文](https://cybermagicsec.github.io/privacytools-zh/) - [GitHub](https://github.com/cybermagicsec/privacytools-zh)
+- [Русский / Russian](https://privacytools.ru) - [GitHub](https://github.com/c0rdis/privacytools.ru)
 
 # License
 [GNU General Public License v3.0](https://github.com/privacytoolsIO/privacytools.io/blob/master/LICENSE.txt)
