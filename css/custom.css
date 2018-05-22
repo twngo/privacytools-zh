@@ -9,13 +9,13 @@ body {
   margin-bottom: 20px;
 }
 
-.theme-showcase > p {
-  min-height: 70px;
-}
-
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
+.theme-showcase > p {
+   min-height: 70px;
+ }
 
 .theme-showcase .navbar .container {
   width: auto;
@@ -31,6 +31,7 @@ a.titleanchor {
 .jumbotron {
     padding: 10px 0px;
 }
+
 .footer {
     margin-top: 10px;
     padding: 10px 0px;
@@ -73,3 +74,8 @@ a.titleanchor {
 .share-btn.linkedin    { background: #4875B4; }
 .share-btn.email { background: #444444; }
 .share-btn.diaspora { background: #2f3537; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color:#3498DB;
+  font-weight: bold;
+} 
