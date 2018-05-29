@@ -48,7 +48,7 @@ There can be exeptions if no software is available that meet the criteria.
 #Community Translations
 - [Español](https://victorhck.gitlab.io/privacytools-es/) - [GitLab](https://gitlab.com/victorhck/privacytools-es)
 - [Deutsch](https://privacytools.it-sec.rocks/) - [GitHub](https://github.com/Anon215/privacytools.it-sec.rocks)
--- [Italiano / Italian](https://strappazzon.github.io/privacytools-it/) - [GitHub](https://github.com/Strappazzon/privacytools-it)
+-- [Italiano / Italian](https://privacytools-it.github.io/) - [GitHub](https://github.com/privacytools-it/privacytools-it.github.io)
 - [Русский / Russian](https://privacytools.ru) - [GitHub](https://github.com/c0rdis/privacytools.ru)
 - [Simplified Chinese 簡體中文](https://cybermagicsec.github.io/privacytools-zh/) - [GitHub](https://github.com/cybermagicsec/privacytools-zh)
 
