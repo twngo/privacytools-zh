@@ -1,0 +1,95 @@
+<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {% assign prefix = "" %}
+        {% if page.active_page %}
+        {% assign prefix = "index.html" %}
+        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{prefix}}#top"><i class="fas fa-home"></i> <span class="sr-only">Home</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="providerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            服務供應商
+          </a>
+          <div class="dropdown-menu" aria-labelledby="providerDropdown">
+            <a class="dropdown-item" href="{{prefix}}#ukusa"><i class="fab fa-creative-commons-nc"></i> 避兔使用以美國與英國為基地的網路服務</a>
+            <a class="dropdown-item" href="{{prefix}}#vpn"><i class="far fa-eye-slash"></i> 虛擬私人網路（VPN）</a>
+            <a class="dropdown-item" href="{{prefix}}#email"><i class="fas fa-mail-bulk"></i> 私密電郵</a>
+            <a class="dropdown-item" href="{{prefix}}#wc"><i class="fa fa-exclamation-circle"></i> 令狀金絲雀</a>
+            <a class="dropdown-item" href="{{prefix}}#cloud"><i class="fas fa-cloud"></i> 加密的雲端儲存服務</a>
+            <a class="dropdown-item" href="{{prefix}}#social"><i class="fas fa-expand-arrows-alt"></i> 去中心化的社交網路</a>
+            <a class="dropdown-item" href="{{prefix}}#dns"><i class="fa fa-tasks"></i> 域名系統（DNS）</a>
+            <a class="dropdown-item" href="{{prefix}}#search"><i class="fab fa-searchengin"></i> 尊重用戶隱私的搜尋引擎</a>
+            <a class="dropdown-item" href="{{prefix}}#host"><i class="fas fa-database"></i> 安全的架站服務商</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="browserDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            瀏覽器
+          </a>
+          <div class="dropdown-menu" aria-labelledby="browserDropdown">
+            <a class="dropdown-item" href="{{prefix}}#browser"><i class="fas fa-check"></i> 推薦</a>
+            <a class="dropdown-item" href="{{prefix}}#fingerprint"><i class="fas fa-fingerprint"></i> 指紋</a>
+            <a class="dropdown-item" href="{{prefix}}#webrtc"><i class="far fa-eye"></i> WebRTC IP 漏洞</a>
+            <a class="dropdown-item" href="{{prefix}}#addons"><i class="far fa-list-alt"></i> 瀏覽器火狐隱私附加元件</a>
+            <a class="dropdown-item" href="{{prefix}}#about_config"><i class="fas fa-wrench"></i> 相關的隱私設定調整</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="softwareDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            軟體
+          </a>
+          <div class="dropdown-menu" aria-labelledby="softwareDropdown">
+            <a class="dropdown-item" href="{{prefix}}#clients"><i class="fas fa-envelope"></i> 電郵軟體</a>
+            <a class="dropdown-item" href="{{prefix}}#messaging"><i class="fas fa-random"></i> 電郵替代工具</a>
+            <a class="dropdown-item" href="{{prefix}}#im"><i class="fab fa-telegram-plane"></i> 即時通訊</a>
+            <a class="dropdown-item" href="{{prefix}}#voip"><i class="fas fa-phone"></i>影音通訊</a>
+            <a class="dropdown-item" href="{{prefix}}#filesharing"><i class="fas fa-file-export"></i> 檔案分享</a>
+            <a class="dropdown-item" href="{{prefix}}#mycloud"><i class="fas fa-hdd"></i> 自搭的雲端伺服器</a>
+            <a class="dropdown-item" href="{{prefix}}#sync"><i class="fas fa-copy"></i> 安全的檔案同步</a>
+            <a class="dropdown-item" href="{{prefix}}#pw"><i class="fas fa-user-lock"></i> 安全的密碼管理</a>
+            <a class="dropdown-item" href="{{prefix}}#calendar_contacts"><i class="far fa-calendar-alt"></i> 日曆與聯絡人同步</a>
+            <a class="dropdown-item" href="{{prefix}}#encrypt"><i class="fas fa-lock"></i> 檔案加密</a>
+            <a class="dropdown-item" href="{{prefix}}#darknets"><i class="fas fa-user-secret"></i> 自足網路</a>
+            <a class="dropdown-item" href="{{prefix}}#notebook"><i class="far fa-sticky-note"></i> 數位筆記簿</a>
+            <a class="dropdown-item" href="{{prefix}}#paste"><i class="fas fa-paste"></i> 原始碼儲存服務</a>
+            <a class="dropdown-item" href="{{prefix}}#productivity"><i class="fas fa-briefcase"></i> 生產力工具</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="osDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            OS 作業系統
+          </a>
+          <div class="dropdown-menu" aria-labelledby="osDropdown">
+            <a class="dropdown-item" href="{{prefix}}#os"><i class="fas fa-th-large"></i> 桌機筆電作業系統</a>
+            <a class="dropdown-item" href="{{prefix}}#live_os"><i class="fas fa-compact-disc"></i> Live CD 光碟隨身碟開機作業系統</a>
+            <a class="dropdown-item" href="{{prefix}}#mobile_os"><i class="fas fa-mobile-alt"></i> 手機作業系統</a>
+            <a class="dropdown-item" href="{{prefix}}#aaddons"><i class="fas fa-th"></i> Android 隱私附加元件</a>
+            <a class="dropdown-item" href="{{prefix}}#firmware"><i class="fas fa-signal"></i> 路由器軔體</a>
+            <a class="dropdown-item" href="{{prefix}}#win10"><i class="far fa-thumbs-down"></i> 不要使用 Windows 10</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#participate">參與</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        {% if page.active_page == "donate" %}
+        <li class="nav-item active">
+          <a class="nav-link" href="#">捐款贊助 <i class="fas fa-heart text-danger"></i></a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="donate.html">捐款贊助 <i class="fas fa-heart text-danger"></i></a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
