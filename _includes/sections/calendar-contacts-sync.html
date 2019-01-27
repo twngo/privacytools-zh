@@ -1,0 +1,46 @@
+<h1 id="calendar_contacts" class="anchor"><a href="#calendar_contacts"><i class="fas fa-link anchor-icon"></i></a> 行事曆與聯絡人同步</h1>
+<div class="alert alert-warning" role="alert">
+    <strong>若目前有使用行事曆與聯絡人同步服務，如 Google Sync 或 iCloud，這裏有其它替代的選項。</strong>
+</div>
+<div class="row mb-2">
+
+    {% include card.html color="success"
+    title="Nextcloud"
+    image="assets/img/provider/Nextcloud.png"
+    url="https://nextcloud.com/"
+    footer="支援的客戶端作業系統：Windows, macOS, Linux, BSD, Unix, iOS, Android, Fire OS。伺服器：Linux。"
+    description="Nextcloud 是一套用來建立及使用檔案分享服務的客戶端－伺服器軟體。它包含了透過 CalDAV 來同步行事曆及聯絡人。Nextcloud 是自由、開源的，因此，在任何人都能免費的安裝、運行在私有的伺服器上。"
+    %}
+
+    {% include card.html color='primary'
+    title='電子郵件供應商'
+    image='assets/img/misc/email.png'
+    url='#email'
+    website='Email Providers section'
+    footer='支援作業系統： 取決於電子郵件提供者。'
+    description='許多電子郵件供應商亦提供行事曆和聯絡人同步服務。可參考<a href=\"#email\">電子郵件供應商的部分</a>來選擇電子郵件供應商，來確認他們是否也提供同步行事曆或聯絡人。'
+    %}
+
+    {% include card.html color='warning'
+    title='EteSync'
+    image='assets/img/provider/etesync.png'
+    url='https://www.etesync.com/'
+    footer='客戶端作業系統：Android、網站。伺服器作業系統：Linux。'
+    description='EteSync 是執行在 Android 或任何支援 CalDAV/CardDAV 作業系統底下的一個安全，端對端加密的日誌型個人資訊（例如：行事曆與聯絡人）雲端同步備份工具。它的費用是一年 $14 或可免費架在自己的伺服器。'
+    %}
+
+</div>
+<h3>值得一提</h3>
+<ul>
+    <li>
+        <a href="https://fruux.com/">fruux</a> - 結合了聯絡人和行事曆系統，可跨不同平台與多台設備。
+    </li>
+
+    <li>
+        <a href="https://signal.org/blog/flock/">Flock</a> - 由 Open Whisper Systems 開始，已未再繼續進行的行事曆聯絡人同步服務。雖然它已不同更新，但<a href="https://github.com/signalapp/Flock">其原始碼 </a> 仍可在 GitHub 找到。
+    </li>
+
+    <li>
+        <a href="#cloud">cloud backups</a> - 請考慮定期匯出行事曆與聯絡人資料備份到不同的儲存硬碟或是上傳到雲端儲存（最好是先<a href="#encrypt">予以加密</a>）。
+    </li>
+</ul>
