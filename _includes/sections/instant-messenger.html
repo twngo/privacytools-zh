@@ -1,0 +1,53 @@
+<h1 id="im" class="anchor"><a href="#im"><i class="fas fa-link anchor-icon"></i></a> 加密的即時通訊</h1>
+
+<div class="alert alert-warning" role="alert">
+    <strong>如果你目前用的即時通訊是：WhatsApp、Viber、LINE、Telegram 或 Threema，或許是時候考慮找其它替代軟體了。</strong>
+
+</div>
+<div class="row mb-2">
+    {% include card.html color='success'
+    title='手機：Signal'
+    image='assets/img/tools/Signal.png'
+    url='https://signal.org'
+    footer='支援作業系統：Android, iOS, macOS, Windows, Linux'
+    description='由 Open Whisper Systems 所開發的手機應用程式。它的所有通訊都予以加密。 Signal 是一套免費開源的軟體，任何人都可以審查它的原始碼。這個開發團隊是靠社群的捐款與獎助，而 Signal 不會插入廣告也不須花錢就可以安裝使用。'
+    %}
+
+
+    {% include card.html color='primary'
+    title='Riot.im'
+    image='assets/img/tools/riot.png'
+    url='https://riot.im/'
+    footer='支援作業系統：Android, iOS, macOS, Windows, Linux, Web'
+    labels="warning:公開測試:目前這個軟體在公開測試中，行動端宣稱「端對端加密正在在公開測試且可能會不穩定。你不應該信任它來保護資料。」"
+    description='Riot.im 為去中心、基於<a href="https://matrix.org/">Matrix</a> 協定的開源免費聊天應用軟體。Matrix 為新進、提供 E2E 加密的即時傳通訊開放協定。它可以橋接其它協定，例如 IRC。'
+    %}
+
+    {% include card.html color='warning'
+    title='桌機：Ricochet'
+    image='assets/img/tools/Ricochet.png'
+    url='https://ricochet.im/'
+    footer='支援作業系統：Windows, macOS, Linux.'
+    description='Ricochet 利用<a href="#browser"> <i class="fas fa-link"></i> Tor 網路</a>來連接聯絡人而不是依賴訊息伺服器。它會建立一個隱藏的服務，用來與聯終人線上會談而不必揭露出你的來源和位置。不採用一般的使用者名稱，使用者會拿到一個特別的網址，它長得像這樣 <em>ricochet:rs7ce36jsj24ogfw</em>。而 Ricochet 的其它使用者可以利用這個獨特的網址來傳送加入請求，徵求你的同意被加入聯絡人名單上。'
+    %}
+
+</div>
+<h3>值得一提</h3>
+<ul>
+    <li><a href="https://www.chatsecure.org">ChatSecure</a> - ChatSecure 是一個免費開源聊天通訊應用，其利用 XMPP 進行不保留記錄的加密功能。  </li>
+    <li><a href="https://crypto.cat/">Cryptocat</a> - 加密的開源通訊軟體，支援檔案分享和多設備的帳號使用。也同樣支援跨平台的作業系統如 Windows、 Linux 和 Mac。</li>
+    <li><a href="https://kontalk.org/">Kontalk</a> - 由社群發起的即時通訊網路，支援端點對端點間的通訊加密。不管是使用者端到伺服器端或是伺服器之間的通道都採完全加密。</li>
+    <li><a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations">Conversations</a> -  運行於Android 4.0版本以上的智慧型手機，Jabber/XMPP 開源的客戶端通訊軟體。透過 OMEMO 或 openPGP 等方式來支援端點對端點間的通訊加密。也有 <a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations.legacy">Conversations Legacy 版本</a>，其仍支援 OTR。</li>
+    <li><a href="https://get.wire.com/">Wire</a> <span class="badge badge-warning" data-toggle="tooltip" title="Wire 將部份的元數據，例如聯絡人名單以明文未加密儲存。">實驗性 <i class="far fa-question-circle"></i> (<a href="https://motherboard.vice.com/en_us/article/secure-messaging-app-wire-stores-everyone-youve-ever-contacted-in-plain-text">進一步了解</a>)</span> - 免費的端對端加密聊天應用程式，支援即時文字通訊和影音通話。</li>
+    <li><a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support">OTR 客戶端列表 - Wikipedia</a></li>
+</ul>
+
+
+<h3>相關資訊</h3>
+<ul>
+    <li><a href="https://motherboard.vice.com/read/ricochet-encrypted-messenger-tackles-metadata-problem-head-on">Ricochet, the Messenger That Beats Metadata, Passes Security Audit | Motherboard</a></li>
+    <li><a href="https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/">Chatting in Secret While We're All Being Watched - firstlook.org</a></li>
+    <li><a href="https://signal.org/android/apk/">Advanced users with special needs can download the Signal APK directly. Most users should not do this under normal circumstances.</a></li>
+    <li><a href="https://security.stackexchange.com/a/49802">Telegram encryption isn't secure.</a></li>
+    <li><a href="https://www.reddit.com/r/privacytoolsIO/comments/6r655i/telegram_isnt_safe/">Telegram is marketed as a private messenger, but it's not private by default.</a></li>
+</ul>
