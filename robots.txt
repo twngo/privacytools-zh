@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://privacytools.io/sitemap.xml
+Sitemap: https://privacytools.twngo.xyz/sitemap.xml

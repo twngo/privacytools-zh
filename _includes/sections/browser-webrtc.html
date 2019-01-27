@@ -1,0 +1,50 @@
+<!-- WebRTC IP Leak Test -->
+<h1 id="webrtc" class="anchor"><a href="#webrtc"><i class="fas fa-link anchor-icon"></i></a> WebRTC IP 漏洞測試 - 你的 IP 位置是否被洩漏？</h1>
+
+<!-- red alert message about WebRTC being a new communication protocol... -->
+<div class="alert alert-danger" role="alert">
+    <strong>WebRTC 是一種新的通訊協議，其依靠 JavaScript 程式。它可能會洩漏 VPN 使用者真實的 IP 位置資訊。</strong>
+</div>
+
+<!-- first sentence -->
+<p>有些軟體，如 NoScript 可以阻止這個漏洞。但為了安全起見，直接關閉這個協議也是不錯的作法。</p>
+
+<!-- orange "Test your Browser now" button -->
+<p>
+    <a class="btn btn-warning" target="_blank" rel="noopener noreferrer" href="https://ipleak.net">立即測試你正在用的瀏覽器吧</a>
+</p>
+
+<!-- heading: How to disable WRTC in Firefox? -->
+<h3>如何在火狐瀏覽器下取消 WebRTC？</h3>
+
+<!-- steps on manually disabling WRTC in Firefox -->
+<p>簡單說：在 "about:config" 內，將 "media.peerconnection.enabled" 設為 "false"。</p>
+<p><strong>說明:</strong></p>
+<ol class="long-string-list">
+    <li>在瀏覽器的網址列輸入 "about:config" 並點擊 enter 鍵</li>
+    <li>點擊"I'll be careful, I promise!"按鈕</li>
+    <li>搜尋"media.peerconnection.enabled"</li>
+    <li>雙擊這條資訊, "Value"欄位現在應該變成了"false"</li>
+    <li>完成了，再作一次 WebRTC　漏洞測試吧</li>
+</ol>
+
+<p>如果要確認每一個與 WebRTC 相關設定真的關閉了，可以再進行以下的設定更動：</p>
+<ol class="long-string-list">
+    <li>media.peerconnection.turn.disable = true</li>
+    <li>media.peerconnection.use_document_iceservers = false</li>
+    <li>media.peerconnection.video.enabled = false</li>
+    <li>media.peerconnection.identity.timeout = 1</li>
+</ol>
+<p>現在你已百分百地將 WebRTC 功能取消了。</p>
+
+<!-- the "Test your Browser again" button -->
+<p>
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://ipleak.net">再次測試你的瀏覽器吧</a>
+</p>
+
+<!-- steps to manually disable WebRTC in Chrome -->
+<h3>如何解決 Google Chrome 底下的 WebRTC 漏洞呢？</h3>
+<p>Chrome 瀏覽器下無法完全取消 WebRTC，但可以透過套件變更其路由設定（與防止洩漏）。有兩種開源的方案為：<a href="https://chrome.google.com/webstore/detail/webrtc-leak-prevent/eiadekoaikejlgdbkbdfeijglgfdalml">WebRTC Leak Prevent</a>（需依情況來調整設定選項），和 <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a>（請選「預防 WebRTC 洩漏本地 IP 地址」）。</p>
+
+<h3>那其它的瀏覽器呢?</h3>
+<p>蘋果 iOS 作業系統下的 Chrome、Internet Explorer 與 Safari 目前尚未採用 WebRTC。<a href="#browser"><i class="fas fa-link"></i>不過我們還是建議在各種設備上最好還是使用火狐瀏覽器。</a></p>  <!-- Firefox add-ons -->
