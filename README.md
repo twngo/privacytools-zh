@@ -32,9 +32,11 @@ You can submit your suggestions here on GitHub [(Issues)](https://github.com/pri
 - [Deutsch / German](https://privacytools.it-sec.rocks/) - [GitHub](https://github.com/Anon215/privacytools.it-sec.rocks)
 - [Italiano / Italian](https://privacytools-it.github.io/) - [GitHub](https://github.com/privacytools-it/privacytools-it.github.io)
 - [Русский / Russian](https://privacytools.ru) - [GitHub](https://github.com/c0rdis/privacytools.ru)
+- [weblate site](https://weblate.nablahost.com/projects/privacytoolsio/) for licalization collabortion 
 
 #About Chinese version
-- [privacytools.io 正體中文版說明 ](https://blog.jxtsai.info/2016/12/27/privacytools-chinese/) 
+- [privacytools.io 正體中文第一版說明 ](https://to.twngo.xyz/12272016) 
+- [privacytools.io 正體中文 2018年改版說明 ](https://to.twngo.xyz/01222019) 
 - [privacytools.io 正體中文網站](https://privacytools.twngo.xyz/)
 - [privacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
 
