@@ -4,6 +4,17 @@ _Encryption Against Global Mass Surveillance._
 
 [![Build Status](https://travis-ci.com/privacytoolsIO/privacytools.io.svg?branch=master)](https://travis-ci.com/privacytoolsIO/privacytools.io)
 
+## Latest Announcement 
+
+The project is freezed for major update. 
+ 
+本中文化專案正在進行第三度大整修更新工桯
+
+歡迎有興趣的朋友一起加入協助
+
+24th Dec, 2019
+
+
 # Contributing
 
 It's important for a website like privacytools.io to be up-to-date. Keep an eye on software updates of the applications listed here. Follow recent news about providers that are recommended. We try our best to keep up but we're not perfect and the internet is changing fast. So if you find an error, or you think a provider should not be listed here, or a qualified service provider is missing or a browser plugin is not the best choice anymore or anything else...
