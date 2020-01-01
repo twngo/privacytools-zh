@@ -1,0 +1,61 @@
+<h1 id="teamchat" class="anchor"><a href="#teamchat"><i class="fas fa-link anchor-icon"></i></a> 團隊聊天平台</h1>
+
+<div class="alert alert-warning" role="alert">
+        <strong>如果您的專案小組或組織使用的是 <a href="https://tosdr.org/#discord">Discord</a> 或 <a href="https://drewdevault.com/2015/11/01/Please-stop-using-slack.html">Slack</a>，不妨參考以下其它替代選項。</strong>
+</div>
+
+{%
+  include cardv2.html
+  title="Matrix"
+  image="/assets/img/svg/3rd-party/matrix.svg"
+  image-dark="/assets/img/svg/3rd-party/matrix-dark.svg"
+  description='<a href="https://matrix.org/docs/guides/introduction">Matrix</a> 開源專案發佈了安全、非集中式、即時性的通訊 <a href="https://matrix.org/docs/spec">Matrix 開放標準</a>。<br />
+  <a href="https://en.wikipedia.org/wiki/Riot.im">Riot.im</a> 則為 Matrix 團隊開發的客戶端聊天應用軟體，提供 E2E 一對一或是多人會議選項。（此項功能須由用戶<strong>主動啟用</strong>，其操作方法為調整聊天室或聊天對象的安全隱私加密模式。）此功能未來將會改成<a href="https://github.com/vector-im/riot-web/issues/6779">默認預設</a>。'
+  website="https://about.riot.im/"
+  forum="https://forum.privacytools.io/t/discussion-riot-im/665/"
+  github="https://github.com/vector-im/riot-web/"
+  windows="https://riot.im/download/desktop/"
+  mac="https://riot.im/download/desktop/"
+  linux="https://riot.im/download/desktop/"
+  fdroid="https://f-droid.org/repository/browse/?fdid=im.vector.alpha"
+  googleplay="https://play.google.com/store/apps/details?id=im.vector.app"
+  ios="https://itunes.apple.com/app/vector.im/id1083446067"
+  web="https://riot.im/app/"
+%}
+
+{%
+  include cardv2.html
+  title="Rocket.chat"
+  image="/assets/img/svg/3rd-party/rocketchat.svg"
+  description="Rocket.chat 為適合團隊通訊的自架式開放溝通軟體，可選擇聯邦與試驗中的 E2EE 模式。"
+  labels="warning:<a href=//rocket.chat/docs/user-guides/end-to-end-encryption/>試驗的 E2EE</a>：E2EE 文件闡明「此功能目前仍在初期測試階段，尚未能支援手機系統。」 它沒有前向保密因此可能會損害密碼解密，造成訊息內容的外洩。後來增加的聯邦式功能也可能會出錯。"
+  website="https://rocket.chat/"
+  forum="https://forum.privacytools.io/t/discussion-rocket-chat/1223"
+  github="https://github.com/rocketchat/"
+  windows="https://rocket.chat/install"
+  mac="https://itunes.apple.com/us/app/rocket-chat/id1086818840"
+  linux="https://rocket.chat/install"
+  fdroid="https://f-droid.org/packages/chat.rocket.android"
+  googleplay="https://play.google.com/store/apps/details?id=chat.rocket.android"
+  ios="https://itunes.apple.com/app/rocket-chat/id1148741252"
+%}
+
+{%
+  include cardv2.html
+  title="Keybase"
+  image="/assets/img/svg/3rd-party/keybase.svg"
+  description='Keybase provides a hosted team chat with E2EE 加密功能的團隊聊天服務，其協議曾通過<a href="https://keybase.io/docs-assets/blog/NCC_Group_Keybase_KB2018_Public_Report_2019-02-27_v1.3.pdf">獨立的稭核審查 (PDF 檔案)</a>。用戶可以透過 Keybase "<a href="https://en.wikipedia.org/wiki/Keybase#Identity_proofs">識別證明</a>的密碼簽署法，認證自己的網路社交帳號。'
+  labels="warning:<a href=github.com/keybase/client/issues/6374>Warning</a>:This software relies on a closed-source central server."
+  website="https://keybase.io/"
+  forum="https://forum.privacytools.io/t/discussion-keybase/1224"
+  tor="http://keybase5wmilwokqirssclfnsqrjdsi7jdir5wy7y7iu3tanwmtp6oid.onion/"
+  github="https://github.com/Keybase"
+  windows="https://keybase.io/docs/the_app/install_windows"
+  mac="https://keybase.io/docs/the_app/install_macos"
+  linux="https://keybase.io/docs/the_app/install_linux"
+  freebsd="https://www.freshports.org/security/keybase/"
+  googleplay="https://play.google.com/store/apps/details?id=io.keybase.ossifrage"
+  ios="https://apps.apple.com/app/keybase-crypto-for-everyone/id1044461770"
+  firefox="https://addons.mozilla.org/firefox/addon/keybase-for-firefox/"
+  chrome="https://chrome.google.com/webstore/detail/keybase-for-reddit/ognfafcpbkogffpmmdglhbjboeojlefj"
+%}

@@ -1,0 +1,88 @@
+---
+layout: page
+permalink: /providers/dns/
+title: "加密的域名解析"
+description: "別讓 Google 和一般傳統 DNS 供應商知道您所有的網站訪問狀況，換換其它更注重隱私的域名解析服務吧。"
+breadcrumb: "DNS"
+---
+
+{% include sections/dns.html %}
+
+<h4>用語說明</h4>
+
+<ul>
+  <li>DNS-over-TLS (DoT) - 加密 DNS 的安全協定，依靠指定專用的 853 端口，某些供應商則用 443 端口，尤其當 853 常被限制的防火牆所檔。它有兩種模式：</li>
+    <ul>
+        <li>自動伺機模式：當用戶試圖透過 853 端口進行 DNS-over-TLS 連線到伺服器時，不會執行憑證查驗。如果連線失敗，它會改用未加密的 DNS。 <span class="badge badge-warning" data-toggle="tooltip" data-original-title="In other words automatic mode leaves your DNS traffic vulnerable to SSL strip and MITM attacks"><i class="fas fa-exclamation-triangle"></i></span></li>
+        <li>嚴格模式：用戶連接到某特定域名，執行相關的憑證查驗動作。如果查驗無法通過，則不會接受  DNS 查詢。</li>
+    </ul>
+  <li>DNS-over-HTTPS (DoH) - 類似 DoT，但採用 HTTPS 取代，透過 443 端口，和一般的 HTTPS 流量無異。<span class="badge badge-warning" data-toggle="tooltip" data-original-title="DoH contains metadata such as user-agent (which may include system information) that is sent to the DNS server."><a href="https://tools.ietf.org/html/rfc8484#section-8.2"><i class="fas fa-exclamation-triangle"></i></a></span></li>
+  <li>DNSCrypt - 舊式但仍常被使用的 DNS 加密方式。</li>
+</ul>
+
+<h4>如何查驗 DNS 有加密</h4>
+
+<ul>
+  <li>DoH / DoT
+    <ul>
+      <li>利用 <a href="https://www.dnsleaktest.com/">DNSLeakTest.com</a> 來檢查。 <span class="badge badge-warning" data-toggle="tooltip" data-placement="bottom" data-original-title="Your DNS provider may not appear with their own name, so compare the responses to what you know or can find about your DNS provider. Just ensure you don't see your ISP or old unencrypted DNS provider."><i class="fas fa-exclamation-triangle"></i></span></li>
+      <li>檢查您所使用的 DNS 服務商網站，應該可找到 "您正在使用 DNS 服務"的資訊頁。例如<a href="https://adguard.com/en/adguard-dns/overview.html"> AdGuard</a> 和 <a href="https://1.1.1.1/help">Cloudflare</a>。</li>
+      <li>若使用 Firefox 信任的遞迴式解析器 (recursive resolver, TRR)，在設定檔中找到 <code>about:networking#dns</code>。若 TRR 在此設定下有些欄位是 "true"，即代表目前正使用 DoH。<span class="badge badge-warning" data-toggle="tooltip" data-placement="bottom" data-original-title='Some fields will say "false" depending on the the value of network.trr.mode in about:config'><a href="https://wiki.mozilla.org/Trusted_Recursive_Resolver"><i class="fas fa-exclamation-triangle"></i></a></span></li>
+    </ul>
+  </li>
+  <li>dnscrypt-proxy - 參考此維基頁的說明進行檢查 <a href="https://github.com/jedisct1/dnscrypt-proxy/wiki/Checking">dnscrypt-proxy's wiki </a>，看看您的 DNS 是否經過加密。</li>
+  <li>DNSSEC - 利用 <a href="https://dnssec.vs.uni-due.de/">DNSSEC Resolver Test by Matthäus Wander</a> 檢查。</li>
+  <li>QNAME Minimization - 執行文字指令 <code>dig +short txt qnamemintest.internet.nl</code> (參考 <a href="https://nlnetlabs.nl/downloads/presentations/unbound_qnamemin_oarc24.pdf"> NLnet Labs 簡報檔p</a>)。在 Windows 10 的機器，可在 PowerShell 執行 run <code>Resolve-DnsName -Type TXT -Name qnamemintest.internet.nl</code>指令。 應該可看到螢幕會出現以下訊息：<code>"HOORAY - QNAME minimisation is enabled on your resolver :)!"</code></li>
+</ul>
+
+<h3 id="clients">軟體建議與其它資訊</h3>
+
+<ul>
+  <li><strong>電腦端使用 DNS 加密：</strong>
+    <ul>
+      <li>新版<em>Firefox</em>已內建 DoH 支援並把 Cloudflare 當作預設解析器，不過使用者還是可以自行設置改成其它 DoH 解析器。<span class="badge badge-warning" data-toggle="tooltip" data-placement="bottom" data-original-title='"Cloudflare has agreed to collect only a limited amount of data about the DNS requests that are sent to the Cloudflare Resolver for Firefox via the Firefox browser."'><a href="https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/"><i class="fas fa-exclamation-triangle"></i></a></span> 目前 Mozilla <a href="https://blog.mozilla.org/futurereleases/2019/07/31/dns-over-https-doh-update-detecting-managed-networks-and-user-choice/">正在研究</a> 未來打算讓美國的使用者默認啟動 DoH。</li>
+          <ul>
+              <li>"DNS over HTTPS"之功能開關可在選單 -> 偏好 (<code>about:preferences</code>) -> 網路設定 -> 下找到"Enable DNS over HTTPS"。將 "Use Provider" 設置為 "Custom"，再輪入 DoH 供應者的地址。</li>
+              <li>熟練的使用者可以透過 <code>about:config</code> 來開啟，請將 <code>network.trr.custom_uri</code> 與 <code>network.trr.uri</code> 的地址設置為您的 DoH 所提供的地址，並將 <code>network.trr.mode</code> 設為 <code>2</code>。最好也能把 <code>network.security.esni.enabled</code> 設為 <code>True</code> 以便啟動加密的 SNI 讓網站支援 ESNI　更不容易被追踨。</li>
+          </ul>
+    </ul>
+  </li>
+  <li><strong>手機上使用 DNS 加密：</strong>
+    <ul>
+      <li><em>Android 9</em> 已<a href="https://support.google.com/android/answer/9089903">預設</a>提供 DoT。<span class="badge badge-warning" data-toggle="tooltip" data-original-title="...but with some caveats"><a href="https://www.quad9.net/private-dns-quad9-android9/"><i class="fas fa-exclamation-triangle"></i></a></span></li>
+        <ul>
+          <li>推薦選擇 <em>"Private DNS provider hostname"</em>再輸入 DoT 提供商之地址以啟動嚴格模式（請參考上方用語說明）。 <span class="badge badge-warning" data-toggle="tooltip" data-original-title="If you are on a network blocking access to port 853, Android will error about the network not having internet connectivity."><i class="fas fa-exclamation-triangle"></i></span></li>
+        </ul>
+      <li><em><a href="https://apps.apple.com/app/id1452162351">DNSCloak</a></em> -  <a href="https://github.com/s-s/dnscloak">開源的</a>DNSCrypt DoH 工具，在 iOS 使用由<td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"A charitable non-profit host organization for international Free Software projects."' href="https://techcultivation.org/">the Center for the Cultivation of Technology gemeinnuetzige GmbH</a>開發。</li>
+      <li><em><a href="https://git.frostnerd.com/PublicAndroidApps/smokescreen/blob/master/README.md">Nebulo</a></em> - Android 系統上支援 DoH / DoT 的開源應用，也支援 DNS 回應與本地的 DNS 查詢記錄。</li>
+    </ul>
+  </li>
+  <li><strong>本地網路的 DNS 伺服器：</strong>
+    <ul>
+      <li><em><a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby">Stubby</a></em> -  Linux, macOS,  Windows 皆可執行的開源軟體，可在本地網路的 DNS Privacy 根存解析器使用 DoT.</li>
+      <li><em><a href="https://nlnetlabs.nl/projects/unbound/about/">Unbound</a></em> -可驗證、遞迴、快取的域名解析工具，可在泛網路裏執行且支援 DNS-over-TLS 功能（需 1.7.3 版以上）</li>
+      <ul>
+          <li>另見 <a href="https://www.ctrl.blog/entry/unbound-tls-forwarding.html">Actually secure DNS over TLS in Unbound on ctrl.blog</a>之說明</li>
+      </ul>
+    </ul>
+  </li>
+  <li><strong>區域網路中的 DNS 伺服器：</strong>
+    <ul>
+      <li><em><a href="https://pi-hole.net/">Pi-hole</a></em> - 安裝在樹莓派（Raspberry Pi) 區域網路裏的 DNS 伺服器，可幫區域網路裏所有的設備擋掉廣告、追蹤和惡意域名。</li>
+      <li><em><a href="https://gitlab.com/quidsup/notrack">NoTrack</a></em> - 類似 Pi-hole 安裝在區域網路伺服器上的域名解析工具，可過濾廣告、追蹤和惡意域名。</li>
+    </ul>
+  </li>
+  <li><strong>進階閱讀材料：</strong>
+    <ul>
+      <li>關於 Firefox, DoH and ESNI</li>
+          <ul>
+              <li>了解什麼是<a href="https://wiki.mozilla.org/Trusted_Recursive_Resolver">Trusted Recursive Resolver (DoH) </a> 可參考 MozillaWiki 維基頁說明。</li>
+              <li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1500289">Firefox bug report requesting the ability to use ESNI without DoH</a></li>
+              <li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1542754">Firefox bug report requesting the ability to use Android 9+'s Private DNS (DoT) and benefit from encrypted SNI without having to enable DoH</a></li>
+              <li><a href="https://blog.cloudflare.com/encrypted-sni/">Encrypt it or lose it: how encrypted SNI works on Cloudflare blog</a></li>
+          </ul>
+      <li><a href="https://www.isc.org/blogs/qname-minimization-and-privacy/">QNAME Minimization and Your Privacy</a> by the Internet Systems Consortium (ISC)</li>
+      <li><a href="https://www.isc.org/dnssec/">DNSSEC and BIND 9</a> by the ISC</li>
+    </ul>
+  </li>
+</ul>

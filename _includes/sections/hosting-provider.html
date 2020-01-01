@@ -1,22 +1,36 @@
-<h1 id="host" class="anchor"><a href="#host"><i class="fas fa-link anchor-icon"></i></a> 安全的主機供應商</h1>
-<div class="row mb-2">
-    {% include card.html color='success'
-    title='BAHNHOF'
-    image='assets/img/provider/bahnhof.png'
-    url='https://www.bahnhof.net/'
-    description='BAHNHOF 因搭建維基解密 Wikileaks 架站服務供應商「防彈效果」而廣為人知。'
-    %}
-    {% include card.html color='primary'
-    title='主機託管：DataCell'
-    image='assets/img/provider/datacell.png'
-    url='https://datacell.is/'
-    description='DataCell 位於瑞士和冰島的資料中心，提供安全的異地同步保存。'
-    %}
+<h1 id="host" class="anchor"><a href="#host"><i class="fas fa-link anchor-icon"></i></a> 安全架站供應商</h1>
 
-    {% include card.html color='warning'
-    title='VPS/Web 主機：Orange Website'
-    image='assets/img/provider/orange_hosting.png'
-    url='https://www.orangewebsite.com/'
-    description='Orange Website 冰島的網站主機服務商，以其提供的線上隱私與言論保護自豪。'
-    %}
-</div>
+{% include cardv2.html
+title="Data Center: Bahnhof"
+image="/assets/img/svg/3rd-party/bahnhof.svg"
+image-dark="/assets/img/svg/3rd-party/bahnhof-dark.svg"
+description="1994 年成立於瑞典，Bahnhof 也是當地最大的網路營運商之一。他們擅長創意的資料中心建造，其高安全性與使用低成本綠能而聞名於世。"
+website="https://www.bahnhof.net/"
+forum="https://forum.privacytools.io/t/discussion-bahnhof-net/341"
+%}
+
+{% include cardv2.html
+title="VPS & Domain: Njalla"
+image="/assets/img/svg/3rd-party/njalla.svg"
+image-dark="/assets/img/svg/3rd-party/njalla-dark.svg"
+description="Njalla 具有強烈隱私意識的域名註冊商與 VPS 服務供應，公司設在尼維斯島（VPS 資料中心在瑞典）。 創辦人出身自海盜灣(Pirate Bay) 與 IPredator VPN 出身，接受：Bitcoin, Litecoin, Monero, DASH, Bitcoin Cash 與 PayPal 多種付款方式。"
+website="https://njal.la/"
+tor="http://njalladnspotetti.onion"
+forum="https://forum.privacytools.io/t/discussion-njalla/339"
+%}
+
+{% include cardv2.html
+title="Colocation: DataCell"
+image="/assets/img/png/3rd-party/datacell.png"
+description="DataCell 資料中心設於瑞士和冰島的，提供安全的異地同步保存。"
+website="https://datacell.is/"
+forum="https://forum.privacytools.io/t/discussion-datacell-is/342"
+%}
+
+{% include cardv2.html
+title="VPS, Hosting, & Domain: Orange Website"
+image="/assets/img/png/3rd-party/orange_website.png"
+description="Orange Website 冰島的網站主機服務商，以重視線上隱私與言論保護自豪。"
+website="https://www.orangewebsite.com/"
+forum="https://forum.privacytools.io/t/discussion-orange-website/343"
+%}

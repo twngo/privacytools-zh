@@ -1,42 +1,82 @@
-<h1 id="social" class="anchor"><a href="#social"><i class="fas fa-link anchor-icon"></i></a> 去中心的社交網路</h1>
+<h1 id="social" class="anchor"><a href="#social"><i class="fas fa-link anchor-icon"></i></a> 非集中的社交網路</h1>
+
 <div class="alert alert-warning" role="alert">
-    <strong> 如果你還在使用如 Facebook、Twitter 或 Google+ 的社交網站，不妨從這裏挑選一個替代方案。</strong>
+  <strong> 如果您還在使用如 Facebook、Twitter 或 Google+ 的社交網站，不妨從這裏挑選一個替代方案。</strong>
 </div>
-<div class="row mb-2">
 
-    {% include card.html color='success'
-    title='Mastodon 長毛象'
-    image='assets/img/tools/Mastodon.png'
-    url='https://joinmastodon.org'
-    website='mastodon.social'
-    description='Mastodon 基於開放網頁協定的自由開源社交網站軟體。它如電子郵件的去中心化，包容各式多元（不同興趣同好的）使用者，外觀搶眼容易使用安裝。'
-    %}
+{% include cardv2.html
+title="Mastodon - Twitter 替代品"
+image="/assets/img/svg/3rd-party/mastodon.svg"
+description='Mastodon 基於開放網頁協定的自由開源社交網站軟體。它如電子郵件般無一特定中心，包容來自不同伺候器的各式多元（不同興趣同好的）使用者，即使在不同的機器彼此仍然可以相互溝通。它有最大、最多樣（指興趣）的用戶數，Mastodon 外觀搶眼容易使用安裝。如果您想試試加入某個站點，不妨選擇我們提供的免費服務：<a href="https://social.privacytools.io/">social.privacytools.io</a>'
+website="https://joinmastodon.org/"
+forum="https://forum.privacytools.io/t/discussion-mastodon/289"
+github="https://github.com/tootsuite/mastodon"
+windows="https://joinmastodon.org/apps"
+mac="https://joinmastodon.org/apps"
+linux="https://joinmastodon.org/apps"
+freebsd="https://joinmastodon.org/apps"
+openbsd="https://joinmastodon.org/apps"
+netbsd="https://joinmastodon.org/apps"
+android="https://joinmastodon.org/apps"
+sailfish="https://joinmastodon.org/apps"
+ios="https://joinmastodon.org/apps"
+web="https://joinmastodon.org/#getting-started"
+%}
 
-    {% include card.html color='primary'
-    title='diaspora*'
-    image='assets/img/tools/diaspora.png'
-    url='https://diasporafoundation.org/'
-    description='diaspora* 基於三大核心哲學：去中心化、自由和隱私。它希望能引起大家關切由中心所控制社交網站下的隱私問題，所以可以讓用戶自行架設伺服器（或稱 "pod"）來控制內容，而各個伺服器可以再自行互動分享動態更新、照片或其它的資料。'
-    %}
+{% include cardv2.html
+title='diaspora* - Google+ 替代品'
+image='/assets/img/svg/3rd-party/diaspora.svg'
+description='diaspora* 基於三大核心哲學：非集中式、自由和隱私。它希望能引發大家關切由集中型控制社交網站帶來隱私問題，所以可以讓用戶自行架設伺服器（或稱 "pod"）來提供內容，各個伺服器可以再自行互動分享動態更新、照片或其它的社交資料。'
+website='https://diasporafoundation.org/'
+forum='https://forum.privacytools.io/t/discussion-diaspora/290'
+github='https://github.com/diaspora/diaspora'
+android='https://wiki.diasporafoundation.org/Tools_to_use_with_Diaspora#Android'
+web='https://diasporafoundation.org/'
+%}
 
-    {% include card.html color='warning'
-    title='Friendica'
-    image='assets/img/tools/Friendica.png'
-    url='https://friendi.ca/'
-    description='Friendica 強調在隱私控制上的仔細設定，它是一個容易安裝在伺服器上的軟體，以期待盡可能出現更多其它的社交網路聯邦。 Friendica 用戶可以從 Facebook, Twitter, Diaspora, GNU social, App.net, Pump.io 等等多項社交網路服務來整合其聯絡人的名單到自己的社交時間軸。'
-    %}
+{% include cardv2.html
+title="Friendica - Facebook 替代品"
+image="/assets/img/svg/3rd-party/friendica.svg"
+description="Friendica 強調在隱私控制上的仔細設定，容易自行安裝於伺服器，以期網絡聯邦盡可能出現更多的自主網站。 Friendica 用戶可以從 Facebook, Twitter, Diaspora, GNU social, App.net, Pump.io 等其它網路服務來整合其聯絡人的名單到自己的社交時間軸。"
+website="https://friendi.ca/"
+forum="https://forum.privacytools.io/t/discussion-friendica/291"
+github="https://github.com/friendica/friendica"
+windows="https://friendi.ca/resources/mobile-clients/"
+linux="https://friendi.ca/resources/mobile-clients/"
+android="https://friendi.ca/resources/mobile-clients/"
+sailfish="https://friendi.ca/resources/mobile-clients/"
+web="https://friendi.ca/"
+%}
 
-</div>
+{% include cardv2.html
+title="PixelFed - Instagram 替代"
+image="/assets/img/svg/3rd-party/pixelfed.svg"
+description='PixelFed 為免費優質的照片分享平台，它依 ActivityPub 聯邦規格打造，故 Pixelfed 為開源、聯邦型平台。用戶可自行搭建自己服務或是<a href="https://fediverse.party/en/pixelfed/">加入已有的平台。</a>'
+website="https://pixelfed.org/"
+forum="https://forum.privacytools.io/t/discussion-pixelfed/293"
+github="https://github.com/pixelfed"
+web="https://pixelfed.org/"
+%}
+
+{% include cardv2.html
+title="Pleroma - Twitter 替代"
+image="/assets/img/svg/3rd-party/pleroma.svg"
+description="Pleroma 免費、聯邦式的社交網路，其伺候器基於開放協議，可與 Mastodon 、 ActivityPub、 OStatus 等相容。"
+website="https://pleroma.social"
+forum="https://forum.privacytools.io/t/discussion-pleroma/2307"
+gitlab="https://git.pleroma.social/pleroma/pleroma/"
+windows="https://docs-develop.pleroma.social/backend/clients/#desktop"
+mac="https://docs-develop.pleroma.social/backend/clients/#desktop"
+linux="https://docs-develop.pleroma.social/backend/clients/#desktop"
+android="https://docs-develop.pleroma.social/backend/clients/#handheld"
+fdroid="https://docs-develop.pleroma.social/backend/clients/#handheld"
+googleplay="https://docs-develop.pleroma.social/backend/clients/#handheld"
+ios="https://docs-develop.pleroma.social/backend/clients/#handheld"
+web="https://docs-develop.pleroma.social/backend/clients/#alternative-web-interfaces"
+%}
 
 <h3>值得一提</h3>
 <ul>
-    <li><a href="https://gnu.io/social/">GNU Social</a> - 開源、自由與去中心的社交平台，可與 Mastodon 和 Friendica 相容交流。</li>
-</ul>
-
-<h3>相關資訊</h3>
-<ul>
-    <li><a href="https://justdeleteme.xyz/">JustDeleteMe</a> - 直接透過連結，來刪除你在網路服務上的帳號</li>
-    <li><a href="https://addons.mozilla.org/firefox/addon/facebook-container/">Facebook Container by Mozilla</a> - 防止 Facebook 在網路上追蹤你。</li>
-    <li><a href="https://www.facebook.com/help/delete_account">Delete your Facebook account</a> - 直接連結到刪除你 Facebook 帳號，讓它不能重新啟用。</li>
-    <li><a href="https://deletefacebook.com/">How To Permanently Delete A Facebook Account</a> - 此指南會順暢的帶你成功刪除 Facebook 帳號。</li>
+  <li><a href="https://www.minds.com/">Minds</a> - <a href="https://gitlab.com/minds">開源</a> 分散式的社交網絡服務，它結合區塊鏈功能以打賞社群成員。</li>
+  <li><a href="https://movim.eu/">Movim</a> - 聯邦式的社交平台，其透過 XMPP 標準讓用戶在各式電腦設備上交流。</li>
 </ul>

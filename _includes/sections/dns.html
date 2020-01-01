@@ -1,35 +1,548 @@
-<h1 id="dns" class="anchor"><a href="#dns"><i class="fas fa-link anchor-icon"></i></a> 網域名系統 (DNS)</h1>
+<h1 id="dns" class="anchor"><a href="#dns"><i class="fas fa-link anchor-icon"></i></a> 加密網域名系統解析</h1>
 
-<div class="row mb-2">
-
-    {% include card.html color='success'
-    title='Njalla - 域名註冊'
-    image='assets/img/provider/Njalla.png'
-    url='https://njal.la/'
-    tor='http://njalladnspotetti.onion'
-    description='Njalla 只需要電子郵件信箱或是一個　jabber 帳戶來註冊域名。它是由 Pirate Bay 與 IPredator VPN　所創立，其付款方式有：Bitcoin, Litecoin, Monero, DASH, Bitcoin, PayPal, 現金。是一個具隱私意識的域名註冊商。'
-    %}
-
-    {% include card.html color='primary'
-    title='DNSCrypt - 工具'
-    image='assets/img/tools/DNSCrypt.png'
-    url='https://dnscrypt.info/'
-    description='這是一個強化客戶端與網域名解析器之間的通訊安全協議。DNSCrypt 協議利用高速高安全的橢圓曲線密碼學，其有點類似 DNSCurve，但更關注在客戶端與第一級解析器之間的連線通訊安全。'
-    %}
-
-    {% include card.html color='warning'
-    title='OpenNIC - 服務'
-    image='assets/img/tools/OpenNIC.png'
-    url='https://www.opennic.org/'
-    description='OpenNIC 是一個另類的網路資訊中心/或稱替代的 DNS 根區，其列名自身是 ICANN 與其註冊局的替代品。如同其它的替代式根域名系統，採用 OpenNIC-主機的域名無法被其它網路上大多數使用者所造訪。只有透過在某個 DNS 解析器上的特殊設定才能讓人可以訪問，但一般很少有網路服務供應商會作這樣的設定。'
-    %}
-
+<div class="alert alert-warning" role="alert">
+  <strong>請注意：使用加密的域名解析器並無匿名化效果，也不能向網路連線供應商 ISP 隱瞞您的網路流量狀況。它可防止域名被截持綁架，讓域名請求查詢更難被第三方所竊聽和竄改。如果您現在用的是 Google 提供的域名解析服務，不妨試試其它供應者。</strong>
 </div>
 
-<h3>值得一提</h3>
+<div class="table-responsive">
+  <table class="table sortable-theme-bootstrap" data-sortable>
+    <thead>
+      <tr>
+        <th data-sorted="true" data-sorted-direction="ascending">DNS 供應商</th>
+        <th data-sortable="true">伺服器所在地</th>
+        <th data-sortable="false">隱私政策</th>
+        <th data-sortable="true">經營者類型</th>
+        <th data-sortable="true">用戶活動記錄</th>
+        <th data-sortable="true">網路協議</th>
+        <th data-sortable="true">DNSSEC</th>
+        <th data-sortable="true">限定名(QNAME) 最小化</th>
+        <th data-sortable="true">過濾器</th>
+        <th data-sortable="true">源代碼</th>
+        <th data-sortable="true">使用的網路主機供應者</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-value="AdGuard">
+          <a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard</a>
+        </td>
+        <td>Anycat 任播型 (以
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-cy"></span>
+              賽浦勒斯為主要地)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://adguard.com/en/privacy/dns.html">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>商業營利</td>
+        <td>不</td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            廣告、追蹤、
+          </span>
+          <span class="no-text-wrap">
+            惡意域名
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/AdguardTeam/AdGuardDNS/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://flops.ru/en/about.html">Serveroid, LLC</a>
+          </span>
+        </td>
+      </tr>
 
-<ul>
-    <li><a href="https://github.com/quidsup/notrack">NoTrack</a> - 一個 DNS 伺服器可以封鎖某些追蹤網站。目前僅運行在 Debian 與 Ubuntu 的作業系統下。</li>
-    <li><a href="https://namecoin.info/">Namecoin</a> - 去中心的 DNS 開源的資訊註冊與傳送系統，其利用比特幣的密碼貨幣所開發的系統。</li>
-    <li><a href="https://pi-hole.net/">Pi-hole</a> - 樹莓派 Raspberry Pi 所用的全網路 DNS 伺服器，可封鎖區域網路內所有設備上的廣告與追蹤域名。</li>
-</ul>
+      <tr>
+        <td data-value="BlahDNS">
+          <a href="https://blahdns.com/">BlahDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-fi"></span>
+            芬蘭、
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-de"></span>
+            德國、
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-jp"></span>
+            日本
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;No logs.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </div>
+        </td>
+        <td>啫好推廣</td>
+        <td>不</td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>,
+            </span>
+          </span>
+          DNSCrypt
+        </td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            廣告、追蹤、
+          </span>
+          <span class="no-text-wrap">
+            惡意域名
+            <span class="badge badge-warning" data-toggle="tooltip" data-original-title="And some wildcard and IDN domains."><a href="https://github.com/ookangzheng/blahdns#default-blocked-wildcard-domain"><i class="fas fa-exclamation-triangle"></i></a></span>
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/ookangzheng/blahdns/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.choopa.com/">Choopa, LLC</a>,
+          </span>
+          <span class="no-text-wrap">
+            <a href="https://www.datacenterlight.ch/">Data Center Light</a>,
+          </span>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Cloudflare">
+          <a href="https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/">Cloudflare</a> <span class="badge badge-warning" data-toggle="tooltip" title="Cloudflare is one of the world's largest networks, and a problem considering anonymity and decentralization."><a href="https://codeberg.org/crimeflare/cloudflare-tor/"><i class="fas fa-exclamation-triangle"></i></a></span>
+        </td>
+        <td>任播型(主要在
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            美國)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://www.cloudflare.com/privacypolicy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>商業營利</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"We will collect limited DNS query data that is sent to the resolvers. This data does not contain user IP addresses or any other personally identifiable information, and the bulk of the data is only stored for 24 hours."' href="https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/">部份</a></td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>是</td>
+        <td>是</td>
+        <td>無</td>
+        <td>?</td>
+        <td>自行架設</td>
+      </tr>
+
+      <tr>
+        <td data-value="CZ.NIC">
+          <a href="https://www.nic.cz/odvr/">CZ.NIC</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-cz"></span>
+            捷克
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;CZ.NIC resolvers neither collect any personal data nor gather information on pages where your computer sends personal data.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"成立於 1998 年，CZ.NIC 是由一群 ISP  組建的合法利益體."' href="https://www.nic.cz/page/351/about-association/">協會</a></td>
+        <td>不</td>
+        <td>DoH, DoT</td>
+        <td>是</td>
+        <td>是</td>
+        <td data-value="No">?</td>
+        <td>?</td>
+        <td>自行架設</td>
+      </tr>
+
+      <tr>
+        <td data-value="dnswarden">
+          <a href="https://github.com/bhanupratapys/dnswarden/blob/master/README.md">dnswarden</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-de"></span>
+            德國
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/bhanupratapys/dnswarden/blob/master/README.md#privacy-policy-and-tc">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>啫好推廣</td>
+        <td>不</td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>,
+            </span>
+          </span>
+          DNSCrypt
+        </td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            視所選伺服器而定
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Foundation for Applied Privacy">
+          <a href="https://appliedprivacy.net/services/dns/">Foundation for Applied Privacy</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-at"></span>
+            奧地利
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://appliedprivacy.net/privacy-policy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>非營利</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"We do NOT log your IP address or DNS queries during normal operations. We do NOT share query data with third parties that are not directly involved with resolving the query (i.e. sending queries to authoritative nameservers for resolution)."' href="https://appliedprivacy.net/privacy-policy/">部份</a></td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>
+            </span>
+          </span>
+        </td>
+        <td>是</td>
+        <td>是</td>
+        <td>無</td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.ipax.at/">IPAX OG</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="nextdns">
+          <a href="https://www.nextdns.io/">NextDNS</a>
+        </td>
+        <td>任播型 (
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            美國為主要地)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://www.nextdns.io/privacy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>商業營利</td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title='"Some of the features require some sort of data retention. In that case, we give our users the choice to granularly or completely disable those features (and associated data retention), and we follow up immediately on that promise"' href="https://www.nextdns.io/privacy">視用戶選擇而定</a>
+        </td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            視所選伺服器而定
+          </span>
+        </td>
+        <td>?</td>
+        <td>自行架設</td>
+      </tr>
+
+      <tr>
+        <td data-value="NixNet">
+          <a href="https://nixnet.xyz/dns/">NixNet</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            任播型 (
+            <span class="flag-icon flag-icon-us"></span>
+            美國為主要地),
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            美國、
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-lu"></span>
+            盧森堡
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://nixnet.xyz/privacy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title='Part of LibreHosters, "a network of cooperation and solidarity that uses free software to encourage decentralisation through federation and distributed platforms."' href="https://libreho.st/">
+            非正式合作社
+          </a>
+        </td>
+        <td>不</td>
+        <td>DoH, DoT</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            視所選伺服器而定
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://git.nixnet.xyz/NixNet/dns">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://frantech.ca/">FranTech Solutions</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="PowerDNS">
+          <a href="https://powerdns.org/">PowerDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-nl"></span>
+            尼德蘭
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://powerdns.org/doh/privacy.html">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>啫好推廣</td>
+        <td>不</td>
+        <td>DoH</td>
+        <td>是</td>
+        <td>不是</td>
+        <td>無</td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/PowerDNS/pdns">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.transip.nl/">TransIP B.V. Admin</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Quad9">
+          <a href="https://quad9.net/">Quad9</a> <span class="badge badge-warning" data-toggle="tooltip" title="Founders include the Global Cyber Alliance, composed of the City of London Police and Manhattan District Attorney's Office"><i class="fas fa-exclamation-triangle"></i></span>
+        </td>
+        <td>任播型 (
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            美國為主要地)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://quad9.net/policy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>非營利</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"Our normal course of data management does not have any IP address information or other PII logged to disk or transmitted out of the location in which the query was received."' href="https://quad9.net/policy/">部份</a></td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            惡意域名
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          自行架設,
+          <span class="no-text-wrap">
+            <a href="https://www.pch.net/">Packet Clearing House</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="SecureDNS">
+          <a href="https://securedns.eu/">SecureDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-nl"></span>
+            尼德蘭
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://securedns.eu/#privacy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>啫好推廣</td>
+        <td>不</td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            視所選伺服器而定
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.digitalocean.com/">DigitalOcean, Inc.</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Snopyta">
+          <a href="https://snopyta.org/service/dns/index.html">Snopyta</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-fi"></span>
+            芬蘭
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://snopyta.org/privacy_policy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title="Part of LibreHosters, &quot;a network of cooperation and solidarity that uses free software to encourage decentralisation through federation and distributed platforms.&quot;" href="https://libreho.st/">
+            非正式合作社
+          </a>
+        </td>
+        <td>不</td>
+        <td>DoH, DoT</td>
+        <td>是</td>
+        <td>是</td>
+        <td>
+          <span class="no-text-wrap">
+            無
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="UncensoredDNS">
+          <a href="https://blog.uncensoreddns.org/">UncensoredDNS</a>
+        </td>
+        <td>任播型(主要在
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-dk"></span>
+            丹麥)
+            </span>
+
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            美國
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;Absolutely nothing is being logged, neither about the users nor the usage of this service. I do keep graphs of the total number of queries, but no personally identifiable information is saved. The data that is saved will never be sold or used for anything except capacity planning of the service.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </div>
+        </td>
+        <td>啫好推廣</td>
+        <td>不</td>
+        <td data-value="doh">DoT</td> <!-- "hack" to group "DoT" values (when sorted) with "DoH" values -->
+        <td>是</td>
+        <td>不是</td>
+        <td>無</td>
+        <td>?</td>
+        <td>
+          自行架設，
+          <span class="no-text-wrap">
+            <a href="https://www.teliacompany.com">Telia Company AB</a>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

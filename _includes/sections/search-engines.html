@@ -1,49 +1,52 @@
-<h1 id="search" class="anchor"><a href="#search"><i class="fas fa-link anchor-icon"></i></a> 重視使用者隱私的搜尋引擎</h1>
+<h1 id="search" class="anchor"><a href="#search"><i class="fas fa-link anchor-icon"></i></a>重視使用者隱私的搜尋引擎</h1>
 
 <div class="alert alert-warning" role="alert">
-    <strong>如果你目前仍在使用 Google、 Bing 或 Yahoo 等搜尋引擎，或許是時候考慮其它的替代選項了。</strong>
+  <strong> 如果您目前仍在使用 Google、 Bing 或 Yahoo 等搜尋引擎，或許是時候考慮其它的替代選項了。</strong>
 </div>
 
-<div class="row mb-2">
+{% include cardv2.html
+title="searx - 無中心"
+image="/assets/img/svg/3rd-party/searx.svg"
+description='searx 為<a href="https://github.com/asciimoo/searx">開源</a>元搜尋引擎。總合來自其它搜尋引擎的查詢結果但不會儲存使用者的資訊，無存留活動記錄、無廣告也不會追蹤。此處整理了<a href="https://github.com/asciimoo/searx/wiki/Searx-instances">公開運行的機器列表</a>，或是可以試用本站提供的<a href="https://search.privacytools.io/"> PrivacyTools Search</a>搜尋服務。'
+website="https://searx.me/"
+tor="http://ulrn6sryqaifefld.onion"
+forum="https://forum.privacytools.io/t/discussion-searx/283"
+github="https://github.com/asciimoo/searx"
+%}
 
-    {% include card.html color='success'
-    title='searx'
-    image='assets/img/provider/searx.jpg'
-    url='https://searx.me/'
-    tor='http://ulrn6sryqaifefld.onion'
-    extra_button='<a class="btn btn-success mb-1" href="https://github.com/asciimoo/searx/wiki/Searx-instances">主機列表</a>'
-    description='<a href="https://github.com/asciimoo/searx">開源</a> 元搜尋引擎。總合來自其它搜尋引擎的查詢結果但不會儲存使用者的資訊，不留活動記錄、無廣告也不會追蹤。'
-    %}
+{% include cardv2.html
+title="DuckDuckGo - 美國"
+image="/assets/img/svg/3rd-party/duckduckgo.svg"
+description='不會追蹤使用者的搜尋引擎。DuckDuckGo 部份的程式碼寄放在 GitHub 的開源自由授權，但其核心是封閉。<span class="flag-icon flag-icon-us"></span> <a href="../../providers/#ukusa">公司所在地是美國。</a>'
+website="https://duckduckgo.com/"
+tor="http://3g2upl4pq6kufc4m.onion"
+forum="https://forum.privacytools.io/t/discussion-duckduckgo/285"
+github="https://github.com/duckduckgo"
+%}
 
-    {% include card.html color='primary'
-    title='StartPage'
-    image='assets/img/provider/StartPage.png'
-    url='https://www.startpage.com/'
-    description='它利用 Google 搜尋引擎的查詢結果，但有完全的隱私保護措施。StartPage 是一家歐洲公司，自 2006 年創立之初就很重視隱私課題。'
-    %}
+{% include cardv2.html
+title="Qwant - 法國"
+image="/assets/img/svg/3rd-party/qwant.svg"
+description='Qwant搜尋引擎的理念有二大原則：不追蹤使用者也沒有過濾氣泡。它 2013 年 2 月從法國起家。'
+website="https://www.qwant.com/"
+forum="https://forum.privacytools.io/t/discussion-qwant/286"
+github="https://github.com/Qwant/"
+%}
 
-    {% include card.html color='warning'
-    title='DuckDuckGo'
-    image='assets/img/provider/DuckDuckGo.jpg'
-    url='https://duckduckgo.com/'
-    tor='http://3g2upl4pq6kufc4m.onion'
-    description='不會追蹤使用者的搜尋引擎。 DuckDuckGo　部份的程式碼是放在 <a href="https://github.com/duckduckgo">GitHub</a> 的開源自由授權，但其核心是封閉。 <span class="flag-icon flag-icon-us"></span> <a href="#ukusa">公司所在地是美國。</a> '
-    %}
-</div>
 
 <h3>Firefox 火狐附加元件</h3>
+
 <ul>
-    <li>
-        <a href="https://addons.mozilla.org/firefox/addon/google-search-link-fix/">Google search link fix</a> - 它是一個火狐的附加元件可以預防 Google 與 Yandex 搜尋引擎在使用者點擊了搜尋結果連結後進行調整。這可以在複製連結上會有所幫助，但也可以防止搜尋引擎來記錄你的點擊狀況。（<a href="https://github.com/palant/searchlinkfix">開源</a>）
-    </li>
+  <li>
+    <a href="https://addons.mozilla.org/firefox/addon/google-search-link-fix/">Google search link fix</a> - 用於火狐瀏覽器的附加元件，可預防 Google 與 Yandex 搜尋引擎在使用者點擊了搜尋結果後作調整。這在複製連結時很有用，也可以防止搜尋引擎來記錄您的點擊狀況。 (<a href="https://github.com/palant/searchlinkfix">專案源碼庫</a>)
+  </li>
 </ul>
 
 <h3>值得一提</h3>
+
 <ul>
-    <li>
-        <a href="https://www.qwant.com/">Qwant</a> - Qwant　的理念有二大原則：不追蹤使用者也沒有過濾氣泡。Qwant 自 2013 年 2 月從法國起家。進一步了解其<a href="https://www.qwant.com/privacy">隱私政策</a>。
-    </li>
-    <li>
-        <a href="https://metager.de/en/">MetaGer</a> - 一個開源的元搜尋引擎，其總站位在德國。它關注於保護使用者隱私。
-    </li>
+  <li><a href="https://yacy.net/">YaCy</a> - 由用戶打造的免費 P2P search engine 搜尋引擎軟體。</li>
+  <li><a href="https://jivesearch.com/">Jive Search</a> - 外觀與使用上很像 Google, 免費的搜尋引擎軟體。</li>
+  <li><a href="https://metager.de/en/">MetaGer</a> - 來自德國，開源的元搜尋引擎，強調對用戶隱私保護的重視。</li>
+  <li><a href="https://www.mojeek.com/">Mojeek</a> - 獨立不偏倚、不追蹤使用者的搜尋結果</li>
 </ul>

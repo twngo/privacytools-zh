@@ -1,53 +1,206 @@
 <h1 id="im" class="anchor"><a href="#im"><i class="fas fa-link anchor-icon"></i></a> 加密的即時通訊</h1>
 
 <div class="alert alert-warning" role="alert">
-    <strong>如果你目前用的即時通訊是：WhatsApp、Viber、LINE、Telegram 或 Threema，或許是時候考慮找其它替代軟體了。</strong>
+  <strong>如果您只知道 一般行動簡訊 SMS、<a href="https://www.eff.org/deeplinks/2016/10/where-whatsapp-went-wrong-effs-four-biggest-security-concerns">WhatsApp</a>WhatsApp、Viber、LINE、Telegram 或 Threema 即時通訊，不妨從下列的推薦考慮其它替代軟體。</strong></div>
 
-</div>
-<div class="row mb-2">
-    {% include card.html color='success'
-    title='手機：Signal'
-    image='assets/img/tools/Signal.png'
-    url='https://signal.org'
-    footer='支援作業系統：Android, iOS, macOS, Windows, Linux'
-    description='由 Open Whisper Systems 所開發的手機應用程式。它的所有通訊都予以加密。 Signal 是一套免費開源的軟體，任何人都可以審查它的原始碼。這個開發團隊是靠社群的捐款與獎助，而 Signal 不會插入廣告也不須花錢就可以安裝使用。'
-    %}
+<p>我們只推薦支援<a href="https://en.wikipedia.org/wiki/End-to-end_encryption">端對端加密 (end-to-end encryption, E2EE)</a>的即時通訊。當使用 E2EE ,所有的傳輸（訊息、語音、影像等）都經過<strong>加密後</strong> 才會送出。 E2EE 可同時保護傳輸在任何網路流通的真實性與私密度。</p>
 
+<p>除特別註明外，這裏所選出來的客戶端程式/應用軟體都是 <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">免費開源的軟體</a>。 如此才可以確保其源代碼可以被專家獨立查驗。</p>
 
-    {% include card.html color='primary'
-    title='Riot.im'
-    image='assets/img/tools/riot.png'
-    url='https://riot.im/'
-    footer='支援作業系統：Android, iOS, macOS, Windows, Linux, Web'
-    labels="warning:公開測試:目前這個軟體在公開測試中，行動端宣稱「端對端加密正在在公開測試且可能會不穩定。你不應該信任它來保護資料。」"
-    description='Riot.im 為去中心、基於<a href="https://matrix.org/">Matrix</a> 協定的開源免費聊天應用軟體。Matrix 為新進、提供 E2E 加密的即時傳通訊開放協定。它可以橋接其它協定，例如 IRC。'
-    %}
+<p>現有的即時通訊軟體可簡單分成三大類：集中型、聯邦式和對等組網路，下方整理其各自的優缺點。</p>
 
-    {% include card.html color='warning'
-    title='桌機：Ricochet'
-    image='assets/img/tools/Ricochet.png'
-    url='https://ricochet.im/'
-    footer='支援作業系統：Windows, macOS, Linux.'
-    description='Ricochet 利用<a href="#browser"> <i class="fas fa-link"></i> Tor 網路</a>來連接聯絡人而不是依賴訊息伺服器。它會建立一個隱藏的服務，用來與聯終人線上會談而不必揭露出你的來源和位置。不採用一般的使用者名稱，使用者會拿到一個特別的網址，它長得像這樣 <em>ricochet:rs7ce36jsj24ogfw</em>。而 Ricochet 的其它使用者可以利用這個獨特的網址來傳送加入請求，徵求你的同意被加入聯絡人名單上。'
-    %}
+<h2 id="centralized" class="anchor"><a href="#centralized"><i class="fas fa-link anchor-icon"></i></a> 集中型</h2>
 
-</div>
-<h3>值得一提</h3>
+<p>集中式的通訊軟體由某家公司或組織在他們控制的伺服器上提供加入者相關的服務。</p>
+
+<h3>優點</h3>
 <ul>
-    <li><a href="https://www.chatsecure.org">ChatSecure</a> - ChatSecure 是一個免費開源聊天通訊應用，其利用 XMPP 進行不保留記錄的加密功能。  </li>
-    <li><a href="https://crypto.cat/">Cryptocat</a> - 加密的開源通訊軟體，支援檔案分享和多設備的帳號使用。也同樣支援跨平台的作業系統如 Windows、 Linux 和 Mac。</li>
-    <li><a href="https://kontalk.org/">Kontalk</a> - 由社群發起的即時通訊網路，支援端點對端點間的通訊加密。不管是使用者端到伺服器端或是伺服器之間的通道都採完全加密。</li>
-    <li><a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations">Conversations</a> -  運行於Android 4.0版本以上的智慧型手機，Jabber/XMPP 開源的客戶端通訊軟體。透過 OMEMO 或 openPGP 等方式來支援端點對端點間的通訊加密。也有 <a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations.legacy">Conversations Legacy 版本</a>，其仍支援 OTR。</li>
-    <li><a href="https://get.wire.com/">Wire</a> <span class="badge badge-warning" data-toggle="tooltip" title="Wire 將部份的元數據，例如聯絡人名單以明文未加密儲存。">實驗性 <i class="far fa-question-circle"></i> (<a href="https://motherboard.vice.com/en_us/article/secure-messaging-app-wire-stores-everyone-youve-ever-contacted-in-plain-text">進一步了解</a>)</span> - 免費的端對端加密聊天應用程式，支援即時文字通訊和影音通話。</li>
-    <li><a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support">OTR 客戶端列表 - Wikipedia</a></li>
+    <li>新功能可被快速採用。</li>
+    <li>容易上手與找到聯絡對象</li>
 </ul>
 
-
-<h3>相關資訊</h3>
+<h3>缺點</h3>
 <ul>
-    <li><a href="https://motherboard.vice.com/read/ricochet-encrypted-messenger-tackles-metadata-problem-head-on">Ricochet, the Messenger That Beats Metadata, Passes Security Audit | Motherboard</a></li>
-    <li><a href="https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/">Chatting in Secret While We're All Being Watched - firstlook.org</a></li>
-    <li><a href="https://signal.org/android/apk/">Advanced users with special needs can download the Signal APK directly. Most users should not do this under normal circumstances.</a></li>
-    <li><a href="https://security.stackexchange.com/a/49802">Telegram encryption isn't secure.</a></li>
-    <li><a href="https://www.reddit.com/r/privacytoolsIO/comments/6r655i/telegram_isnt_safe/">Telegram is marketed as a private messenger, but it's not private by default.</a></li>
+    <li>集中式服務容易讓當權者<a href="#exploiting-centralized-networks">要求開放後門存取</a>。</li>
+    <li><a href="https://drewdevault.com/2018/08/08/Signal.html">受限的控制或存支取</a>，例如：</li>
+    <ul>
+        <li>它們可以在使用條款中禁止 <a href="https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165">第三方用戶的連結請求</a>，後者往往能提供更多的客制化服務或最佳的用戶體驗。</li>
+        <li>第三方開發者無法獲得必要的文件資料。</li>
+    </ul>
+    <li>單一控制下，<a href="https://blog.privacytools.io/delisting-wire">所有權</a>、隱私政策和服務營運可輕易改變，恐怕隨後造成服務劣化。</li>
+</ul>
+
+{%
+   include cardv2.html
+   title="Signal"
+   image="/assets/img/svg/3rd-party/signal.svg"
+   description='Signal Messenger LLC 開發的手機應用軟體，Signal 提供即時訊息，包括語音和影像通話。除非用戶選擇寄送 SMS 簡訊，不然全部的通訊皆透過 E2EE。它的協議通過<a href="https://eprint.iacr.org/2016/1013.pdf">獨立審查（報告文件）</a>'
+   labels="warning:<a>須提供手機門號</a>:Signal 要求手機門號作為個人識別碼，這意謂任何通訊對象都可以看到您的號碼。|success:VoIP"
+   website="https://signal.org/"
+   forum="https://forum.privacytools.io/t/discussion-signal/664"
+   github="https://github.com/signalapp"
+   windows="https://signal.org/download/"
+   mac="https://signal.org/download/"
+   linux="https://signal.org/download/"
+   googleplay="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms"
+   android="https://signal.org/android/apk/#apk-danger"
+   ios="https://apps.apple.com/app/signal-private-messenger/id874139669"
+%}
+
+{%
+  include cardv2.html
+  title="Keybase"
+  image="/assets/img/svg/3rd-party/keybase.svg"
+  description='Keybase 提供團隊 E2EE 共用聊天通訊，其協議亦接受過<a href="https://keybase.io/docs-assets/blog/NCC_Group_Keybase_KB2018_Public_Report_2019-02-27_v1.3.pdf">獨立稭核審查（相關文件）</a>。用戶可以透過 Keybase "<a href="https://en.wikipedia.org/wiki/Keybase#Identity_proofs">識別證明</a>的密碼簽署法，認證自己的網路社交帳號。.'
+  labels="warning:<a href=//github.com/keybase/client/issues/6374>警示</a>：該軟體架設在封閉碼源的中央伺服器。"
+  website="https://keybase.io/"
+  forum="https://forum.privacytools.io/t/discussion-keybase/1224"
+  tor="http://keybase5wmilwokqirssclfnsqrjdsi7jdir5wy7y7iu3tanwmtp6oid.onion/"
+  github="https://github.com/Keybase"
+  windows="https://keybase.io/docs/the_app/install_windows"
+  mac="https://keybase.io/docs/the_app/install_macos"
+  linux="https://keybase.io/docs/the_app/install_linux"
+  freebsd="https://www.freshports.org/security/keybase/"
+  googleplay="https://play.google.com/store/apps/details?id=io.keybase.ossifrage"
+  ios="https://apps.apple.com/app/keybase-crypto-for-everyone/id1044461770"
+  firefox="https://addons.mozilla.org/firefox/addon/keybase-for-firefox/"
+  chrome="https://chrome.google.com/webstore/detail/keybase-for-reddit/ognfafcpbkogffpmmdglhbjboeojlefj"
+%}
+
+<div>
+    <h2 id="federated" class="anchor"><a href="#federated"><i class="fas fa-link anchor-icon"></i></a> 聯邦式</h2>
+
+    <p>聯邦式通訊軟體使用多方、各自獨立的伺服器，它們之間能互相通話（例如電子郵件即為職邦型服務的好例子）。這類通訊設計可讓糸統管理員控制自家伺服器，同時為廣大通訊社群裏的一份子。</p>
+
+    <h3>優勢</h3>
+    <ul>
+        <li>自己運行伺服器更能掌控自己的資料。</li>
+        <li>讓用戶自己挑選所信任的公開伺服器。</li>
+        <li>通常可讓第三方軟體提供更道地，自定或親和的使用體驗。</li>
+        <li>當信任變成非集中式，較不易成讓政府置入<a href="#exploiting-centralized-networks">後門取得所有資料</a>。 此類分散式獨立伺服器可能由非原軟體開發組織所架設。</li>
+        <li>若您或所信任的人有權限存取伺服器，可驗查伺服器軟體是否符合公開的源代碼。</li>
+        <li>第三方開發者可以提交代碼與新增功能，不必等待私人開發團隊。</li>
+    </ul>
+
+    <h3>劣勢</h3>
+    <ul>
+        <li>新增功能更為複雜，它們須經標準化與測試來確保能在所有的伺服器上運行。</li>
+        <li>可以取得一些元數據（像是"誰與誰通話"之類的資料。因為使用 E2EE，實際的通訊內容則不會被看到）。</li>
+		<li>邦聯中的伺服器通常表示對網管人員的信任，但他們可能只是興趣啫好者而非網路安全專業人士，不會認真看待隱私政策或服務條款中的個資使用細節等標準文件。</li>
+        <li>伺服器管理員可決定屏蔽其它伺服器，此將影響使用者與該伺服器用戶的通訊（通常是因該伺服器無人管造成濫用或是破壞規則的行為）.</li>
+    </ul>
+</div>
+
+{%
+  include cardv2.html
+  title="Matrix"
+  image="/assets/img/svg/3rd-party/matrix.svg"
+  image-dark="/assets/img/svg/3rd-party/matrix-dark.svg"
+  description='<a href="https://matrix.org/docs/guides/introduction">Matrix</a> 開源專案發佈了安全、非集中式、即時性的通訊 <a href="https://matrix.org/docs/spec">Matrix 開放標準</a>。<br />
+  <a href="https://en.wikipedia.org/wiki/Riot.im">Riot.im</a> 則為 Matrix 團隊開發的客戶端聊天應用軟體，提供 E2E 一對一或是多人會議選項。（此項功能須由用戶<strong>主動啟用</strong>，其操作方法為調整聊天室或聊天對象的安全隱私加密模式。）此功能未來將會改成<a href="https://github.com/vector-im/riot-web/issues/6779">默認預設</a>。'
+  website="https://about.riot.im/"
+  forum="https://forum.privacytools.io/t/discussion-riot-im/665/"
+  github="https://github.com/vector-im/riot-web/"
+  windows="https://riot.im/download/desktop/"
+  mac="https://riot.im/download/desktop/"
+  linux="https://riot.im/download/desktop/"
+  fdroid="https://f-droid.org/repository/browse/?fdid=im.vector.alpha"
+  googleplay="https://play.google.com/store/apps/details?id=im.vector.app"
+  ios="https://itunes.apple.com/app/vector.im/id1083446067"
+  web="https://riot.im/app/"
+%}
+
+<div>
+    <h4>值得一提</h4>
+
+    <ul>
+        <li>其它 <a href="https://matrix.org/clients">Matrix</a> 客戶端軟體，但它們的功能不如 Riot.im 完整。</li>
+        <li><a href="https://xmpp.org/about">XMPP</a> (Extensible Messaging and Presence Protocol) 為 1999 年開始發展的開源通訊協議。 從此之後進一步發佈 XEPs（XMPP 延伸協議）。<a href="https://conversations.im/omemo/">OMEMO</a> 為最主流的 E2EE XEP (XMPP extension)，它的客戶端軟體是由社群開發而非 XSF （XMPP 標準基金會）。<span class="badge badge-warning" data-toggle="tooltip" title="VoIP and file transfers/names may not be end-to-end encrypted.">Inconsistent E2EE</span></li>
+        <ul>
+            <li><a href="https://gajim.org/">Gajim</a></li>
+            <li><a href="https://conversations.im">Conversations</a></li>
+            <li><a href="https://siskin.im/">Siskin</a></li>
+            <li>其它可用 XMPP <a href="https://omemo.top">OMEMO</a> 用戶端軟體。</li>
+        </ul>
+        <li><a href="https://www.kontalk.org">Kontalk</a> 以 XMPP 協議為基礎，由社群發起的即時通訊網路。</li>
+    </ul>
+
+    <h2 id="peer-to-peer" class="anchor"><a href="#peer-to-peer"><i class="fas fa-link anchor-icon"></i></a> 對等式網路 (P2P)</h2>
+
+    <p>Peer-to-Peer 對等式即時訊不透過第三方伺服器，節點直接連接。客戶端(peers)透由 usually find each other through the use of a <a href="https://en.wikipedia.org/wiki/Distributed_computing">分散式運算</a>網路來找到對方。相關案例包括：<a href="https://en.wikipedia.org/wiki/Distributed_hash_table">DHT (distributed hash table)</a> (用在<a href="https://en.wikipedia.org/wiki/BitTorrent_(protocol)">torrents</a> 和 <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">IPFS</a>)，或是 <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a>的 <a href="https://github.com/ethereum/wiki/wiki/Whisper">Whisper</a>協議（與一些新的 DApps 運用）。 其它的方式則大略是基於網路，透過無線訊號或藍牙作連結（例如 Briar 或是 <a href="https://www.scuttlebutt.nz">Scuttlebutt</a> 社交網路協議）。 一旦某名使用者透過上述方式找到接通他人的路徑，即產生直接連繫。</p>
+
+
+    <h3>優勢</h3>
+    <ul>
+        <li>第三方只能取得最少量的資訊</li>
+        <li>現代 P2P 平台皆預設執行端對端加密。不像中央或聯邦式，會有伺服器攔截或解密傳輸的問題。</li>
+    </ul>
+
+    <h3>缺點/h3>
+    <ul>
+        <li>Reduced feature set:</li>
+        <ul>
+            <li>當收訊對象上線後才會收到訊息，但您的設備可能在會本地端儲存未送出的訊息以待對方上線。</li>
+            <li>由於要與分散網路維持連線狀態，往往會消耗行動設備的電量。</li>
+        </ul>
+        <li>若無使用 <a href="/software/networks">自足網路</a>如 <a href="https://www.torproject.org">Tor</a>或<a href="https://geti2p.net/">I2P</a>，則您與通訊對象的 <a href="https://en.wikipedia.org/wiki/IP_address">IP 位置</a>可能會顯露出來。許多國家有大規模監控或是保存元數據的作法。</li>
+    </ul>
+</div>
+
+{%
+  include cardv2.html
+  title="Briar"
+  image="/assets/img/svg/3rd-party/briar.svg"
+  description="加密的即時訊息，讓使用者可透過無線訊號、藍牙或是 Tor 網路在互聯網上同步訊息。一旦遇上斷網或是天災等緊急狀況，這類技術往往可派上用場。"
+  website="https://briarproject.org"
+  forum="https://forum.privacytools.io/t/discussion-briar/2114"
+  gitlab="https://code.briarproject.org/briar/briar"
+  fdroid="https://f-droid.org/packages/org.briarproject.briar.android/"
+  googleplay="https://play.google.com/store/apps/details?id=org.briarproject.briar.android"
+%}
+
+{%
+  include cardv2.html
+  title="Jami"
+  image="/assets/img/svg/3rd-party/jami.svg"
+  description="加密的即時訊息與影音通話軟體，使用 <a href=//jami.net/improving-performance-and-security-with-tls-1-3/>TLS 1.3</a> 方式加密。"
+  labels="success:VoIP"
+  website="https://jami.net/"
+  forum="https://forum.privacytools.io/t/discussion-jami/2116"
+  gitlab="https://git.jami.net/savoirfairelinux"
+  windows="https://jami.net/download-jami-windows"
+  mac="https://jami.net/download-jami-macos"
+  linux="https://jami.net/download-jami-linux"
+  fdroid="https://f-droid.org/packages/cx.ring/"
+  googleplay="https://play.google.com/store/apps/details?id=cx.ring"
+  ios="https://itunes.apple.com/app/ring-a-gnu-package/id1306951055?mt=8"
+%}
+
+{%
+  include cardv2.html
+  title="Tox"
+  image="/assets/img/svg/3rd-party/tox.svg"
+  image-dark="/assets/img/svg/3rd-party/tox-dark.svg"
+  description='加密的即時訊息與影音通話軟體，它使用<a href="https://toktok.ltd/spec.html"> 自家的加密協議</a>（密碼學專家尚未正式稭核）。'
+  labels="warning:<a href=//tox.chat/download.html#warning>實驗性</a>：其加密方式尚未接受密碼學專家的稭查 |success:VoIP"
+  website="https://tox.chat"
+  forum="https://forum.privacytools.io/t/discussion-tox/2115"
+  windows="https://tox.chat/download.html#oses"
+  mac="https://tox.chat/download.html#oses"
+  linux="https://tox.chat/download.html#oses"
+  freebsd="https://tox.chat/download.html#oses"
+  openbsd="http://openports.se/search.php?so=tox"
+  netbsd="http://pkgsrc.se/search.php?so=tox"
+  fdroid="https://tox.chat/download.html#oses"
+  googleplay="https://tox.chat/download.html#oses"
+  ios="https://tox.chat/download.html#oses"
+%}
+
+<h4>值得一提</h4>
+
+<ul>
+    <li><a href="https://status.im">Status.im</a> - 整合了 <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a> 錢包（乙太幣加密貨幣）的通訊軟體，也支援 <a href="https://our.status.im/tag/dapps">DApps（無中心的應用軟體）</a> (web apps in a curated store)。 採用<a href="https://blog.enuma.io/update/2018/08/08/decentralized-application-messaging-with-whisper.html">Whisper protocol</a>來進行 P2P 通訊。 <span class="badge badge-warning">試驗性質</span></li>
+    <li><a href="https://retroshare.cc">Retroshare</a> - 加密的即時訊息和語音影像軟體，RetroShare 同時支援 <a href="https://www.torproject.org/">Tor</a> 與 <a href="https://geti2p.net">I2P</a>。</li>
+    <li><a href="https://bitmessage.org">Bitmessage</a> 是去中心、加密、點對點、無信任的通訊協議，可將加密訊息傳送給單一或多名訂閱者
+	其意指使用者不必要信任任何根憑證授權的實體。它採用強度高的認證授權，讓送件者的訊息無法被欺騙，目的在於能將非訊息內容的資料予以隱藏。</li>
 </ul>

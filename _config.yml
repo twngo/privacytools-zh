@@ -1,9 +1,13 @@
-title: 網路隱私工具 - 加密安全抵抗全球大規模監控
-description: 你正在被盯著！這裏提供一些知識與工具以保護個人隱私抵抗全球大規模監控。
+title: PrivacyTools 網路隱私工具- 加密對抗全球大規模監控
+name: PrivacyTools
+description: 你正在被盯著。私人和國家支持的組織正在監控與記錄你的線上活動。這裏提供一些知識與工具以保護個人隱私抵抗全球大規模監控。
 url: "https://privacytools.twngo.xyz"
+production_url: "https://privacytools.twngo.xyz"
 sass:
   style: compressed
 plugins:
   - jekyll-sitemap
 sitemap:
 file: "/sitemap.xml"
+include: [".well-known"]
+exclude: ["font", "vendor"]

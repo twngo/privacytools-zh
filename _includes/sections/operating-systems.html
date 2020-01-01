@@ -1,43 +1,45 @@
 <h1 id="os" class="anchor"><a href="#os"><i class="fas fa-link anchor-icon"></i></a> 電腦作業系統</h1>
+
 <div class="alert alert-warning" role="alert">
-    <strong> 如果你目前還在使用微軟 Windows 或是蘋果電腦 macOS 的作業系統，或許該考慮其它替代選項了。 </strong>
-</div>
-<div class="row mb-2">
-
-    {% include card.html color='success'
-    title='Qubes OS'
-    image='assets/img/tools/Qubes-OS.png'
-    url='https://www.qubes-os.org/'
-    tor='http://qubesos4rrrrz6n4.onion'
-    description='Qubes 是一個開源的作業系統，其設計為桌機型電腦提供更堅強的安全保護。Qubes 是以 Xen 為基礎， X 視窗系統桌面環境與 Linux。它可以執行大多數的 Linux 應用程式以及適用大部份的 Linux 的硬體效能驅動。'
-    %}
-
-    {% include card.html color='primary'
-    title='Debian'
-    image='assets/img/tools/Debian.png'
-    url='https://www.debian.org/'
-    tor='http://sejnfjrq6szgca7v.onion'
-    description='Debian 有點像 Unix 的電腦操作系統，它是 Linux 的發佈版本之一，其由自由免費的軟體所組成，大部份的軟體都是採用 GNU 一般公共授權。有一群人長期地投入 Debian 專案的開發維護。'
-    %}
-
-    {% include card.html color='warning'
-    title='Trisquel'
-    image='assets/img/tools/Trisquel.png'
-    url='https://trisquel.info/'
-    description='Trisquel 是一個從 Ubuntu 分家出來的 Linux 作業系統。這個專案希望能發展一個完全免費的軟體系統而不依靠商用軟體或軔體，故其採用 Linux-libre，這是一個 Linux kernel 核心版本，若為非免費的程式碼（位元型大型物件 binary blobs）即會被移除。'
-    %}
-
+  <strong> 如果你目前還在使用微軟 Windows 或是蘋果電腦 macOS 的作業系統，不妨從下方考慮其它替代選項。</strong>
 </div>
 
-<h3>警告</h3>
-<ul>
-    <li><a href="#win10"><i class="fas fa-link"></i> 不要用 Windows 10 - 它是隱私侵害的夢</a></li>
-</ul>
+{% include cardv2.html
+title="Qubes OS"
+image="/assets/img/svg/3rd-party/qubes_os.svg"
+description='Qubes 開源的作業系統，其設計為桌機型電腦提供更堅強的安全保護。Qubes 是以 Xen 為基礎， X 視窗系統桌面環境與 Linux。它可以執行大多數的 Linux 應用程式以及適用大部份的 Linux 的硬體效能驅動。'
+badges="info:Xen"
+labels="warning:contrib:This software may depend on or recommend non-free software."
+website="https://www.qubes-os.org/"
+github="https://github.com/QubesOS"
+tor="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/"
+%}
+
+{% include cardv2.html
+title="Fedora 工作站"
+image="/assets/img/svg/3rd-party/fedora.svg"
+description='Fedora 由 Red Hat 贊助，Fedora 專案開發的 Linux 版本。 Fedora 工作站強調安全、可靠與使用友善，使用 GNOME 桌面環境來提供桌機與筆電運行。'
+badges="info:GNU/Linux"
+labels="warning:contrib:This software may depend on or recommend non-free software."
+website="https://getfedora.org/"
+git="https://src.fedoraproject.org/"
+%}
+
+{% include cardv2.html
+title="Debian"
+image="/assets/img/svg/3rd-party/debian.svg"
+description='Debian 有點類似 Unix 的電腦操作系統，為 Linux 的發佈版本之一，完全以自由免費的軟體組成，大部份的軟體都是採用 GNU 一般公共授權。有一群人長期地投入 Debian 專案的開發維護。'
+badges="info:GNU/Linux"
+website="https://www.debian.org/"
+tor="http://sejnfjrq6szgca7v.onion"
+gitlab="https://salsa.debian.org/qa/debsources"
+%}
 
 <h3>值得一提</h3>
+
 <ul>
-    <li><a href="https://www.openbsd.org/">OpenBSD</a> - 創造免費、多平台，類似像 4.4BSD-based UNIX 的作業系統開發專案。強調可攜帶性、標準化、正確性、主動安全與整合的密碼學系統。</li>
-    <li><a href="https://www.archlinux.org/">Arch Linux</a> - 一套簡約、輕量的 Linux 發行版本。它組合了主要的免費和開源的軟體，支持社群投入。<a href="https://www.parabola.nu/">Parabola</a> 則是 Arch Linux 的完整開源版本。</li>
-    <li><a href="https://www.whonix.org/">Whonix</a> - 其以 Debian GNU/Linux 為基礎，更強調安全關注的 Linux 發行版本。它希望能提供網路上的隱私保護，安全與匿名性。這個作業系統由二個虛擬機器組成，一個是「工作站」一個是 Tor「閘門道」。所有的通訊都被迫要透過 Tor 網路來完成。</li>
-    <li><a href="https://subgraph.com/">Subgraph OS</a> - 另一個利用 Debian 基礎打造的 Linux 版本，其特色為安全堅固強化以提高弱點攻擊的抵抗力。Subgraph 將許多桌面應用程式執行於沙盒環境下以限制程式受到攻擊傷害的危險。它預設透過 Tor 網絡傳送匿名傳輸流量。請注意，目前本專案仍在半成品階段，需要更多的測試與糾錯修正工作。</li>
+  <li><a href="https://www.openbsd.org/">OpenBSD</a> <span class="badge badge-info">BSD</span> - 創造免費、多平台，類似像 4.4BSD-based UNIX 的作業系統開發專案。強調可攜帶性、標準化、正確性、主動安全與整合的密碼學系統。</li>
+  <li><a href="https://www.archlinux.org/">Arch Linux</a> <span class="badge badge-info">GNU/Linux</span> <span class="badge badge-warning" data-toggle="tooltip" title="This software may depend on or recommend non-free software.">contrib <i class="far fa-question-circle"></i></span> - 一套簡約、輕量的 Linux 發行版本。主要由免費和開源軟體所組成，支持社群投入。<a href="https://www.parabola.nu/">Parabola</a> 則是 Arch Linux 的完整開源版本。</li>
+  <li><a href="https://trisquel.info/">Trisquel</a> <span class="badge badge-info">GNU/Linux</span> - Ubuntu 分家出來的 Linux 作業系統。這個專案希望能發展一個完全免費的軟體系統而不依靠商用軟體或軔體，故其採用 Linux-libre，這是一個 Linux kernel 核心版本，移除封閉的程式碼（如 binary blobs）。</li>
+  <li><a href="https://www.whonix.org/">Whonix</a> <span class="badge badge-info">GNU/Linux</span> - 以 Debian GNU/Linux 為基礎，更強調安全關注的 Linux 發行版本。它希望能提供網路上的隱私保護，安全與匿名性。這個作業系統由二個虛擬機器組成，一個是「工作站」一個是 Tor「閘門道」。所有的通訊都被迫要透過 Tor 網路。</li>
 </ul>

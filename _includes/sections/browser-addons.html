@@ -1,83 +1,117 @@
-<h1 id="addons" class="anchor"><a href="#addons"><i class="fas fa-link anchor-icon"></i></a> 優質的火狐瀏覽器隱私保護附加元件</h1>
+<h1 id="addons" class="anchor"><a href="#addons"><i class="fas fa-link anchor-icon"></i></a>瀏覽器附加元件推薦</h1>
 
-<div class="alert alert-success" role="alert">
-    <strong>利用優質的火狐瀏覽器附加元件來改善隱私保護</strong>
+<div class="alert alert-secondary" role="alert">
+  下列的附加元件並非必要，有些提供多餘的功能。依自身狀況挑選所需的就好，同時可一併<a class="alert-link" href="https://blog.privacytools.io/firefox-privacy-an-introduction-to-safe/">參考 Firefox 隱私設定指南</a>。
 </div>
 
-<div class="container-fluid">
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/Privacy-Badger.png" class="img-fluid d-block mr-auto ml-auto align-middle" alt="Privacy Badger">
-        </div>
-        <div class="col">
-            <h3>安裝 <a href="https://www.eff.org/privacybadger">Privacy Badger</a> 阻止被追蹤</h3>
-            <p><strong>Privacy Badger</strong> 可用來阻止廣告商或其它第三方追蹤器偷偷地追蹤使用者瀏覽哪些網站網頁。當你瀏覽網站時 Privacy Badger 透過檢查外部網站資源的請求了解追蹤器狀況。當瀏覽網頁時，Privacy Badger 會檢查外部的網站請求。請注意，Google Analytics 被 Privacy Badger 視為首先相關者（first-party），這表示如果你未用其它封鎖器（例如 uBlock Origin），則 Google Analytics 就不會遭到封鎖。</p>
-        </div>
-    </div>
+{% include cardv2.html
+title="uBlock Origin: 封鎖廣告與追蹤器"
+image="/assets/img/svg/3rd-party/ublock_origin.svg"
+description="<strong>uBlock Origin</strong> 有效的全頻封鎖器，便於記憶體執行，比一般市面上的封鎖器更可負載入上千個過濾器。這套軟體並沒有商業化的打算而且是完全開源。"
+website="https://addons.mozilla.org/firefox/addon/ublock-origin/"
+forum="https://forum.privacytools.io/t/discussion-ublock-origin/266"
+github="https://github.com/gorhill/uBlock/"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"
+chrome="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
+opera="https://addons.opera.com/en/extensions/details/ublock/"
+edge="https://www.microsoft.com/en-us/p/ublock-origin/9nblggh444l4"
+%}
 
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/uBlock.png" class="img-fluid d-block mr-auto ml-auto align-middle" alt="uBlock">
-        </div>
-        <div class="col">
-            <h3>利用 <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/">uBlock Origin</a> 來封鎖廣告與追蹤器</h3>
-            <p>它是一個有效 <a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode">寛譜封鎖器</a>，容易在記憶體上執行，也比一般市面上的封鎖器更可負載入上千個過濾器當中。這套軟體並沒有商業化的打算而且是完全<a href="https://github.com/gorhill/uBlock/">開源</a>。不只在火狐，uBlock Origin 也可以用在其它的瀏覽器如 Safari、Opera、Chromium 等等。不像 AdBlock Plus，uBlock 並沒有所謂 <a href="https://adblockplus.org/acceptable-ads">「可接受的廣告」</a>。</p>
-        </div>
-    </div>
+{% include cardv2.html
+title="HTTPS Everywhere: 加密連線"
+image="/assets/img/svg/3rd-party/https_everywhere.svg"
+description="<strong>HTTPS Everywhere</strong> 對一些主要網站之間的網路連線予以加密，讓瀏覽更為安全。它是 Tor 計畫與電子前鋒基金會 EFF 所合作的專案。"
+website="https://www.eff.org/https-everywhere"
+forum="https://forum.privacytools.io/t/discussion-https-everywhere/268"
+github="https://github.com/EFForg/https-everywhere"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere"
+chrome="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp"
+opera="https://addons.opera.com/en/extensions/details/https-everywhere"
+%}
 
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/Cookie-AutoDelete.png" class="img-fuid d-block mr-auto ml-auto align-middle" alt="Cookie AutoDelete">
-        </div>
-        <div class="col">
-            <h3>利用 <a href="https://addons.mozilla.org/firefox/addon/cookie-autodelete">Cookie AutoDelete</a> 自動刪除 Cookies</h3>
-            <p>自動地移除儲存在已開啟分頁中不需再用到的 cookies。連同揮之不去的會談、以及用來監視使用者的資訊都會被清除。</p>
-        </div>
-    </div>
+{% include cardv2.html
+title="Decentraleyes: 阻擋內容傳遞網路 CDN "
+image="/assets/img/svg/3rd-party/decentraleyes.svg"
+description="<strong>Decentraleyes</strong> 攔截對外請求，在本機上仿效內容傳遞網路 CDN，找出所需的資源再將其注入瀏覽器環境。這些步驟會同時自發自動地發生而不必事前的設定。"
+website="https://decentraleyes.org/"
+forum="https://forum.privacytools.io/t/discussion-decentraleyes/269"
+gitlab="https://git.synz.io/Synzvato/decentraleyes"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/decentraleyes"
+chrome="https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj"
+opera="https://addons.opera.com/en/extensions/details/decentraleyes"
+%}
 
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/HTTPS-Everywhere.png" class="img-fuid d-block mr-auto ml-auto align-middle" alt="HTTPS Everywhere">
-        </div>
-        <div class="col">
-            <h3>使用 <a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a> 加密連線</h3>
-            <p>Firefox, Chrome, Opera 都支援的瀏覽器延伸元件，可以對一些主要網站之間的網路連線予以加密，讓你的瀏覽更為安全。它是 Tor 計畫與電子前鋒基金會 EFF 的一個合作專案。</p>
-        </div>
-    </div>
+{% include cardv2.html
+title="Cookie AutoDelete: 自動刪除 Cookies"
+image="/assets/img/png/3rd-party/cookie_autodelete.png"
+description="<strong>Cookie AutoDelete</strong> 自動地移除儲存在已開啟分頁中不需再用到的 cookies，過長的交換期間、以及用來監視使用者的資訊都會被清除。"
+website="https://addons.mozilla.org/firefox/addon/cookie-autodelete/"
+forum="https://forum.privacytools.io/t/discussion-cookie-autodelete/267"
+github="https://github.com/Cookie-AutoDelete/Cookie-AutoDelete"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete"
+chrome="https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh"
+%}
 
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/Decentraleyes.png" class="img-fuid d-block mr-auto ml-auto align-middle" alt="Decentraleyes">
-        </div>
-        <div class="col">
-            <h3>利用 <a href="https://addons.mozilla.org/firefox/addon/decentraleyes/">Decentraleyes</a> 來阻擋內容傳遞網路</h3>
-            <p>以攔截對外請求，在本機上仿效內容傳遞網路，找出所需的資源再將其注入環境下。這些步驟會同時自發自動地發生而不必事前的設定。<i>原始碼：<a href="https://git.synz.io/Synzvato/decentraleyes">GitLab（自架）</a>.</i></p>
-        </div>
-    </div>
-</div>
+{% include cardv2.html
+title="Terms of Service; Didn’t Read: Be Informed"
+image="/assets/img/svg/3rd-party/terms_of_service_didnt_read.svg"
+description='<strong>Terms of Service; Didn’t Read</strong> 元件相信「我已讀過並同意服務條款」是萬維網上最大的謊話，要改正此問題不如來評分各大網站的使用服務條款和隱私權政策。這個工具提供短版的協議文件摘要，由社群審查員透明地發佈分析與評比。'
+website="https://tosdr.org/"
+forum="https://forum.privacytools.io/t/discussion-terms-of-service-didn-t-read/270"
+github="https://github.com/tosdr/"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/"
+chrome="https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg"
+opera="https://addons.opera.com/en/extensions/details/terms-of-service-didnt-read"
+%}
+
+{% include cardv2.html
+title="Snowflake"
+image="/assets/img/svg/3rd-party/snowflake.svg"
+description="來自 Tor 專案，<strong>Snowflake</strong>是一個新的<a href=https://2019.www.torproject.org/docs/pluggable-transports.html.en>pluggable transport抽拔式傳輸</a>。如果身處在連線不受審查的環境，運行此元件可將您的連線化身為 Snowflake 代理器，以協助無法使用 Tor 網路的使用者。您的 IP 資訊不會被利用您的代理的網站使用者看到，也不會被用於 Tor 網路的出口節點。若您的 Tor 網路被封鎖，則此元件則無用，請直接使用 <a href=https://www.torproject.org>Tor 瀏覽器</a> 替代。"
+website="https://snowflake.torproject.org"
+forum="https://forum.privacytools.io/t/discussion-snowflake/1146"
+git="https://gitweb.torproject.org/pluggable-transports/snowflake.git"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake"
+chrome="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie"
+%}
+
+{% include cardv2.html
+title="Privacy Badger: 阻止被追蹤"
+image="/assets/img/svg/3rd-party/privacy_badger.svg"
+description="<strong>Privacy Badger</strong> 阻止廣告商或其它第三方追蹤器偷偷地追蹤使用者瀏覽哪些網站網頁。當你瀏覽網站時 Privacy Badger 透過檢查外部網站資源的請求了解追蹤器狀況。"
+website="https://www.eff.org/privacybadger"
+forum="https://forum.privacytools.io/t/discussion-privacy-badger/265"
+github="https://github.com/EFForg/privacybadger"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17"
+chrome="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp"
+opera="https://addons.opera.com/en/extensions/details/privacy-badger/"
+%}
+
+<h2>僅適合資深使用者</h2>
 
 <div class="alert alert-warning" role="alert">
-    <strong>下面的附加元件要求與使用者之間的許多互動才能設定成功。有些網站除非你已設好了這些附加元件否則無法順利工作。</strong>
+  <strong>下面的附加元件需要有經驗的使用者多次調校才能成功設定。除非已順利設好這些附加元件否則有些網站無法順利工作。</strong>
 </div>
 
-<div class="container-fluid">
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/uMatrix.png" class="img-fuid d-block mr-auto ml-auto align-middle" alt="uMatrix">
-        </div>
-        <div class="col">
-            <h3>利用 <a href="https://addons.mozilla.org/firefox/addon/umatrix/">uMatrix</a> 來停止跨站的請求</h3>
-            <p>許多網站或許整合了一些功能，讓其它別的網站可以追蹤你，例如臉書的按讚按鈕或是 Google 流量分析工具。uMatrix 則讓你可以掌握造訪網站上來自其它網站的追蹤請求，賦予更佳更大的決定權力來控制你願意在網路上流出的資料。</p>
-        </div>
-    </div>
+{% include cardv2.html
+title="uMatrix: 停止跨站請求"
+image="/assets/img/png/3rd-party/umatrix.png"
+description="<strong>uMatrix</strong>賦予使用者更大控制權限來處理來自其它網站的請求。許多網站整合某些功能，讓其它網站可以追蹤你，例如臉書的按讚按鈕或是 Google 流量分析工具。"
+website="https://addons.mozilla.org/firefox/addon/umatrix/"
+forum="https://forum.privacytools.io/t/discussion-umatrix/271"
+github="https://github.com/gorhill/uMatrix"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/umatrix"
+chrome="https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf"
+opera="https://addons.opera.com/en/extensions/details/umatrix"
+%}
 
-    <div class="row mb-2">
-        <div class="col-lg-3 col-sm-12">
-            <img src="assets/img/addons/NoScript.png" class="img-fuid d-block mr-auto ml-auto align-middle" alt="NoScript">
-        </div>
-        <div class="col">
-            <h3>利用 <a href="https://addons.mozilla.org/firefox/addon/noscript/">NoScript Security Suite</a> 套件完整控制</h3>
-            <p> 高度客製化的外掛工具可以選擇讓 Javascript、Java 與 Flash 只能在所信任的網站上執行。但它並不適合一般的使用者，需足夠知識才能進行適當設定。</p>
-        </div>
-    </div>
-</div>
+{% include cardv2.html
+title="NoScript Security Suite: 完全掌控"
+image="/assets/img/svg/3rd-party/noscript.svg"
+description="<strong>NoScript</strong> 高度客製化的外掛工具可以選擇讓 Javascript、Java 與 Flash 只能在所信任的網站上執行。但它並不適合一般的使用者，需足夠知識才能進行適當設定。."
+website="https://addons.mozilla.org/firefox/addon/noscript/"
+forum="https://forum.privacytools.io/t/discussion-noscript-security-suite/272"
+github="https://github.com/hackademix/noscript"
+firefox="https://addons.mozilla.org/en-US/firefox/addon/noscript"
+chrome="https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm"
+%}

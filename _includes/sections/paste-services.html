@@ -1,34 +1,20 @@
-<h1 id="paste" class="anchor"><a href="#paste"><i class="fas fa-link anchor-icon"></i></a>原始碼儲存服務</h1>
+<h1 id="paste" class="anchor"><a href="#paste"><i class="fas fa-link anchor-icon"></i></a> 文字儲存服務</h1>
 
-<div class="row mb-2">
+{% include cardv2.html
+title="PrivateBin"
+image="/assets/img/svg/3rd-party/privatebin.svg"
+description=" PrivateBin 是一個迷你、開源的線上文字儲存應用，其伺服器對所張貼資料採取零知識方式保存，而資料在瀏覽器使用 256 位元的 AES 加密/解密，是 ZeroBin 的改良版本。"
+website="https://privatebin.info/"
+forum="https://forum.privacytools.io/t/discussion-privatebin/296"
+github="https://github.com/PrivateBin/PrivateBin"
+%}
 
-    {% include card.html color='success'
-    title='PrivateBin'
-    image='assets/img/tools/PrivateBin.png'
-    url='https://privatebin.net/'
-    description='PrivateBin 是一個迷你、開源的線上原始碼儲存應用程式，它的伺服器對儲存資料採取張貼資料零知識方式保存，而資料在瀏覽器使用 256 位元的 AES 加密/解密，是 ZeroBin 的改良版本。'
-    %}
 
-    {% include card.html color='primary'
-    title='Zerobin.net'
-    image='assets/img/tools/ZeroBin.png'
-    url='https://zerobin.net/'
-    tor='http://zerobinqmdqd236y.onion'
-    description='Zerobin 是極簡化、開源的線上原始碼儲存應用，其伺服器對儲存之資料維持「零知識 (zero knowledge)」，瀏覽器以 256bit AES 來加密、解密資料。'
-    %}
-
-    {% include card.html color='warning'
-    title='Ghostbin'
-    image='assets/img/tools/Ghostbin.png'
-    url='https://ghostbin.com/'
-    description='Ghostbin 支援伺服器端加密功能和期間限制，授權用戶有 1 MB 空間可撰寫筆記和網路便利貼。使用者可建置自己的帳號來追蹤自己的剪貼資料。<br>
-    軟體本身不錯，但它的網站安全<a href="https://github.com/privacytoolsIO/privacytools.io/issues/454">卻令人擔憂</a>。'
-    %}
-
-</div>
-
-<h3>值得一提</h3>
-
-<ul>
-    <li><a href="https://disroot.org/">disroot.org</a> - 免費友善的隱私服務，提供 PrivateBin 與其它應用程式。</li>
-</ul>
+{% include cardv2.html
+title="CryptPad"
+image="/assets/img/svg/3rd-party/cryptpad.svg"
+description="CryptPad 開源、零知識、即時的協作編輯器，其資料利用 Salsa20 和 Poly1305 在瀏覽器上進行筆記之加密解密。"
+website="https://cryptpad.fr/pad/"
+forum="https://forum.privacytools.io/t/discussion-cryptpad/1270"
+github="https://github.com/xwiki-labs/cryptpad"
+%}

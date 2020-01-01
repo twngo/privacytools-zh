@@ -1,39 +1,84 @@
 <h1 id="productivity" class="anchor"><a href="#productivity"><i class="fas fa-link anchor-icon"></i></a> 生產力工具</h1>
-<div class="row mb-2">
 
-    {% include card.html color="success"
-    title="CryptPad"
-    image="assets/img/provider/CryptPad.png"
-    description="CryptPad 是用隱私設計思維，來替代普及的辦公室工具及雲端服務。所有的內容都是端對端加密，它是自由且開源，能讓任何人審閱程式碼來驗證安全性。開發團隊透過捐款與補助的支持。不需要註冊，而且可以匿名的使用洋蔥（Tor）瀏覽器。"
-    url="https://cryptpad.fr/"
-    footer='支援作業系統：Linux, macOS, Windows, 網站。'
-    %}
+{%
+  include cardv2.html
+  title="CryptPad"
+  image="/assets/img/svg/3rd-party/cryptpad.svg"
+  description="<strong>CryptPad</strong>以隱私為念的設計思維，替代流行的辦公室工具及雲端服務。所有的內容都是端對端加密，它是自由且開源，能讓任何人審閱程式碼來驗證安全性。開發團隊透過捐款與獎助金的支持。不需要註冊，而且可以匿名的使用洋蔥（Tor）瀏覽器。"
+  website="https://cryptpad.fr/"
+  forum="https://forum.privacytools.io/t/discussion-cryptpad-productivity-tools/1537"
+  github="https://github.com/xwiki-labs/cryptpad"
+  web="https://cryptpad.fr/"
+%}
 
-    {% include card.html color='primary'
-    title='Etherpad'
-    image='assets/img/tools/Etherpad.png'
-    url='http://etherpad.org/'
-    footer='支援作業系統：Windows, macOS, Linux。'
-    description='Etherpad 是一個可以高度自訂的開源線上編輯器，它提供了即時的協同編輯功能。Etherpad 可以讓你即時地在線上協力編寫文件，在你的瀏覽器上就像是有多名參與者共同在編寫一份文章、發佈消息或是任務清單等等功能。'
-    %}
+{%
+  include cardv2.html
+  title="Etherpad"
+  image="/assets/img/svg/3rd-party/etherpad.svg"
+  description="<strong>Etherpad</strong> 可高度自訂的開源線上編輯器，提供了即時的協同編輯功能。Etherpad 可以讓你即時地在線上協力編寫文件，在你的瀏覽器上就像是有多名參與者共同在編寫一份文章、發佈消息或是任務清單等等功能。<a href=https://github.com/ether/etherpad-lite/wiki/Sites-that-run-Etherpad>此處有一份運行 Etherpad 站台清單</a>。"
+  website="https://etherpad.org/"
+  forum="https://forum.privacytools.io/t/discussion-etherpad-productivity-tools/1538"
+  github="https://github.com/ether/etherpad-lite"
+  web="https://github.com/ether/etherpad-lite/wiki/Sites-that-run-Etherpad"
+  windows="https://github.com/ether/etherpad-lite#windows"
+  linux="https://github.com/ether/etherpad-lite#installation"
+  mac="https://github.com/ether/etherpad-lite#gnulinux-and-other-unix-like-systems"
+  freebsd="https://github.com/ether/etherpad-lite#gnulinux-and-other-unix-like-systems"
+  openbsd="https://github.com/ether/etherpad-lite#gnulinux-and-other-unix-like-systems"
+  netbsd="https://github.com/ether/etherpad-lite#gnulinux-and-other-unix-like-systems"
+%}
 
-    {% include card.html color='warning'
-    title='Write.as'
-    image='assets/img/tools/WriteAs.png'
-    url='https://write.as/'
-    tor='http://writeas7pm7rcdqg.onion'
-    footer='支援作業系統： Windows, macOS, Linux, Android, iOS, Chrome OS, 網站。'
-    description='Write.as 為跨平台，重視隱私的網誌服務。它預設為匿名，無須註冊即可發表文章。如果創建帳號，也不會要求使用者提供任何個人資料，無廣告、無干擾、基於永續的商業模式。'
-    %}
-
-</div>
+{%
+  include cardv2.html
+  title="Write.as"
+  image="/assets/img/svg/3rd-party/writeas.svg"
+  image-dark="/assets/img/svg/3rd-party/writeas-dark.svg"
+  description="<strong>Write.as</strong> 跨平台，重視隱私的部落格網誌服務。它預設為匿名，無須註冊即可發表文章。如果創建帳號，也不會要求使用者提供任何個人資料，無廣告、無干擾、基於永續的商業模式。"
+  website="https://write.as/"
+  forum="https://forum.privacytools.io/t/discussion-write-as-productivity-tools/1539"
+  tor="http://writeas7pm7rcdqg.onion"
+  git="https://code.as/writeas"
+  web="https://write.as/pad"
+  windows="https://github.com/writeas/writeas-cli"
+  mac="https://github.com/writeas/writeas-cli"
+  linux="https://write.as/apps"
+  chrome="https://write.as/apps"
+  googleplay="https://play.google.com/store/apps/details?id=com.abunchtell.writeas"
+  ios="https://itunes.apple.com/app/apple-store/id1000755153"
+%}
 
 <h3>值得一提</h3>
 
 <ul>
-    <li><a href="https://crypt.ee/">Cryptee</a> - 自由重視隱私的文件、檔案與照片儲存服務。</li>
-    <li><a href="https://ethercalc.net/">EtherCalc</a> - 是一個網頁版的試算表，其資料存在網頁上，使用者可以同一時間在同一個檔案上進行編輯而其變動會立即呈現在螢幕上。它可用來作為共用的庫存統計、問卷表單、清單管理、腦力激盪等工具。</li>
-    <li><a href="https://disroot.org/">disroot.org</a> - 担提免費友善的 Etherpad, EtherCalc 和 PrivateBin 使用服務。</li>
-    <li><a href="https://dudle.inf.tu-dresden.de/anonymous/">dudle</a> - 是一個線上行程安排的應用程式，其為免費和開源。很方便用來安排會議時間或進行小型的線上調查。它不收集電子郵件或須註冊即可使用。</li>
-    <li><a href="https://www.libreoffice.org/">LibreOffice</a> - 免費開源的辦公室軟體套件。</li>
+  <li><a href="https://crypt.ee/">Cryptee</a> - 自由重視隱私的文件、檔案與照片儲存服務。</li>
+  <li><a href="https://ethercalc.net/">EtherCalc</a> -  網頁版的試算表，其資料存在網頁上，使用者可以同一時間在同一個檔案上進行編輯而其變動會立即呈現在螢幕上。它可用來作為共用的庫存統計、問卷表單、清單管理、腦力激盪等工具。</li>
+  <li><a href="https://disroot.org/">Disroot</a> - 提供免費友善的 Etherpad, EtherCalc 和 PrivateBin 使用服務。</li>
+  <li><a href="https://dudle.inf.tu-dresden.de/anonymous/">dudle</a> - 線上行程安排的應用程式，免費和開源。方便用來安排會議時間或進行小型的線上調查。它不收集電子郵件，無須註冊即可使用。</li>
+  <li><a href="https://framadate.org/">Framadate</a> - 免費開源的會議時間規劃或簡易決策的線上工具，無須註冊即可使用</li>
+  <li><a href="https://www.libreoffice.org/">LibreOffice</a> - 免費開源的辦公室軟體套件。</li>
+  <li><a href="https://vscodium.com/">VSCodium</a> - 從微軟 Visual Studio Code 編輯器另外獨立的分支，不帶品牌或遙測。</li>
 </ul>
+
+<h1 id="metadata-removal-tools" class="anchor">
+  <a href="#metadata-removal-tools"
+    ><i class="fas fa-link anchor-icon"></i>
+  </a> 元數據移除工具
+</h1>
+
+<div class="row mb-2">
+{%
+  include cardv2.html
+  title="MAT2"
+  image="/assets/img/svg/3rd-party/mat2.svg"
+  description="<strong>MAT2</strong> 免費軟體，可用於刪除照片、聲音、文件、BT 種子等檔案的元數據。同時提供文字指令與 Nautilus 圖形介面操作，後者為 GNOME 桌面所預設的檔案管理系統。"
+  website="https://0xacab.org/jvoisin/mat2"
+  forum="https://forum.privacytools.io/t/discussion-mat/1559"
+  gitlab="https://0xacab.org/jvoisin/mat2"
+  windows="https://pypi.org/project/mat2/"
+  mac="https://pypi.org/project/mat2/"
+  linux="https://pypi.org/project/mat2/"
+  freebsd="https://pypi.org/project/mat2/"
+  openbsd="https://pypi.org/project/mat2/"
+  netbsd="https://pypi.org/project/mat2/"
+%}
+</div>
