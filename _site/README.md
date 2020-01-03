@@ -44,6 +44,13 @@ You can submit your suggestions here on GitHub [(Issues)](https://github.com/pri
 - [Русский / Russian](https://privacytools.ru) - [GitHub](https://github.com/c0rdis/privacytools.ru)
 - [Português / Portuguese](https://www.privacidade.digital/) - [GitHub](https://github.com/PrivacidadeDigital/privacidade.digital)
 
+
+# About Chinese version
+- [privacytools.io 正體中文第一版說明](https://to.twngo.xyz/12272016)
+- [privacytools.io 正體中文 2018年改版說明](https://to.twngo.xyz/01222019)
+- privacytools.io 正體中文網站
+- [privacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
+
 # License & Notices
 
 Please visit [https://www.privacytools.io/notices/](https://www.privacytools.io/notices/) for license information and other disclaimers. PrivacyTools is provided on an "as-is" basis, without warranty, and disclaiming liability for damages. By contributing to this repository you agree to license your work under the terms of the [license](https://github.com/privacytoolsIO/privacytools.io/blob/master/LICENSE.txt) in this repository.
