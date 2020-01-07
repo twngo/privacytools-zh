@@ -47,7 +47,8 @@ You can submit your suggestions here on GitHub [(Issues)](https://github.com/pri
 
 # About Chinese version
 - [privacytools.io 正體中文第一版說明](https://to.twngo.xyz/12272016)
-- [privacytools.io 正體中文 2018年改版說明](https://to.twngo.xyz/01222019)
+- [privacytools.io 正體中文 2019年改版說明](https://to.twngo.xyz/01222019)
+- [privacytools.io 正體中文 2020年改版說明](https://to.twngo.xyz/01062020)
 - privacytools.io 正體中文網站
 - [privacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
 
