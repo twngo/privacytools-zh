@@ -4,6 +4,11 @@
 
 _Encryption Against Global Mass Surveillance._
 
+<a href="https://privacytools.twngo.xyz">
+	<img src="assets/img/svg/layout/brand/horizontal-zh.svg" width="500px" alt="PrivacyTools" />
+</a>
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/afd98777-c205-4928-a301-f57a1448113f/deploy-status)](https://app.netlify.com/sites/privacytools-io/deploys)
 
 # Contributing
