@@ -24,6 +24,7 @@
   image="/assets/img/svg/3rd-party/gnupg.svg"
   description="<strong>GnuPG</strong> 採 GPL 授權，替代 PGP 密碼學軟體套件。GnuPG 可兼容 RFC 4880，它是一個目前 IETF OpenPGP 標準追蹤規格。目前 PGP（以及 Veridis' Filecrypt）的版本可以和 GnuPG 以及其它 OpenPGP 兼容系統互相操作。GnuPG 是自由軟體基金會 GNU 軟體專案中的一部份，曾接受德國政府的經費贊助。"
   website="https://gnupg.org/"
+  privacy-policy="https://gnupg.org/privacy-policy.html"
   forum="https://forum.privacytools.io/t/discussion-gnupg-file-encryption/1533"
   git="https://git.gnupg.org/cgi-bin/gitweb.cgi?p=gnupg.git"
   windows="https://gpg4win.org/download.html"
@@ -38,6 +39,22 @@
 
 {%
   include cardv2.html
+  title="7 Zip"
+  image="/assets/img/svg/3rd-party/7zip.svg"
+  description='<strong>7-Zip</strong> 自由免費開源的檔案壓縮整理工具，可運行於 Linux, MacOS 等環境，另有文字指令版 <a href="http://p7zip.sourceforge.net/"><strong>p7zip</strong></a> 可整合不同介面例如  <a href="https://wiki.gnome.org/Apps/FileRoller">FileRoller</a>, <a href="https://github.com/ib/xarchiver">Xarchiver</a>, <a href="https://kde.org/applications/utilities/ark">Ark</a>等等。'
+  website="https://7-zip.org"
+  forum="https://forum.privacytools.io/t/discussion-7-zip/3024"
+  source="https://sourceforge.net/projects/sevenzip/files/"
+  windows="https://7-zip.org/download.html"
+  linux="https://sourceforge.net/projects/p7zip/files"
+  freebsd="https://www.freshports.org/archivers/p7zip"
+  openbsd="https://sourceforge.net/projects/p7zip"
+  netbsd="https://sourceforge.net/projects/p7zip"
+%}
+
+
+<!-- {%
+  include cardv2.html
   title="PeaZip - File Archive Encryption"
   image="/assets/img/svg/3rd-party/peazip.svg"
   description="<strong>PeaZip</strong> 由 Giorgio Tani 所開發的一套免費開源的檔案管理與檔案庫軟體。它支援原生的 PEA 檔案庫格式（特色為壓縮、多組磁區分割、彈性化節授權加密和一致的檢驗格式）以及其它的主流格式。其特別關注在開放格式的處理，目前支援 180 多種 檔案延伸格式。"
@@ -49,13 +66,14 @@
   freebsd="https://www.freshports.org/archivers/peazip/"
   openbsd="https://www.peazip.org/peazip-bsd.html"
   netbsd="https://www.peazip.org/peazip-bsd.html"
-%}
+%} -->
 
 <h3>Worth Mentioning</h3>
 
 <ul>
   <li><a href="https://cryptomator.org/">Cryptomator</a> - 免費客戶端的雲端檔案 AES 加密工具。其為開源軟體，沒有後門也無須註冊。<span class="badge badge-warning" data-toggle="tooltip" title="Cryptomator's mobile apps are not open-source."><a href="https://github.com/cryptomator/cryptomator-android/issues/1#issuecomment-257979375"><i class="fas fa-exclamation-triangle"></i></a></span></li>
   <li><a href="https://gitlab.com/cryptsetup/cryptsetup/">Linux Unified Key Setup (LUKS)</a> - 使用 dm-crypt 為磁碟加密骨幹，可為 Linux 全磁區加密系統。Ubuntu 作業環境提供其為默認設定，也有 Windows 與其它的 Linux 版本可用。</li>
+  <li><a href="https://www.dyne.org/software/tomb/">Tomb</a> - 簡單的 zsh 腳本工具可在文字指令環境下製作 LUKS 容器。</li>
   <li><a href="https://hat.sh/">Hat.sh</a> - 跨平台不用伺服器的 JavaScript 網頁應用，在瀏覽器上利用 AES-256-GCM 加密演算法，提供安全的檔案加密。可下載離線使用。</li>
   <li><a href="https://www.keka.io/">Keka</a> - 只能用於 macOS，開源的檔案封存器且具加密功能。</li>
 </ul>

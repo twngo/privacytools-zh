@@ -5,7 +5,7 @@
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, NGO 推進器, TWNGO">
+  <meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, TWNGO, NGO 推進器, 隱私, 資安, 監控">
   <meta name="description" content="您正被盯著。私人和國家支持的組織正在監控與記錄您的線上活動。這裏提供一些知識與工具以保護個人隱私抵抗全球大規模監控。">
   <link rel="canonical" href="https://privacytools.twngo.xyz/">
 
@@ -29,8 +29,9 @@
     "name": "PrivacyTools",
     "description": "您正被盯著。私人和國家支持的組織正在監控與記錄您的線上活動。這裏提供一些知識與工具以保護個人隱私抵抗全球大規模監控。",
     "alternateName": [
+      "privacytools.io",
       "Privacy Tools",
-      "網路隱私工具"
+      "privacytoolsIO"
     ],
     "url": "https://privacytools.twngo.xyz",
     "logo": "https://privacytools.twngo.xyz/assets/img/svg/layout/brand/square-transparent.svg",
@@ -39,7 +40,7 @@
       "https://twitter.com/privacytoolsIO",
       "https://social.privacytools.io/@privacytools",
       "https://www.youtube.com/channel/UCen3taxHtzByXV8Da73B1Vg",
-      "https://github.com/privacytoolsIO"
+      "https://github.com/privacytools"
     ]
   }
   </script>
@@ -61,7 +62,6 @@
   <link href="/assets/css/style.css?v=9" rel="stylesheet">
   <link id="dark-css" href="/assets/css/dark.css?v=4" rel="stylesheet" media="(prefers-color-scheme: dark)">
 </head>
-
 <body data-spy="scroll" data-target="#navbar">
   <script src="/assets/js/applytheme.js?v=1"></script>
   <header>
@@ -99,6 +99,7 @@
             <a class="dropdown-item" href="/providers/search-engines/"><span class="fas fa-search fa-fw"></span> 搜尋引擎</a>
             <a class="dropdown-item" href="/providers/social-networks/"><span class="fas fa-expand-arrows-alt fa-fw"></span> 社交網絡</a>
             <a class="dropdown-item" href="/providers/social-news-aggregator/"><span class="far fa-newspaper fa-fw"></span> 社交訊息聚合</a>
+            <a class="dropdown-item" href="/providers/video/"><span class="far fa-newspaper fa-fw"></span> 影片平台</a>
             <a class="dropdown-item" href="/providers/vpn/"><span class="far fa-eye-slash fa-fw"></span> 虛擬私人網路（VPN）</a>
           </span>
         </details>
@@ -116,7 +117,7 @@
             <a class="dropdown-item" href="/browsers/#fingerprint"><span class="fas fa-fingerprint fa-fw"></span> 指紋資訊</a>
             <a class="dropdown-item" href="/browsers/#webrtc"><span class="far fa-eye fa-fw"></span> WebRTC IP 漏洞</a>
             <a class="dropdown-item" href="/browsers/#addons"><span class="far fa-list-alt fa-fw"></span> 瀏覽器附加元件</a>
-            <a class="dropdown-item" href="/browsers/#about_config"><span class="fas fa-wrench fa-fw"></span> 火狐隱私調校技巧</a>
+            <a class="dropdown-item" href="/browsers/#about_config"><span class="fas fa-wrench fa-fw"></span> FireFox隱私調校技巧</a>
           </span>
         </details>
 
@@ -154,7 +155,7 @@
           </summary>
           <span class="nav-dropdown">
             <a class="dropdown-item" href="/operating-systems/#os"><span class="fas fa-th-large fa-fw"></span> 個人電腦作業系統</a>
-            <a class="dropdown-item" href="/operating-systems/#live_os"><span class="fas fa-compact-disc fa-fw"></span> 可開機作業系統</a>
+            <a class="dropdown-item" href="/operating-systems/#tor_os"><span class="fas fa-compact-disc fa-fw"></span> Tor-Focused Distributions</a>
             <a class="dropdown-item" href="/operating-systems/#mobile_os"><span class="fas fa-mobile-alt fa-fw"></span> 手機作業系統</a>
             <a class="dropdown-item" href="/operating-systems/#aaddons"><span class="fas fa-th fa-fw"></span> Android 隱私附加元件</a>
             <a class="dropdown-item" href="/operating-systems/#firmware"><span class="fas fa-signal fa-fw"></span> 路由器軔體</a>
@@ -216,7 +217,7 @@
   <main>
   <script src="/assets/js/redirects.js"></script>
 <div class="alert alert-success" role="alert">
-  <strong>好消息！</strong> 若您在美國 <a href="https://opencollective.com/privacytoolsio" class="alert-link">金錢捐贈</a> PrivacyTools，現在已可享有當地稅額扣抵優惠！<a href="https://blog.privacytools.io/privacytools-io-joins-the-open-collective-foundation" class="alert-link">了解詳情...</a>
+  <strong>站務宣告</strong> 本站中文化由志工自主維護，與 privacytools 無任何厲屬也無受其金錢財務補助。
 </div>
 
 <div class="jumbotron p-5">
@@ -470,25 +471,43 @@
 
 </div>
 
-<h1 id="sponsors" class="anchor"><a href="#sponsors"><i class="fas fa-link anchor-icon"></i></a> 贊助者</h1>
+<h1 id="sponsors" class="anchor"><a href="#sponsors"><i class="fas fa-link anchor-icon"></i></a> 贊助</h1>
 
 <div class="alert alert-success mb-5" role="alert">
-  <strong>New!</strong> 歡迎認同之品牌贊助網路隱私工具，支持本站宗旨打造一個免於大規監控網路隱私環境，一個網路自由的世界！ <a href="/sponsors/" class="alert-link">了解詳情...</a>
+  <strong>New!</strong> 贊助PrivacyTools，推廣您的品牌並創造一個沒有大規模監控的世界! <a href="/sponsors/" class="alert-link">了解詳情...</a>
 </div>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-10 col-sm-8 col-md-4 col-lg-3">
-      <a href="https://safing.io/" target="_blank" rel="noreferrer">
-        <img
-        src="/assets/img/svg/sponsors/safing.svg"
-        title="Safing Privacy Network - Launching on Kickstarter January 2nd, 2020"
-        alt="Safing Privacy Network - Safing.io Logo"
-        class="img-fluid" />
-      </a>
-    </div>
-  </div>
+<div class="d-flex flex-wrap justify-content-around">
+  <a class="m-3" href="https://safing.io" target="_blank" rel="noreferrer">
+    <img
+      src="/assets/img/svg/3rd-party/sponsors/safing.svg"
+      data-theme-src="/assets/img/svg/3rd-party/sponsors/safing-dark.svg"
+      height="70rem"
+      title="Safing Privacy Network - Launching on Kickstarter January 2nd, 2020"
+      alt="Safing Privacy Network - Safing.io Logo" />
+  </a>
+  <a class="m-3" href="https://www.oeck.com" target="_blank" rel="noreferrer">
+    <img
+      src="/assets/img/png/3rd-party/sponsors/oeck.png"
+      data-theme-src="/assets/img/png/3rd-party/sponsors/oeck-dark.png"
+      height="70rem"
+      title="Oeck - A new type of VPN - Unique, fast and private."
+      alt="Insurgo Logo" />
+  </a>
+  <a class="m-3" href="https://insurgo.ca" target="_blank" rel="noreferrer">
+    <img
+      src="/assets/img/png/3rd-party/sponsors/insurgo.png"
+      height="70rem"
+      title="Insurgo Technologies Libres / Open Technologies — Empower yourself!"
+      alt="Insurgo Logo" />
+  </a>
+  <a class="m-3" href="https://joindeleteme.com" target="_blank" rel="noreferrer">
+    <img
+      src="/assets/img/png/3rd-party/sponsors/deleteme.png"
+      height="70rem"
+      title="DeleteMe is a hands-free subscription service that removes your personal information from data brokers and prevents it from being sold online."
+      alt="DeleteMe Logo" />
+  </a>
 </div>
-
 <div class="page-header">
   <h1>隱私？我無不可告人之事</h1>
 </div>
@@ -500,6 +519,11 @@
 <blockquote class="blockquote">
   <p>在房子里安裝窗簾的主要是為了阻止人們看到屋內。我們不希望他們看到屋內事物是因為我們認同在房屋內所做的許多事情都是私人行為，不管是在餐桌旁吃晚餐，與孩子一起看電影，還是與伴侶進行親密或性行為。這些行為都不是非法之事，但是即使如此，我們仍然放上窗簾和百葉窗。 這清楚地表明了當我們的私人生活和外界有所牽扯時，我們顯然對隱私存有強烈的渴望。</p>
    <footer class="blockquote-footer">Joshua in <cite title="The Crypto Paper"><a href="https://github.com/cryptoseb/CryptoPaper#let-me-explain-further">The Crypto Paper</a></cite></footer>
+</blockquote>
+
+<blockquote class="blockquote">
+  <p>隱私不是奢侈品：它是基本人權 – 不管是數位還是實體空間都必須捍衛的權利，我們必須時時保持警覺，特別是在此科技進展神速的時刻.....。</p>
+  <footer class="blockquote-footer">Chelsea Manning in <cite title="The Guardian"><a href="https://www.theguardian.com/commentisfree/2016/feb/22/privacy-is-a-right-not-a-luxury-and-its-increasingly-at-risk-for-lgbt-people">The Guardian</a></cite></footer>
 </blockquote>
 
 <h4>其它資訊:</h4>
@@ -551,7 +575,6 @@
   <li><a href="https://www.grc.com/securitynow.htm"><strong>Security Now!</strong></a> -  Steve Gibson 與 Leo Laporte 所製作的網際網路安全每週 Podcast 節目。</li>
   <li><a href="https://www.jupiterbroadcasting.com/show/techsnap/"><strong>TechSNAP</strong></a> - 每週播出的 Poadcast 節目，主題涵蓋科技產業對一般人生活之影響的故事。</li>
   <li><a href="https://tosdr.org/"><strong>Terms of Service; Didn't Read</strong></a> - 「勾選已讀完用戶服務協議且予同意」是網際網路上最大的謊言，該網站希望能改善此困境。</li>
-  <li><a href="https://codeberg.org/crimeflare/cloudflare-tor"><strong>The Great Cloudwall</strong></a> - 對於 Cloudflare 這家網際網路背後大戶真面目的批評資訊。</li>
 </ul>
 
 <h3>工具類</h3>
@@ -562,7 +585,6 @@
   <li><a href="https://prism-break.org/"><strong>PRISM Break</strong></a> - 人人都有隱私基本人權，透過通訊加密或是斬斷商用軟體服務依賴，重新落實個人隱私權利之主張吧。</li>
   <li><a href="https://securityinabox.org/"><strong>Security in-a-Box</strong></a> - 為全球人權捍衛者與社運人士所編寫整理的數位安全指南。</li>
   <li><a href="https://securedrop.org/"><strong>SecureDrop</strong></a> - 開源的吹哨揭密提交系統，讓媒體組織用來保護匿名消息來源，確保其安全。此工具由已故的 Aaron Swartz 創建，目前由新聞自由基金會（Freedom of the Press Foundation）負責維護。</li>
-  <li><a href="https://pack.resetthenet.org/"><strong>Reset The Net - Privacy Pack</strong></a> - 協助對抗、終結大規模監控。利用這些工具來保護自己和朋友。</li>
   <li><a href="https://secfirst.org/"><strong>Security First</strong></a> -  Umbrella 是一個手機應用程式，提供如何在一個敵意的環境下採行各種安全措施的建議。</li>
   <li><a href="https://www.osalt.com/"><strong>Osalt</strong></a> - 收錄開源替代專有工具。</li>
   <li><a href="https://alternativeto.net/"><strong>AlternativeTo</strong></a> - 大量收集開源的線上或自行佈署的軟體工具，以替代商用軟體或服務。</li>
@@ -574,7 +596,7 @@
   <h1 id="participate" class="anchor"><a href="#participate"><i class="fas fa-link anchor-icon"></i></a> 提出建設性批評與建議</h1>
 </div>
 
-<p>在網路資訊快速流動的今天，維持 PrivacyTools 與時具進地更新並不容易，為了讓用戶更快地掌握本站所列軟體與服務的動態，除主站外還可透過各式社交平台即時關注我們的新鮮推薦。如果您發現錯誤不妥或是其它更佳的推薦未被收入，<strong>請不吝告之</strong>。可透過<a rel="me" href="https://social.privacytools.io/@privacytools"> Mastodon 直接傳訊</a>或是加入 <a href="https://chat.privacytools.io">Matrix</a> 的聊天室 <code class="highlighter-rouge">#general:privacytools.io</code>。</p>
+<p>在網路資訊快速流動的今天，維持 PrivacyTools 與時具進地更新並不容易，為了讓用戶更快地掌握本站所列軟體與服務的動態，除主站外還可透過各式社交平台即時關注我們的新鮮推薦。如果您發現錯誤不妥或是其它更佳的推薦未被收入，<strong>請不吝告之</strong>。可透過<a rel="me" href="https://social.privacytools.io/@privacytools"> Mastodon 直接傳訊</a>或是加入 <a href="https://chat.privacytools.io">Matrix</a> 的聊天室 <code class="highlighter-rouge">#general:privacytools.io</code>，使用 XMPP 者可透過 #general#privacytools.io@matrix.org。提醒您，使用本站所提供的服務當遵守相關<a href="https://wiki.privacytools.io/view/PrivacyTools:Code_of_Conduct">行為準則</a>。</p>
 
 <div class="row">
 
@@ -794,6 +816,7 @@
       <a href="/privacy/">隱私宣告</a> |
       <a href="/notices/">注意事項 &amp; 免責聲明</a> |
       <a href="https://github.com/privacytoolsIO/brand">品牌資產 &amp; 指導原則</a>
+      <a href="https://status.privacytools.io">Status Page</a>
     </small>
 
   </div>
@@ -801,12 +824,10 @@
 
   </footer>
 </div>
-  <script src="/assets/js/jquery-3.3.1.min.js?v=4"></script>
-<script src="/assets/js/popper.min.js?v=4"></script>
-<script src="/assets/js/bootstrap.min.js?v=4"></script>
+  <script src="/assets/js/popper.min.js?v=5"></script>
+<script src="/assets/js/bootstrap.min.js?v=5"></script>
 <script src="/assets/js/sortable.min.js?v=4"></script>
 <script src="/assets/js/main.js?v=5"></script>
-
 <!--
   Matomo is the leading open-source analytics platform:
   - Free open-source software

@@ -10,6 +10,9 @@
 <loc>http://localhost:4000/software/calendar-contacts/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/services/chat/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/software/cloud/</loc>
 </url>
 <url>
@@ -17,9 +20,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/donate/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/donate.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/providers/email/</loc>
@@ -85,6 +85,9 @@
 <loc>http://localhost:4000/services/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/services/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/providers/social-networks/</loc>
 </url>
 <url>
@@ -100,10 +103,12 @@
 <loc>http://localhost:4000/providers/cloud-storage/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/providers/video/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/providers/vpn/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/password.html</loc>
-<lastmod>2020-01-01T10:39:20+08:00</lastmod>
+<loc>http://localhost:4000/providers/vpn/</loc>
 </url>
 </urlset>

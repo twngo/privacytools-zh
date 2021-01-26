@@ -5,6 +5,7 @@ title="Thunderbird"
 image="/assets/img/svg/3rd-party/thunderbird.svg"
 description="Thunderbird 免費、開源、跨平台的電子郵件、新聞與聊天軟體，之前由 Mozilla 基金會開發維護，現為 Thunderbird 社群為開發主力。 是電子郵件、新聞群組、新聞推送訂閱與聊天(支援 XMPP, IRC, Twitter)的客戶端軟體。"
 website="https://www.thunderbird.net/"
+privacy-policy="https://www.mozilla.org/privacy/thunderbird/"
 forum="https://forum.privacytools.io/t/discussion-thunderbird/659"
 source="https://hg.mozilla.org/comm-central/"
 windows="https://www.thunderbird.net/en-US/"
@@ -16,6 +17,87 @@ netbsd="http://pkgsrc.se/mail/thunderbird"
 %}
 
 {% include cardv2.html
+  title="Mailpile"
+  image="/assets/img/svg/3rd-party/mailpile.svg"
+  description="Mailpile 為免費、社群資助的開源郵件軟體方便操作加密且有許多隱私功能。"
+  website="https://www.mailpile.is/"
+  privacy-policy="https://www.mailpile.is/privacy.html"
+  tor="clgs64523yi2bkhz.onion"
+  forum="https://forum.privacytools.io/t/"
+  github="https://github.com/mailpile/Mailpile"
+  linux="https://www.mailpile.is/download/linux.html"
+%}
+
+{% include cardv2.html
+  title='Mailvelope'
+  image='/assets/img/svg/3rd-party/mailvelope.svg'
+  description='Mailvelope 瀏覽器上的附加元件，透過 <a href="https://theprivacyguide.org/tutorials/pgp.html">OpenPGP 加密標準</a>，以便交換加密郵件。'
+  website='https://www.mailvelope.com/en'
+  privacy-policy='https://www.mailvelope.com/en/privacy-policy'
+  forum='https://forum.privacytools.io/t/'
+  github='https://github.com/mailvelope/mailvelope'
+  firefox='https://addons.mozilla.org/firefox/addon/mailvelope/'
+  chrome='https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke?hl'
+  edge='https://microsoftedge.microsoft.com/addons/detail/mailvelope/dgcbddhdhjppfdfjpciagmmibadmoapc'
+%}
+
+<h3>值得一提</h3>
+<ul>
+  <li><a href="https://neomutt.org/">NeoMutt</a> - NeoMutt 為 Linux 與 BSD 使用的文字指令郵件閱讀軟體，它本源自於 <a href="https://en.wikipedia.org/wiki/Mutt_(email_client)">Mutt</a>，新增更多功能。
+</ul>
+
+
+
+
+<h1 id="mobileclients" class="anchor"><a href="#mobileclients"><i class="fas fa-link anchor-icon"></i></a> 手機電子郵件客戶端軟體</h1>
+
+<h2 id="adroidclients" class="anchor"><a href="#adroidclients"><i class="fas fa-link anchor-icon"></i></a> Android 電子郵件客戶端軟體</h1>
+
+{% include cardv2.html
+  title="FairEmail"
+  image="/assets/img/svg/3rd-party/fairemail.svg"
+  description="輕巧開源的郵件軟體，FairEmail 使用開放標準 (IMAP, SMTP, OpenPGP) 低度流量耗廢與省電。"
+  website="https://email.faircode.eu/"
+  privacy-policy="https://github.com/M66B/FairEmail/blob/master/PRIVACY.md"
+  forum="https://forum.privacytools.io/t/"
+  github="https://github.com/M66B/FairEmail"
+  fdroid="https://f-droid.org/en/packages/eu.faircode.email/"
+  googleplay="https://play.google.com/store/apps/details?id=eu.faircode.email"
+%}
+
+{% include cardv2.html
+  title="K-9 Mail"
+  image="/assets/img/svg/3rd-party/k9mail.svg"
+  description="Android 安卓手機上的獨立電子郵件應用程式，K-9 Mail 同時支援 POP3 與 IMAP 協議的郵箱, 但目前只支援 IMAP 的郵件推送。"
+  website="https://k9mail.app/"
+  privacy-policy="https://k9mail.app/privacy"
+  forum="https://forum.privacytools.io/t/"
+  github="https://github.com/k9mail"
+  fdroid="https://f-droid.org/packages/com.fsck.k9/"
+  googleplay="https://play.google.com/store/apps/details?id=com.fsck.k9"
+%}
+
+<h2 id="iosclients" class="anchor"><a href="#iosclients"><i class="fas fa-link anchor-icon"></i></a> iOS 電子郵件客戶端軟體</h1>
+
+{% include cardv2.html
+  title="Canary Mail"
+  image="/assets/img/svg/3rd-party/canarymail.svg"
+  labels="color==warning::link==https://canarymail.io/faq.html::text==Closed source::tooltip==The source programming code for Canary Mail is not available. Canary Mail is a proprietary application."
+  description="Canary Mail 付費的郵件軟體，可無縫順暢地進行端對端加密並帶有許多安全功能，例如生物應用上鎖等。"
+  website="https://canarymail.io/"
+  privacy-policy="https://canarymail.io/privacy.html"
+  forum="https://forum.privacytools.io/t/"
+  ios="https://apps.apple.com/us/app/canary-mail/id1236045954"
+%}
+
+
+<h3>值得一提</h3>
+
+<ul>
+  <li><a href="https://letterbox-app.org/">Letterbox</a> - Letterbox 運行於 iOS 的自由開源郵件軟體，其為德國柏林自由大學所進行研究計畫的一部份</li>
+</ul>
+
+<!-- {% include cardv2.html
 title="Claws Mail"
 image="/assets/img/png/3rd-party/claws_mail.png"
 description="Claws Mail 免費開源，使用 GTK 桌面環境的電子郵件與新聞軟體。它提供了簡單的設定和豐富的功能，也包括 Windows 底下的加密套件包 Gpg4win。"
@@ -28,7 +110,7 @@ linux="https://www.claws-mail.org/downloads.php?section=downloads"
 freebsd="https://www.freshports.org/mail/claws-mail/"
 openbsd="http://openports.se/mail/claws-mail"
 netbsd="http://pkgsrc.se/mail/claws-mail"
-%}
+%} 
 
 
 <h3>隱私電郵工具</h3>
@@ -47,4 +129,5 @@ netbsd="http://pkgsrc.se/mail/claws-mail"
   <li><a href="https://github.com/k9mail/k-9/releases">K-9 Mail</a> - Android 安卓手機上的獨立電子郵件應用程式，其同時支援 POP3 與 IMAP 協議的郵箱, 但目前只支援 IMAP 的郵件推送。</li>
   <li><a href="https://www.gnupg.org/">GNU Privacy Guard</a> - 電子郵件加密，GnuPG 為基於 GPL 授權版本的 PGP 密碼套件軟體的替代選擇。 <a href="https://theprivacyguide.org/tutorials/gpg.html">使用教學（英文）</a>。MacOS X 作業系統可使用 <a href="https://gpgtools.org/">GPGTools</a>。</li>
   <li><a href="https://www.mailpile.is/">Mailpile (Beta)</a> - 現代、快捷的網頁電郵工具，易上手的使用介面與友善的加密隱私功能。</li>
-</ul>
+</ul> -->
+

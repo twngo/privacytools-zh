@@ -5,14 +5,7 @@ title: "電郵客戶端軟體"
 description: "免費、開源、安全的電子郵件客戶端軟體以及一些可考慮的替代方案。"
 ---
 
-<div class="card border-danger">
-   <div class="card-header text-danger"><i class="fas fa-exclamation-circle fa-fw"></i>提醒</div>
-   <div class="card-body">
-    <p class="card-text text-danger">即便使用如 GPG 之類端對端加密的技術，email 本質上仍不夠安全不宜作為敏感內容的通訊管道。它的元數據只能以明文型式傳輸，就算正確使用加密法，也可能在轉寄或回信時不小心把早先加密過的內容以明文方式傳送。 GPG 也無法方便地支援新的密碼學功能，如密鑰輪替（key rotation）和向前保密（forward secrecy）。</p>
-    <p class="card-text text-secondary">為了定期接收其它服務的通知需要有電子郵件信箱，故我們推薦下列的電郵供應商。但若考量<strong>需要</strong> 安全隱密的通訊，最好採用專注的即時通訊軟體如 Signal。</p>
-    <a href="/software/real-time-communication/" class="btn btn-outline-secondary">推薦的通時訊軟體</a>
-  </div>
-</div>
+
+{% include sections/email-warning.html %}
 
 {% include sections/email-clients.html %}
-

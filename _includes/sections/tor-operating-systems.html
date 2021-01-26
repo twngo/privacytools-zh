@@ -1,0 +1,25 @@
+<h1 id="tor_os" class="anchor"><a href="#tor_os"><i class="fas fa-link anchor-icon"></i></a> Tor 特用 版本</h1>
+
+<div class="alert alert-info" role="alert">
+  <strong>以下 Linux 版本皆為特別開發，引導其網路流量須透過 Tor 進行。</strong>
+</div>
+
+{% include cardv2.html
+  title="Tails"
+  image="/assets/img/svg/3rd-party/tails.svg"
+  description='Tails 自生作業系統，可利用 DVD、隨身碟或 SD 記憶卡來啟動大多數電腦開機。它希望可以保留隱私與匿名，協助人們可以匿名地使用網路以及逃過網路審查，它的網路連結是透過 Tor 網路；不會在用過的電腦上留下使用㾗跡。它使用最新的密碼學工具來加密檔案，電子郵件和即時通訊。'
+  badges="info:Linux"
+  website="https://tails.boum.org/"
+  git="https://git-tails.immerda.ch/tails/"
+  %}
+
+{% include cardv2.html
+  title="Whonix"
+  image="/assets/img/svg/3rd-party/whonix.svg"
+  description='利用 Debian 為基礎，進一步強調安全的 Linux 版本，讓使用者在網際網路漫遊之際能保護自身隱私、資訊安全與匿名性。此作業系統包含兩件虛擬機器，一個是工作站另一個是 Tor 閳
+  門。所有的外部通訊都強制通過 Tor 網路進行。<a href="https://www.whonix.org/wiki/Qubes/Why_use_Qubes_over_other_Virtualizers">Whonix is best used in conjunction with Qubes.</a>'
+  badges="info:Linux"
+  website="https://www.whonix.org/"
+  tor="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/"
+  github="https://github.com/Whonix"
+%}

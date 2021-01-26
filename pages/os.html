@@ -13,40 +13,15 @@ description: "常用的電腦可能正在傷害您的隱私，請看看我們對
   <li><a href="#win10"><i class="fas fa-link"></i>不要使用 Windows 10 - 它是隱私夢魘</a></li>
 </ul>
 
-<h4 id="cpuvulns">請記得檢查中央處理器 CPU 弱點緩解 </h4>
 
-<p><em><a href="https://support.microsoft.com/en-us/help/4073757/protect-windows-devices-from-speculative-execution-side-channel-attack">這對 Windows 10　有影響</a>，但微軟並未明白揭露情況或說明如何降低危險。 MacOS 用戶可檢查 <a href="https://support.apple.com/en-us/HT210108">How to enable full mitigation for Microarchitectural Data Sampling (MDS) vulnerabilities on Apple Support</a>.</em></p>
 
-<p>如果電腦用的是 Linux 最近的核心，可以從 <code>tail -n +1 /sys/devices/system/cpu/vulnerabilities/*</code> 指令來檢查 CPU 弱點狀況。用 <code>tail -n +1</code> 而不是 <code>cat</code>指今，才可看到檔案名稱。</p>
+{% include sections/tor-operating-systems.html %}
 
-<p>
-    若使用英特爾處理器，執行 <code>tail</code> 指令時可能會出現"SMT vulnerable"之訊息。可在開機時的 UEFI/BIOS 底下關閉<a href="https://en.wikipedia.org/wiki/Hyper-threading">hyper-threading</a>，以減緩此問題。若您的作業系統版本使用 GRUB 且支援 <code>/etc/default/grub.d/</code>，不妨依照下列步驟操作：
-</p>
-
-<ol>
-  <li><code>sudo mkdir /etc/default/grub.d/</code> 創建新目錄來作另一個 grub 設定。</li>
-  <li><code>echo GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT l1tf=full,force mds=full,nosmt mitigations=auto,nosmt nosmt=force" | sudo tee /etc/default/grub.d/mitigations.cfg</code> 寫入新的 grub config 設定檔內容。</li>
-  <li><code>sudo grub-mkconfig -o /boot/grub/grub.cfg</code> 産生新的 grub 設定檔，其包含新核心啟動標記</li>
-  <li><code>sudo reboot</code> 重開機</li>
-  <li>重新開機後，再次檢查 <code>tail -n +1 /sys/devices/system/cpu/vulnerabilities/*</code>看看現在 SMT 是否顯示 "SMT disabled."</li>
-</ol>
-
-<h5>進一步了解</h5>
-
-<ul>
-  <li><a href="https://cpu.fail/">CPU.fail</a></li>
-  <li><a href="https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/">Hardware vulnerabilities index on The Linux kernel user's and administrator's guide</a></li>
-  <li><a href="https://www.cyberciti.biz/faq/install-update-intel-microcode-firmware-linux/">How to install/update CPU microcode firmware on Linux</a> - Regardless of your CPU manufacturer, you should always install the latest microcode packages available to be protected from CPU vulnerabilities, especially if the command above reports <strong>no microcode</strong> in its output.</li>
-  <li><a href="https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html">MDS - Microarchitectural Data Sampling on The Linux kernel user's and administrator's guide</a></li>
-  <li><a href="https://mdsattacks.com/">RIDL and Fallout: MDS attacks on mdsattacks.com</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Simultaneous_multithreading">Simultaneous multithreading on Wikipedia</a></li>
-</ul>
-
-{% include sections/live-operating-systems.html %}
-
-{% include sections/mobile-operating-systems.html %}
+{% include sections/android-operating-systems.html %}
 
 {% include sections/android-addons.html %}
+
+{% include sections/other-mobile-operating-systems.html %}
 
 {% include sections/router-firmware.html %}
 

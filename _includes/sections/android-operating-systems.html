@@ -1,0 +1,66 @@
+<h1 id="mobile_os" class="anchor"><a href="#mobile_os"><i class="fas fa-link anchor-icon"></i></a> 手機作業系統</h1>
+
+<h2 id="aosp_os" class="anchor"><a href="#aosp_os"><i class="fas fa-link anchor-icon"></i></a> Android-based Operating Systems</h1>
+
+<div class="alert alert-warning" role="alert">
+  <strong>雖然以下的作業系統提供原始碼，但安裝 Google Apps 可能會影響你的設定。</strong>
+</div>
+
+{% include cardv2.html
+  title="CalyxOS"
+  image="/assets/img/svg/3rd-party/calyxos.svg"
+  description='CalyxOS Pixel 以安卓開源專案為底 Pixel 手機運行的客制 ROM。它強調隱私和安全，包含一些良選的應用程式，亦支援<a href="https://source.android.com/security/verifiedboot">認證啟動</a>。'
+  badges="info:AOSP"
+  website="https://calyxos.org"
+  gitlab="https://gitlab.com/calyxos"
+%}
+
+{% include cardv2.html
+title="GrapheneOS"
+image="/assets/img/svg/3rd-party/grapheneos.svg"
+image-dark="/assets/img/svg/3rd-party/grapheneos-dark.svg"
+description='GrapheneOS (前身為 CopperheadOS) 自由開源、重視安全和隱私的手機作業系統，其基礎來自 Android 開源專案，目前重點工作在提昇更強大的硬體安全保護。'
+badges="info:AOSP"
+labels="warning:contrib:This software may depend on or recommend non-free software."
+website="https://grapheneos.org/"
+github="https://github.com/GrapheneOS/"
+%}
+
+{% include cardv2.html
+title="LineageOS"
+image="/assets/img/svg/3rd-party/lineageos.svg"
+description='LineageOS 是一個以 Android 為基礎，為手機與平板電腦上的開源作業系統。它依據 Google 所發佈的 Android 正式版為開發基礎，為一自由開源軟體， CyanogenMod 專案的延續。'
+badges="info:AOSP"
+labels="warning:contrib:This software may depend on or recommend non-free software."
+website="https://www.lineageos.org/"
+privacy-policy="https://www.lineageos.org/legal/"
+github="https://github.com/LineageOS"
+%}
+
+
+<h3>值得一提</h3>
+<ul>
+  <li>
+    <a href="https://microg.org/">MicroG</a>
+    {% include badge.html
+    color="info"
+    text="Add-on Package"
+    %}
+    {% include badge.html
+    color="warning"
+    icon="far fa-question-circle"
+    %}
+    - 希望在安卓系統中能重新實現開源自由軟體市集供應，替代啇用閉源的 Google Play 服務， microG 專案也包括從 LineageOS  microG 分家獨立開發，預裝 F-Droid 的 <a href="https://lineage.microg.org/">Lineage for microG</a>。
+  </li>
+</ul>
+
+
+<!-- {% include cardv2.html
+  title="Ubuntu Touch"
+  image="/assets/img/svg/3rd-party/ubuntu.svg"
+  description="Ubuntu Touch 是運行於手機與平板電腦的自由開源作業系統，可說是目有主流市場外的另一個替代選項，唯目前可<a href=https://devices.ubuntu-touch.io/>支援的</a>硬體設備非常有限。"
+  badges="info:GNU/Linux"
+  labels="warning:contrib:This software may depend on or recommend non-free software."
+  website="https://ubuntu-touch.io/"
+  github="https://github.com/ubports"
+  %} -->

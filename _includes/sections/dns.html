@@ -546,3 +546,140 @@
     </tbody>
   </table>
 </div>
+
+
+<h1 id="dns-desktop-clients" class="anchor">
+  <a href="#dns-desktop-clients">
+    <i class="fas fa-link anchor-icon"></i>
+  </a> 推薦桌機或筆電使用的加密域名軟體
+</h1>
+
+{%
+  include cardv2.html
+  title="Unbound"
+  image="/assets/img/svg/3rd-party/unbound.svg"
+  description='A validating, recursive, caching DNS resolver, supporting DNS-over-TLS, and has been <a href="https://ostif.org/our-audit-of-unbound-dns-by-x41-d-sec-full-results/">independently audited</a>.'
+  website="https://nlnetlabs.nl/projects/unbound/about/"
+  forum="https://forum.privacytools.io/t/discussion-unbound/3563"
+  github="https://github.com/NLnetLabs/unbound"
+%}
+
+{%
+  include cardv2.html
+  title="dnscrypt-proxy"
+  image="/assets/img/svg/3rd-party/dnscrypt-proxy.svg"
+  description='支援 DNSCrypt 的 DNS 代理， DNS-over-HTTPS， <a href="https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt">Anonymized DNSCrypt</a>，以 <a href="https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Anonymized-DNS">中繼協定為基礎來隱藏用戶 IP 位置。</a>'
+  website="https://github.com/DNSCrypt/dnscrypt-proxy/wiki"
+  forum="https://forum.privacytools.io/t/discussion-dnscrypt-proxy/1498"
+  github="https://github.com/DNSCrypt/dnscrypt-proxy"
+%}
+
+{%
+  include cardv2.html
+  title="Stubby"
+  image="/assets/img/png/3rd-party/stubby.png"
+  description='會處理本地端的 DNS-over-TLS 存根解析，Stubby 可與 <a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Clients#DNSPrivacyClients-Unbound/Stubbycombination">Unbound 聯合</a>，後者提供本地快取以管理上流 TLS 連線(但 Unbound 無法重覆使用 TCP/TLS 連接) 。'
+  website="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby"
+  forum="https://forum.privacytools.io/t/discussion-stubby/3582"
+  github="https://github.com/getdnsapi/stubby"
+%}
+
+{%
+  include cardv2.html
+  title="Firefox 自帶的 DNS-over-HTTPS 解析器"
+  image="/assets/img/svg/3rd-party/firefox_browser.svg"
+  description='Firefox 內建  <a href="https://blog.mozilla.org/blog/2020/02/25/firefox-continues-push-to-bring-dns-over-https-by-default-for-us-users/">NextDNS 與 Cloudflare</a>DNS-over-HTTPS 支援功能，但用戶可自行手動調整使用其它 DoH 解析。'
+  labels="color==warning::icon==fas fa-exclamation-triangle::link==https://developers.cloudflare.com/1.1.1.1/privacy/firefox::text==Warning::tooltip==Cloudflare logs a limited amount of data about the DNS requests that are sent to their custom resolver for Firefox."
+  website="https://support.mozilla.org/en-US/kb/firefox-dns-over-https"
+  privacy-policy="https://wiki.mozilla.org/Security/DOH-resolver-policy"
+  forum="https://forum.privacytools.io/t/discussion-firefox-s-built-in-dns-over-https-resolver/3564"
+%}
+
+<h1 id="dns-android-clients" class="anchor">
+  <a href="#dns-android-clients">
+    <i class="fas fa-link anchor-icon"></i>
+  </a> 推薦 Android 手機可用的加密域名軟體
+</h1>
+
+{%
+  include cardv2.html
+  title="Android 9's 內建 DNS-over-TLS 解析"
+  image="/assets/img/svg/3rd-party/android.svg"
+  description="Android 9 (Pie) 已自帶 DNS-over-TLS 支援功能，無須再透過第三方軟體。"
+  labels="color==warning::icon==fas fa-exclamation-triangle::link==https://developers.google.com/speed/public-dns/docs/using#android_9_pie_or_later::text==Warning::tooltip==Android 9's DoT settings have no effect when used concurrently with VPN-based apps which override the DNS."
+  website="https://support.google.com/android/answer/9089903#private_dns"
+  forum="https://forum.privacytools.io/t/discussion-android-9s-built-in-dns-over-tls-resolver/3562"
+%}
+
+{%
+  include cardv2.html
+  title="Nebulo"
+  image="/assets/img/png/3rd-party/nebulo.png"
+  description='開源的 Android 軟體支援 DNS-over-HTTPS 與 DNS-over-TLS, 快取 DNS 回應與記錄 DNS 查詢。'
+  website="https://git.frostnerd.com/PublicAndroidApps/smokescreen/-/blob/master/README.md"
+  privacy-policy="https://smokescreen.app/privacypolicy"
+  forum="https://forum.privacytools.io/t/discussion-nebulo/3565"
+  fdroid="https://git.frostnerd.com/PublicAndroidApps/smokescreen#f-droid"
+  googleplay="https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen"
+  source="https://git.frostnerd.com/PublicAndroidApps/smokescreen"
+%}
+
+<h1 id="dns-ios-clients" class="anchor">
+  <a href="#dns-ios-clients">
+    <i class="fas fa-link anchor-icon"></i>
+  </a> 推薦 iOS 手機使用的加密域名軟體
+</h1>
+
+{%
+  include cardv2.html
+  title="DNSCloak"
+  image="/assets/img/png/3rd-party/dnscloak.png"
+  description='開源的 iOS 客戶端軟體，支援 DNS-over-HTTPS, DNSCrypt, 以及 <a href="https://github.com/DNSCrypt/dnscrypt-proxy/wiki">dnscrypt-proxy</a>選項，例如快取 DNS 回應、本地記錄 DNS 查詢、自定封鎖名單等， 用戶可以<a href="https://blog.privacytools.io/adding-custom-dns-over-https-resolvers-to-dnscloak/">新增 DNS 戳記的自定解析器</a>.'
+  website="https://github.com/s-s/dnscloak/blob/master/README.md"
+  privacy-policy="https://drive.google.com/file/d/1050No_pU74CAWUS5-BwQWyO2x_aiMzWc/view"
+  forum="https://forum.privacytools.io/t/discussion-dnscloak/3566"
+  ios="https://apps.apple.com/app/id1452162351"
+  github="https://github.com/s-s/dnscloak"
+%}
+
+<h2 id="appledns" class="anchor">
+  <a href="#appledns">
+    <i class="fas fa-link anchor-icon"></i>
+  </a>Apple's 原生支援
+</h2>
+
+<p>
+  在蘋果電腦生態系如 iOS, iPadOS, tvOS 14, macOS 11 等，已引入 DoT 與 DoH。故在設置用戶資料時即會自動戴入(開啟 <em>Safari</em>瀏覽器的mobileconfig 檔案).
+  安裝後，可在 <em>設定 &rarr; 一般 &rarr; VPN and Network &rarr; DNS</em>底下處選擇加密的 DNS 伺服器。
+</p>
+
+<ul>
+  <li><a href="https://adguard.com/en/blog/encrypted-dns-ios-14.html">AdGuard</a> 與 <a href="https://apple.nextdns.io/">NextDNS</a>提供<strong>簽署過的用戶資料</strong>。</li>
+  <li>用戶可利用域名服務商架設的的 <a href="https://encrypted-dns.party/">encrypted-dns.party</a>來自定<strong>未簽署的用戶資料</strong>。</li>
+</ul>
+
+<h2 id="dns-definitions" class="anchor">
+  <a href="#dns-definitions">
+    <i class="fas fa-link anchor-icon"></i>
+  </a> 定義
+</h2>
+
+<h4>DNS-over-TLS (DoT)</h4>
+<p>
+  自動伺機模式：當用戶試圖透過 853 端口進行 DNS-over-TLS 連線到伺服器時，不會執行憑證查驗。如果連線失敗，它會改用未加密的 DNS. 部份供應商採更容易運行 443 端口，因為 853 常常被限制的防火牆阻檔。
+</p>
+
+<h4>DNS-over-HTTPS (DoH)</h4>
+<p>
+  類似 DoT，但採用 HTTPS 取代，透過 443 端口，和一般的 HTTPS 流量無異但更難被封鎖。{% include badge.html color="warning" text="Warning" tooltip="DoH contains metadata such as user-agent (which may include system information) that is sent to the DNS server." link="https://tools.ietf.org/html/rfc8484#section-8.2" icon="fas fa-exclamation-triangle" %}
+</p>
+
+<h4>DNSCrypt</h4>
+<p>
+  透過 <a href="https://dnscrypt.info/protocol/">開放指定協定</a>, DNSCrypt 雖舊式但仍常被使用的 DNS 加密方式。
+</p>
+
+<h4>Anonymized DNSCrypt</h4>
+<p>
+  一套<a href="https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Anonymized-DNS">輕巧簡易協定</a> 利用先設定好的中繼來傳輸加密過的 DNS 資訊來隱藏客戶端的 IP 位置，它是 2019年新近建立的協定，目前僅支援 <a href="#dns-desktop-clients">dnscrypt-proxy</a> 和有限的 <a href="https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/relays.md">中繼。</a>.
+</p>

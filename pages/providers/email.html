@@ -2,24 +2,270 @@
 layout: page
 permalink: /providers/email/
 title: "Best Secure Email Providers for Privacy"
-description: "Find a secure email provider that will keep your privacy in mind. Don't settle for ad-supported platforms. Never trust any company with your privacy, always encrypt."
+description: "選擇看重用戶隱私的安全電郵供應商，最好避免廣告式平台。不可輕信任何公司，郵件最好能加密。"
 ---
 
-<div class="card border-danger">
-  <div class="card-header text-danger"><i class="fas fa-exclamation-circle fa-fw"></i>提醒</div>
-  <div class="card-body">
-    <p class="card-text text-danger">即便使用如 GPG 之類端對端加密的技術，email 本質上仍不夠安全不宜作為敏感內容的通訊管道。它的元數據只能以明文型式傳輸，就算正確使用加密法，也可能在轉寄或回信時不小心把早先加密過的內容以明文方式傳送。 GPG 也無法方便地支援新的密碼學功能，如密鑰輪替（key rotation）和隱密轉寄（forward secrecy）。</p>
-    <p class="card-text text-secondary">為了定期接收其它服務的通知需要有電子郵件信箱，故我們推薦下列的電郵供應商。但若考量<strong>需要</strong> 安全隱密的通訊，最好採用專注的即時通訊軟體如 Signal。</p>
-    <a href="/software/real-time-communication/" class="btn btn-outline-secondary">推薦的通時訊軟體</a>
-  </div>
-</div>
+
+{% include sections/email-warning.html %}
 
 {% include sections/email-providers.html %}
 
-<h3>相關資訊</h3>
+<hr>
+<h1 id="criteria" class="anchor"><a href="#criteria"><i class="fas fa-link anchor-icon"></i></a> 電郵服務商推薦標準</h1>
 
-<ul>
-  <li><a href="https://www.wired.com/2011/10/ecpa-turns-twenty-five/">Aging 'Privacy' Law Leaves Cloud E-Mail Open to Cops</a> - 在雲端存放六個月以上的資料被視為遺棄物，情報單位很可能不必聲請搜索票就可以取得。了解：使用電郵客戶端軟體如 Thunderbird, Enigmail，將郵件下載到本地電腦不要把它們一直存放在伺服器。</li>
-  <li><a href="https://www.eff.org/deeplinks/2012/04/may-firstriseup-server-seizure-fbi-overreaches-yet-again">With May First/Riseup Server Seizure, FBI Overreaches Yet Again</a></li>
-  <li><a href="https://www.autistici.org/ai/crackdown/">Autistici/Inventati server compromised</a> - 由 Autistici/Inventati 伺服器提供的密碼服務在 2004 年 6 月遭到破壞，一年後才被發現。為查詢某個電郵，郵政警察可能進行一整年的監控 autistici.org/inventati.org 伺服器上每一位用戶的私人通信。</li>
-</ul>
+<p><strong>本站與下列推薦的供應商並無任何關聯，以維持完全客觀的立場和評論，特此聲明。</strong> 透過消費者自己一番研究確認可信任的對象後，再決定電子郵件的服務商。</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="司法管轄地" %}</h3>
+      <p>供應商在非五眼/九眼/十四眼等國家之外營運，不必然保證隱私安全，還要考量其它因素。不管如何，最好還是不要選用這些集團國家所在地，避免大規模政府無差別的拖網式監控，尤其是美國。請參考<a href="/providers/#ukusa"></a>全球大規模監控與避免使用美國與英國的服務商</a>，了解為何這點很重要。</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線：</strong></p>
+      <ul>
+        <li>在美國境外或其它五眼聯盟以外的國家營運。</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為：</strong></p>
+      <ul>
+        <li>在美國與十四眼聯盟以外的國家營運。</li>
+        <li>營運所在地有強勢的消費者保護法令。</li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="技術" %}</h3>
+      <p>以下為安全與最佳電郵體驗的重要必備功能，消費者在挑選服務商時，應慎重看待這些條件。</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線:</strong></p>
+      <ul>
+        <li>全程安全加密帳號資料</li>
+        <li>網頁版郵件整合加密功能，方便使用者來改善原本無<a href="https://en.wikipedia.org/wiki/End-to-end_encryption">E2EE</a>加密的情況。</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為:</strong></p>
+      <ul>
+        <li>全程使用 zero-access 加密方式處理用戶的帳號資料(zero-access 指只有資料所有人才能讀取，別人無法看到)</li>
+        <li>用戶可自定<a href="https://en.wikipedia.org/wiki/Domain_name">網域名</a>。 用戶可利用自定域名Custom domain names are important to users because it allows them to maintain their agency from the service, should it turn bad, be acquired by another company which doesn't prioritize privacy etc.</li>
+        <li>支援 <a href="https://wiki.gnupg.org/WKD">WKD</a>，便於透過 HTTP 來找 OpenPGP 公鑰目錄，<br> GnuPG 使用者只要輸入: <code>gpg --locate-key example_user@example.com</code>，就可查找他人的公鑰。</li>
+        <li>服務非註冊客戶，利用臨時信箱。臨時信箱可傳送加密郵件給不會使用加密郵件的外部收件，這些郵件通常都有讀取時限之後就會自動刪除。此功能讓收件者不必設定複雜的加密方法。</li>
+        <li>可透過 <a href="https://en.wikipedia.org/wiki/.onion"> Tor 網路洋蔥服務</a>使用郵件服務</li>
+        <li><a href="https://en.wikipedia.org/wiki/Email_address#Subaddressing">Subaddressing</a> 支援</li>
+        <li>使用自定網域名者可享<a href="https://en.wikipedia.org/wiki/Email_filtering">Catch all</a> 或 <a href="https://en.wikipedia.org/wiki/Email_alias">aliases名別</a>功能。</li>
+        <li>使用標準的郵件取用協定，如 <a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP</a>, <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a> or <a href="https://en.wikipedia.org/wiki/JSON_Meta_Application_Protocol">JMAP</a>等。標準協定能確保用戶若要轉換其它服務商時，可方便下載帶走全部郵件。</li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="隱私" %}</h3>
+      <p>建議考慮服務商收集用戶資料的必要性，以資料最少量為宜</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線:</strong></p>
+      <ul>
+        <li>保護寄件人的 IP 位置，過濾避免此資訊顯示在<code>已接收</code> 表頭欄位</li>
+        <li>除了用戶名稱和密碼，不強制要求提供其它可辨識的個人資訊(personally identifiable information,PII)。</li>
+        <li>隱私政策符合歐盟個資保護指令 GDPR</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為:</strong></p>
+      <ul>
+        <li>可接受比特幣、現金、加密資幣或其它可匿名的付款方式(如禮物卡)。</li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="安全" %}</h3>
+      <p>郵件伺服器經手許多敏感資料，故我們希望服務商們能採行業界最佳示範方案來保護客戶。</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線:</strong></p>
+      <ul>
+        <li>網頁版電郵提供 <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">雙因子驗證 (2FA)</a>，例如 <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm">TOTP</a>。</li>
+        <li>全程加密保護 (e.g. <a href="https://en.wikipedia.org/wiki/dm-crypt">dm-crypt</a>) 以確保放在伺服器內容萬一遭非法入侵也不會外洩。</li>
+        <li><a href="https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions">DNSSEC</a> 支援</li>
+        <li>使用 <a href="https://www.hardenize.com">Hardenize</a>、<a href="https://testssl.sh">testssl.sh</a>、 <a href="https://www.ssllabs.com/ssltest">Qualys SSL Labs</a>等工具時，無 <a href="https://en.wikipedia.org/wiki/Opportunistic_TLS">TLS</a> 錯誤/缺陷弱點，像憑證錯誤、不良密碼組、單薄的 DH 參數等等，容易造成 <a href="https://en.wikipedia.org/wiki/Logjam_(computer_security)">Logjam 安全問題</a>。</li>
+        <li>有效的 <a href="https://tools.ietf.org/html/rfc8461">MTA-STS</a>和 <a href="https://tools.ietf.org/html/rfc8460">TLS-RPT</a> 政策</li>
+        <li>有效的 <a href="https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities">DANE</a> 記錄</li>
+        <li>有 <a href="https://en.wikipedia.org/wiki/Sender_Policy_Framework">SPF</a>, <a href="https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail">DKIM</a> 與 <a href="https://en.wikipedia.org/wiki/DMARC">DMARC</a>， <code>p</code>值設置為:  <code>none</code>, <code>quarantine</code> or <code>reject</code>.</li>
+        <li>伺服器採用 TLS 1.2 以上版本或是提出停止使用 <a href="https://datatracker.ietf.org/doc/draft-ietf-tls-oldversions-deprecate/"> TLSv1.0 / TLSv1.1 版本的規劃宣告。</a></li>
+        <li>若已使用SMTP，最好進一步採加密級的<a href="https://en.wikipedia.org/wiki/SMTPS">SMTPS</a> 提交</li>
+        <li>網站安全標準如:</li>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HTTP Strict Transport Security </a>, 告知瀏覽器應強制使用 HTTPS 以取代 HTTP</li>
+            <li><a href="https://en.wikipedia.org/wiki/Subresource_Integrity">子资源完整性 Subresource Integrity</a>(自外部網站載入資料時)</li>
+          </ul>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為:</strong></p>
+      <ul>
+        <li>支援硬體驗證， 如 <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">U2F</a>、 <a href="https://en.wikipedia.org/wiki/WebAuthn">WebAuthn</a>等設備。U2F 與 WebAuthn 將私鑰儲存在用戶所保留的硬體，而非放在他人管理的網站伺服器，前者利用硬體直接驗證，後者則透過 TOTP 等軟體作雙因子驗證。再者，硬體驗證更能夠防止釣魚風險，因為它們的驗證必須符合已查驗過的<a href="https://en.wikipedia.org/wiki/Domain_name">網域名</a>。</li>
+        <li>全程使用零讀加密，服務商手上沒有可讀取內容的解密鑰，以防止服務商不良員工洩露所保管的資料或是遠端的仇家利用不法手取得伺服器上的資料。</li>
+        <li><a href="https://tools.ietf.org/html/rfc6844">DNS憑證頒發機構授權 (CAA) 資源記錄與</a> DANE 支援。</li>
+        <li>實施<a href="https://en.wikipedia.org/wiki/Authenticated_Received_Chain">驗證收取鏈 Authenticated Received Chain (ARC)</a>，尤其有助於郵件群組發送。<a href="https://tools.ietf.org/html/rfc8617">RFC8617</a>.</li>
+        <li>Bug-bounty 找錯賞金方案以及弱點揭露的程序協調</li>
+        <li>網站安全標準如:</li>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Content_Security_Policy">內容安全策略 Content Security Policy (CSP)</a></li>
+            <li><a href="https://datatracker.ietf.org/doc/draft-ietf-httpbis-expect-ct">Expect-CT</a></li>
+          </ul>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="信賴度" %}</h3>
+      <p>一般人不敢與冒名者有財務往來，同樣地使用電子郵件服務又怎麼能安心交給這類人？故我們建議的電郵服務商必須向公眾負責，且最好能定期提供透明報告，尤其是說明如何處理政府對資料索取的要求。</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線:</strong></p>
+      <ul>
+        <li>面向公眾的領導或管理風格</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為:</strong></p>
+      <ul>
+        <li>面向公眾的領導風格</li>
+        <li>定期的透明報告</li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="行銷" %}</h3>
+      <p>負責的行銷手法</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>基本合格線:</strong></p>
+      <ul>
+          <li>必須使用的主機數據分析（不可用 Google Analytics 之流）。其網站必須遵照 <a href="https://en.wikipedia.org/wiki/Do_Not_Track"> DNT (不追蹤)</a>原則讓用戶有退選的權利。</li>
+      </ul>
+      <p>不得進行不負責任的行銷手段：</p>
+        <ul>
+          <li>誇大所謂"無法破解的加密"，加密時須認知道：未來技術的進步這些加密內容有一天都可能會被解開。</li>
+          <li>宣稱可作到百分之百的匿名保護，當聲稱某物為 100％時，這意味著絕無失敗餘地。但實際上，用戶可透過多種方式輕鬆地對自己進行去匿名處理：</li>
+          <ul>
+            <li>重覆使用的個人資料，例如 email 帳號、獨特的化名等等，這些都不必透過匿名軟體(Tor, VPN etc)即可取得 </li>
+            <li><a href="/browsers/#fingerprint">瀏覽器指紋資料</a></li>
+          </ul>
+        </ul>
+    </div>
+    <div class="col-md-6">
+      <p><strong>最佳作為:</strong></p>
+      <ul>
+        <li>明確易讀的文件，例如說明如何設置雙因子驗證、客戶用郵件軟體、OpenPGP 等等。</li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <h3>{% include badge.html color="info" text="額外功能" %}</h3>
+      <p>雖非嚴格必要，但有些推薦功能消費者在考慮供應商時不妨一併放入考量。</p>
+    </div>
+  </div>
+</div>
+<hr>
+
+<h1 id="email-encryption" class="anchor"><a href="#email-encryption"><i class="fas fa-link anchor-icon"></i></a> Email 加密</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>介紹電子郵件的端對端加密方式(E2EE)</h3>
+      <p><a href="https://en.wikipedia.org/wiki/End-to-end_encryption">端對端加密(E2EE)</a> 加密郵件內容，防止其它人可隨意看到其訊息。</p>
+      <h3>如何加密郵件？</h3>
+      <p>即便選用不同的郵件服務，電子郵件的端對端加密的標準作法是<a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP">OpenPGP</a>，但 OpenPGP 標準有不同的操作方式，其中最普遍的<a href="https://en.wikipedia.org/wiki/GNU_Privacy_Guard">GnuPG</a> 和 <a href=https://openpgpjs.org>OpenPGP.js</a>。</p>
+      <p>另一套業界歡迎的加密方式是 <a href="https://en.wikipedia.org/wiki/S/MIME">S/MIME</a>，但它需要有<a href="https://en.wikipedia.org/wiki/Certificate_authority">憑證授權單位 Certificate Authority</a> (不見得每一家 CA 都能發出 S/MIME 憑證)所發的憑證。 <a href="https://support.google.com/a/topic/9061730?hl=en&ref_topic=9061731">Google Workplace</a> 與 <a href="https://support.office.com/en-us/article/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480">Outlook for Web or Exchange Server 2016, 2019</a>皆已支援。</p>
+      <h3> E2EE 加密軟體</h3>
+      <p>使用標準電子郵件協定如 <a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP</a>、 <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>的電郵服務，可利用本網站<a href="/software/email/">所推薦的客戶端電郵軟體</a>自行加密。若僅使用服務商所提供的加密保護(較不安全)，請確認他們的加密操作不會輕易被破壞。</p>
+    </div>
+    <div class="col-md-6">
+      <h3>如何保護個人私鑰？</h3>
+      <p>智慧卡 (例如 <a href="https://support.yubico.com/support/solutions/articles/15000006420-using-your-yubikey-with-openpgp">Yubikey</a> 或 <a href="https://www.nitrokey.com">Nitrokey</a>)可從不同設備(手機、平板電腦或桌機筆電等)之間收取加密郵件，透過智慧卡予以解密後再傳回給設備上的郵件軟體。</p>
+      <p>利用智慧卡解密的好處是可以避免在已遭侵入的設備上私鑰會被盜取。</p>
+    </div>
+  </div>
+</div>
+
+<h1 id="metadata" class="anchor"><a href="#metadata"><i class="fas fa-link anchor-icon"></i></a> Email 元資料</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>誰可看到 Email 元資料？</h3>
+      <p>通常客戶端郵件軟體(或 webmail)與所有中繼傳送訊息的伺服器都可看到 Email 元資料。有些郵件伺服器可能會使用外部服務來阻檔垃圾郵件。</p>
+      <h3>什麼 Email 元資料？</h3>
+      <p>Email 軟體會顯示某些可見的表單，例如: <code>收件人 To</code>, <code>寄件人 From</code>, <code>附本傳送 Cc</code>, <code>日期 Date</code>, <code>主旨 Subject</code>.
+      </p>
+      <h3>何時會用到 Email 元資料？</h3>
+      <p>客戶端郵件軟體使用元資料來顯示郵件一些基本資訊，如誰寄出誰收件、發出與接收時間等等。伺服器用元資料來決定如何傳送郵件，但一般人不知道郵件表頭中<a href="https://en.wikipedia.org/wiki/Email#Message_header">其它作用</a>的元資料</p>
+    </div>
+    <div class="col-md-6">
+      <h3>Email 元資料在哪裏？</h3>
+      <p>Email 元資料儲存在電郵訊息的 <a href="https://en.wikipedia.org/wiki/Email#Message_header">表單部份</a>。</p>
+      <h3>為何 Email 元資料無法使用 E2EE 加密？</h3>
+      <p>Email 元資料對電子郵件許多基本功能至關重要(誰寄來、寄去哪等等)。 E2EE 功能在一開始並未被放入電郵標準協定因此僅能加密訊息內容。</p>
+      <h3>如何保護 Email 元資料？</h3>
+      <p>當郵件在傳送的旅程中，各家服務商利用 <a href="https://en.wikipedia.org/wiki/Opportunistic_TLS">Opportunistic TLS</a>協定進行加密傳送協商。這可保護元資料避開外頭的觀念者，但它並非 E2EE 加密，伺服器管理員可以偷看郵件的元資料。</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h1 id="cloaking" class="anchor"><a href="#cloaking"><i class="fas fa-link anchor-icon"></i></a> 電子郵件遮掩服務</h1>
+<div class="container">
+  <a href="https://anonaddy.com">
+    <img src="/assets/img/svg/3rd-party/anonaddy.svg"
+        data-theme-src="/assets/img/svg/3rd-party/anonaddy-dark.svg"
+         width="180rem" class="img-fluid float-left mr-3"
+         alt="AnonAddy">
+  </a>
+  <br>
+  <p><strong><a href="https://anonaddy.com">AnonAddy</a></strong> 可自建別名信箱，將之轉發到使用者自己的信箱，AnonAddy 可自己架設， <a href="https://github.com/anonaddy/anonaddy">其源代碼在 GitHub</a>。</p>
+  <a href="https://simplelogin.io">
+    <img src="/assets/img/svg/3rd-party/simplelogin.svg"
+         width="180rem" class="img-fluid float-left mr-3"
+         alt="SimpleLogin">
+  </a>
+  <br>
+  <p><strong><a href="https://simplelogin.io">SimpleLogin</a></strong> 輕鬆地建立電郵帳號別名，可自行架設。<a href="https://github.com/simple-login/app">碼源庫 GitHub</a>.</p>
+</div>
+
+<h1 id="selfhosting" class="anchor"><a href="#selfhosting"><i class="fas fa-link anchor-icon"></i></a> 自架 Email</h1>
+<div class="container">
+  <p>有能力的使用者可考慮自己架設 email 伺服器，不過後續的照料維護也得靠自己，確保其安全與服務穩定可靠。</p>
+  <h3>統合式的軟體方案</h3>
+  <a href="https://mailinabox.email/">
+    <img src="/assets/img/svg/3rd-party/mail-in-a-box.svg"
+         width="80rem" class="img-fluid float-left mr-3"
+         alt="Mail-in-a-Box">
+  </a>
+  <br>
+  <p><strong><a href="https://mailinabox.email">Mail-in-a-Box</a></strong>運行於 Ubuntu 作業系統自動設定佈署的郵件伺服軟體，便於讓使用者自行搭置郵件主機。 /p>
+  <a href="https://mailcow.email/">
+    <img src="/assets/img/svg/3rd-party/mailcow.svg"
+         width="80rem" class="img-fluid float-left mr-3"
+         alt="Mailcow">
+  </a>
+  <p><strong><a href="https://mailcow.email">Mailcow</a></strong> 較為進階複雜的郵件主機軟體，安裝者須有一定程度的 Linux 使用經驗。安裝者需要透過 Docker container 安裝以下功能: DKIM 支援的郵件主機、防毒與垃圾信監測、SOGo 的網面版郵件與自動同步、雙因子驗證管理等。完整文件請參考 <strong><a href="https://mailcow.github.io/mailcow-dockerized-docs/">Mailcow Dockerized docs</a></strong></p>
+
+  <p>更詳細的操作手冊，推薦讀者可參考以下二份文件(英文)</p>
+    <ul>
+      <li><a href="https://poolp.org/posts/2019-09-14/setting-up-a-mail-server-with-opensmtpd-dovecot-and-rspamd/">Setting up a mail server with OpenSMTPD, Dovecot and Rspamd</a> (2019)</li>
+      <li><a href="https://www.c0ffee.net/blog/mail-server-guide/">How To Run Your Own Mail Server</a> (August 2017)</li>
+    </ul>
+</div>
+
+<h1 id="info" class="anchor"><a href="#info"><i class="fas fa-link anchor-icon"></i></a> 其它參考文件</h1>
+<div class="container">
+  <div class="row">
+    <ul>
+      <li><a href="https://www.grepular.com/An_NFC_PGP_SmartCard_For_Android">An NFC PGP SmartCard For Android</a></li>
+      <li><a href="https://www.wired.com/2011/10/ecpa-turns-twenty-five/">Aging 'Privacy' Law Leaves Cloud E-Mail Open to Cops (2011)</a></li>
+      <li><a href="https://thinkprogress.org/the-government-can-still-read-most-of-your-emails-without-a-warrant-322fe6defc7b/">The Government Can (Still) Read Most Of Your Emails Without A Warrant (2013)</a></li>
+    </ul>
+  </div>
+</div>

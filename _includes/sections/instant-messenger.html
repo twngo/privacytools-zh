@@ -13,22 +13,6 @@
 
 <p>集中式的通訊軟體由某家公司或組織在他們控制的伺服器上提供加入者相關的服務。</p>
 
-<h3>優點</h3>
-<ul>
-    <li>新功能可被快速採用。</li>
-    <li>容易上手與找到聯絡對象</li>
-</ul>
-
-<h3>缺點</h3>
-<ul>
-    <li>集中式服務容易讓當權者<a href="#exploiting-centralized-networks">要求開放後門存取</a>。</li>
-    <li><a href="https://drewdevault.com/2018/08/08/Signal.html">受限的控制或存支取</a>，例如：</li>
-    <ul>
-        <li>它們可以在使用條款中禁止 <a href="https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165">第三方用戶的連結請求</a>，後者往往能提供更多的客制化服務或最佳的用戶體驗。</li>
-        <li>第三方開發者無法獲得必要的文件資料。</li>
-    </ul>
-    <li>單一控制下，<a href="https://blog.privacytools.io/delisting-wire">所有權</a>、隱私政策和服務營運可輕易改變，恐怕隨後造成服務劣化。</li>
-</ul>
 
 {%
    include cardv2.html
@@ -37,6 +21,7 @@
    description='Signal Messenger LLC 開發的手機應用軟體，Signal 提供即時訊息，包括語音和影像通話。除非用戶選擇寄送 SMS 簡訊，不然全部的通訊皆透過 E2EE。它的協議通過<a href="https://eprint.iacr.org/2016/1013.pdf">獨立審查（報告文件）</a>'
    labels="warning:<a>須提供手機門號</a>:Signal 要求手機門號作為個人識別碼，這意謂任何通訊對象都可以看到您的號碼。|success:VoIP"
    website="https://signal.org/"
+   privacy-policy="https://signal.org/legal/"
    forum="https://forum.privacytools.io/t/discussion-signal/664"
    github="https://github.com/signalapp"
    windows="https://signal.org/download/"
@@ -47,7 +32,7 @@
    ios="https://apps.apple.com/app/signal-private-messenger/id874139669"
 %}
 
-{%
+<!-- {%
   include cardv2.html
   title="Keybase"
   image="/assets/img/svg/3rd-party/keybase.svg"
@@ -65,33 +50,60 @@
   ios="https://apps.apple.com/app/keybase-crypto-for-everyone/id1044461770"
   firefox="https://addons.mozilla.org/firefox/addon/keybase-for-firefox/"
   chrome="https://chrome.google.com/webstore/detail/keybase-for-reddit/ognfafcpbkogffpmmdglhbjboeojlefj"
-%}
+%} -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+<h3>優點</h3>
+<ul>
+    <li>新功能可被快速採用。</li>
+    <li>容易上手與找到聯絡對象</li>
+</ul>
+</div>
+<div class="col-md-6">
+<h3>缺點</h3>
+<ul>
+    <li>集中式服務容易讓當權者<a href="#exploiting-centralized-networks">要求開放後門存取</a>。</li>
+    <li><a href="https://drewdevault.com/2018/08/08/Signal.html">受限的控制或存支取</a>，例如：</li>
+    <ul>
+        <li>它們可以在使用條款中禁止 <a href="https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165">第三方用戶的連結請求</a>，後者往往能提供更多的客制化服務或最佳的用戶體驗。</li>
+        <li>第三方開發者無法獲得必要的文件資料。</li>
+    </ul>
+    <li>單一控制下，<a href="https://blog.privacytools.io/delisting-wire">所有權</a>、隱私政策和服務營運可輕易改變，恐怕隨後造成服務劣化。</li>
+</ul>
+</div>
+</div>
+</div>
+
 
 <div>
     <h2 id="federated" class="anchor"><a href="#federated"><i class="fas fa-link anchor-icon"></i></a> 聯邦式</h2>
 
     <p>聯邦式通訊軟體使用多方、各自獨立的伺服器，它們之間能互相通話（例如電子郵件即為職邦型服務的好例子）。這類通訊設計可讓糸統管理員控制自家伺服器，同時為廣大通訊社群裏的一份子。</p>
 
-    <h3>優勢</h3>
-    <ul>
-        <li>自己運行伺服器更能掌控自己的資料。</li>
-        <li>讓用戶自己挑選所信任的公開伺服器。</li>
-        <li>通常可讓第三方軟體提供更道地，自定或親和的使用體驗。</li>
-        <li>當信任變成非集中式，較不易成讓政府置入<a href="#exploiting-centralized-networks">後門取得所有資料</a>。 此類分散式獨立伺服器可能由非原軟體開發組織所架設。</li>
-        <li>若您或所信任的人有權限存取伺服器，可驗查伺服器軟體是否符合公開的源代碼。</li>
-        <li>第三方開發者可以提交代碼與新增功能，不必等待私人開發團隊。</li>
-    </ul>
+   {%
+        include cardv2.html
+        title="Element"
+        image="/assets/img/svg/3rd-party/element.svg"
+        description='<a href="https://element.io">Element</a> (formerly <a href="https://element.io/blog/welcome-to-element/">Riot</a>) is the reference client for the <a href="https://matrix.org/docs/guides/introduction">Matrix</a> network. The <a href="https://matrix.org/docs/spec">Matrix open standard</a> is an open-source standard for secure, decentralized, real-time communication.'
+        labels="text==VoIP"
+        website="https://element.io"
+        privacy-policy="https://element.io/privacy"
+        forum="https://forum.privacytools.io/t/discussion-element-io/665"
+        github="https://github.com/vector-im/element-web"
+        windows="https://element.io/get-started"
+        mac="https://element.io/get-started"
+        linux="https://element.io/get-started"
+        fdroid="https://f-droid.org/packages/im.vector.app/"
+        googleplay="https://play.google.com/store/apps/details?id=im.vector.app"
+        ios="https://apps.apple.com/app/vector/id1083446067"
+        web="https://app.element.io"
+      %}
 
-    <h3>劣勢</h3>
-    <ul>
-        <li>新增功能更為複雜，它們須經標準化與測試來確保能在所有的伺服器上運行。</li>
-        <li>可以取得一些元數據（像是"誰與誰通話"之類的資料。因為使用 E2EE，實際的通訊內容則不會被看到）。</li>
-		<li>邦聯中的伺服器通常表示對網管人員的信任，但他們可能只是興趣啫好者而非網路安全專業人士，不會認真看待隱私政策或服務條款中的個資使用細節等標準文件。</li>
-        <li>伺服器管理員可決定屏蔽其它伺服器，此將影響使用者與該伺服器用戶的通訊（通常是因該伺服器無人管造成濫用或是破壞規則的行為）.</li>
-    </ul>
-</div>
 
-{%
+<!-- {%
   include cardv2.html
   title="Matrix"
   image="/assets/img/svg/3rd-party/matrix.svg"
@@ -108,13 +120,40 @@
   googleplay="https://play.google.com/store/apps/details?id=im.vector.app"
   ios="https://itunes.apple.com/app/vector.im/id1083446067"
   web="https://riot.im/app/"
-%}
+%} -->
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-6">
+
+<h3>優勢</h3>
+<ul>
+    <li>自己運行伺服器更能掌控自己的資料。</li>
+    <li>讓用戶自己挑選所信任的公開伺服器。</li>
+    <li>通常可讓第三方軟體提供更道地，自定或親和的使用體驗。</li>
+    <li>當信任變成非集中式，較不易成讓政府置入<a href="#exploiting-centralized-networks">後門取得所有資料</a>。 此類分散式獨立伺服器可能由非原軟體開發組織所架設。</li>
+    <li>若您或所信任的人有權限存取伺服器，可驗查伺服器軟體是否符合公開的源代碼。</li>
+    <li>第三方開發者可以提交代碼與新增功能，不必等待私人開發團隊。</li>
+</ul>
+</div>
+<div class="col-md-6">
+<h3>劣勢</h3>
+<ul>
+    <li>新增功能更為複雜，它們須經標準化與測試來確保能在所有的伺服器上運行。</li>
+    <li>可以取得一些元數據（像是"誰與誰通話"之類的資料。因為使用 E2EE，實際的通訊內容則不會被看到）。</li>
+    <li>邦聯中的伺服器通常表示對網管人員的信任，但他們可能只是興趣啫好者而非網路安全專業人士，不會認真看待隱私政策或服務條款中的個資使用細節等標準文件。</li>
+    <li>伺服器管理員可決定屏蔽其它伺服器，此將影響使用者與該伺服器用戶的通訊（通常是因該伺服器無人管造成濫用或是破壞規則的行為）.</li>
+</ul>
+</div>
+</div>
+</div>
 
 <div>
     <h4>值得一提</h4>
 
     <ul>
-        <li>其它 <a href="https://matrix.org/clients">Matrix</a> 客戶端軟體，但它們的功能不如 Riot.im 完整。</li>
+        <li><a href="https://status.im">Status.im</a> - 整合加密貨幣<a href="https://en.wikipedia.org/wiki/Ethereum">乙太幣</a>錢包的即時加密通訊工具，也包括<a href="https://our.status.im/tag/dapps">DApps (分散式應用軟體)</a> (web apps in a curated store)。 使用P2P 對等通訊 <a href="https://our.status.im/status-launches-private-peer-to-peer-messaging-protocol/">Waku 協定 ( 源自於 Whisper)</a>。 僅在手機作業系統 iOS and Android 運行</li>。
+        <!-- <li>其它 <a href="https://matrix.org/clients">Matrix</a> 客戶端軟體，但它們的功能不如 Riot.im 完整。</li>
         <li><a href="https://xmpp.org/about">XMPP</a> (Extensible Messaging and Presence Protocol) 為 1999 年開始發展的開源通訊協議。 從此之後進一步發佈 XEPs（XMPP 延伸協議）。<a href="https://conversations.im/omemo/">OMEMO</a> 為最主流的 E2EE XEP (XMPP extension)，它的客戶端軟體是由社群開發而非 XSF （XMPP 標準基金會）。<span class="badge badge-warning" data-toggle="tooltip" title="VoIP and file transfers/names may not be end-to-end encrypted.">Inconsistent E2EE</span></li>
         <ul>
             <li><a href="https://gajim.org/">Gajim</a></li>
@@ -123,29 +162,13 @@
             <li>其它可用 XMPP <a href="https://omemo.top">OMEMO</a> 用戶端軟體。</li>
         </ul>
         <li><a href="https://www.kontalk.org">Kontalk</a> 以 XMPP 協議為基礎，由社群發起的即時通訊網路。</li>
-    </ul>
-
+        -->
+    </ul>>
     <h2 id="peer-to-peer" class="anchor"><a href="#peer-to-peer"><i class="fas fa-link anchor-icon"></i></a> 對等式網路 (P2P)</h2>
 
     <p>Peer-to-Peer 對等式即時訊不透過第三方伺服器，節點直接連接。客戶端(peers)透由 usually find each other through the use of a <a href="https://en.wikipedia.org/wiki/Distributed_computing">分散式運算</a>網路來找到對方。相關案例包括：<a href="https://en.wikipedia.org/wiki/Distributed_hash_table">DHT (distributed hash table)</a> (用在<a href="https://en.wikipedia.org/wiki/BitTorrent_(protocol)">torrents</a> 和 <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">IPFS</a>)，或是 <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a>的 <a href="https://github.com/ethereum/wiki/wiki/Whisper">Whisper</a>協議（與一些新的 DApps 運用）。 其它的方式則大略是基於網路，透過無線訊號或藍牙作連結（例如 Briar 或是 <a href="https://www.scuttlebutt.nz">Scuttlebutt</a> 社交網路協議）。 一旦某名使用者透過上述方式找到接通他人的路徑，即產生直接連繫。</p>
 
 
-    <h3>優勢</h3>
-    <ul>
-        <li>第三方只能取得最少量的資訊</li>
-        <li>現代 P2P 平台皆預設執行端對端加密。不像中央或聯邦式，會有伺服器攔截或解密傳輸的問題。</li>
-    </ul>
-
-    <h3>缺點</h3>
-    <ul>
-        <li>簡化的功能：</li>
-        <ul>
-            <li>當收訊對象上線後才會收到訊息，但您的設備可能在會本地端儲存未送出的訊息以待對方上線。</li>
-            <li>由於要與分散網路維持連線狀態，往往會消耗行動設備的電量。</li>
-        </ul>
-        <li>若無使用 <a href="/software/networks">自足網路</a>如 <a href="https://www.torproject.org">Tor</a>或<a href="https://geti2p.net/">I2P</a>，則您與通訊對象的 <a href="https://en.wikipedia.org/wiki/IP_address">IP 位置</a>可能會顯露出來。許多國家有大規模監控或是保存元數據的作法。</li>
-    </ul>
-</div>
 
 {%
   include cardv2.html
@@ -153,6 +176,7 @@
   image="/assets/img/svg/3rd-party/briar.svg"
   description="加密的即時訊息，讓使用者可透過無線訊號、藍牙或是 Tor 網路在互聯網上同步訊息。一旦遇上斷網或是天災等緊急狀況，這類技術往往可派上用場。"
   website="https://briarproject.org"
+  privacy-policy="https://briarproject.org/privacy-policy/"
   forum="https://forum.privacytools.io/t/discussion-briar/2114"
   gitlab="https://code.briarproject.org/briar/briar"
   fdroid="https://f-droid.org/packages/org.briarproject.briar.android/"
@@ -166,6 +190,7 @@
   description="加密的即時訊息與影音通話軟體，使用 <a href=//jami.net/improving-performance-and-security-with-tls-1-3/>TLS 1.3</a> 方式加密。"
   labels="success:VoIP"
   website="https://jami.net/"
+  privacy-policy="https://jami.net/privacy-policy/"
   forum="https://forum.privacytools.io/t/discussion-jami/2116"
   gitlab="https://git.jami.net/savoirfairelinux"
   windows="https://jami.net/download-jami-windows"
@@ -176,7 +201,7 @@
   ios="https://itunes.apple.com/app/ring-a-gnu-package/id1306951055?mt=8"
 %}
 
-{%
+<!-- {%
   include cardv2.html
   title="Tox"
   image="/assets/img/svg/3rd-party/tox.svg"
@@ -194,13 +219,35 @@
   fdroid="https://tox.chat/download.html#oses"
   googleplay="https://tox.chat/download.html#oses"
   ios="https://tox.chat/download.html#oses"
-%}
+%} -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+<h3>優勢</h3>
+    <ul>
+        <li>第三方只能取得最少量的資訊</li>
+        <li>現代 P2P 平台皆預設執行端對端加密。不像中央或聯邦式，會有伺服器攔截或解密傳輸的問題。</li>
+    </ul>
+</div>
+<div class="col-md-6">
+    <h3>缺點</h3>
+    <ul>
+        <li>簡化的功能：</li>
+        <ul>
+            <li>當收訊對象上線後才會收到訊息，但您的設備可能在會本地端儲存未送出的訊息以待對方上線。</li>
+            <li>由於要與分散網路維持連線狀態，往往會消耗行動設備的電量。</li>
+        </ul>
+        <li>若無使用 <a href="/software/networks">自足網路</a>如 <a href="https://www.torproject.org">Tor</a>或<a href="https://geti2p.net/">I2P</a>，則您與通訊對象的 <a href="https://en.wikipedia.org/wiki/IP_address">IP 位置</a>可能會顯露出來。許多國家有大規模監控或是保存元數據的作法。</li>
+    </ul>
+</div>
+</div>
+</div>
 
-<h4>值得一提</h4>
+<!-- <h4>值得一提</h4>
 
 <ul>
     <li><a href="https://status.im">Status.im</a> - 整合了 <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a> 錢包（乙太幣加密貨幣）的通訊軟體，也支援 <a href="https://our.status.im/tag/dapps">DApps（無中心的應用軟體，可在分類的軟體市集平台找到的網頁應用）</a> 。 採用 <a href="https://blog.enuma.io/update/2018/08/08/decentralized-application-messaging-with-whisper.html">Whisper protocol</a> 進行 P2P 通訊。 <span class="badge badge-warning">試驗性質</span></li>
     <li><a href="https://retroshare.cc">Retroshare</a> - 加密的即時訊息和語音影像軟體，RetroShare 同時支援 <a href="https://www.torproject.org/">Tor</a> 與 <a href="https://geti2p.net">I2P</a>。</li>
     <li><a href="https://bitmessage.org">Bitmessage</a> - 去中心、加密、端對端、無信任的通訊協議，可將加密訊息傳送給單一或多名訂閱者
 	其意指使用者不必要信任任何根憑證授權的實體。它採用強度高的認證授權，讓送件者的訊息無法被欺騙，目的在於能將非訊息內容的資料予以隱藏。</li>
-</ul>
+</ul> -->

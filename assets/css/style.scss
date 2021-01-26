@@ -219,7 +219,13 @@ h2, h3:not(.h5), h4, h5 {
   background: darken($tor, 5%);
 }
 
+.icon-btn {
+  padding: 0px;
+}
 
+.flow-root {
+  display: flow-root;
+}
 
 /*
  * Bootstrap 4.2+ features
@@ -401,3 +407,59 @@ input#nav-toggle,
   content: "\f186";
 }
 
+/* Vanilla CSS implementation for tooltip */
+[data-toggle="tooltip"] {
+  cursor: pointer;
+  position: relative;
+}
+
+[data-toggle="tooltip"]:hover {
+  z-index: 1337;
+}
+
+[data-toggle="tooltip"]:before,
+[data-toggle="tooltip"]:after {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  pointer-events: none;
+}
+
+[data-toggle="tooltip"]:before {
+  background-color: #000;
+  border-radius: 3px;
+  bottom: 150%;
+  content: attr(data-original-title);
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  left: 50%;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  margin-left: -100px;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  white-space: break-spaces;
+  width: 200px;
+}
+
+/* Little arrow */
+[data-toggle="tooltip"]:after {
+  border-style: solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #000;
+  border-width: 5px;
+  border-bottom: none;
+  bottom: 150%;
+  content: " ";
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+[data-toggle="tooltip"]:hover:before,
+[data-toggle="tooltip"]:hover:after {
+  opacity: .9;
+}

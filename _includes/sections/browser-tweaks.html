@@ -86,9 +86,6 @@
   </ul>
   </dd>
 
-  <dt>想找 TRR, DoH 或 ESNI 的資訊</dt>
-  <dd>它們已被搬移至<a href="/providers/dns/#icanndns"> DNS 頁面</a>.</dd>
-
   <dt>webgl.disabled = true</dt>
   <dd>WebGL 有潛在的安全風險。<a href="https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern">來源出處</a></dd>
 
@@ -101,10 +98,29 @@
     <li>2 = 不儲存額外的連線階段資料</li>
   </ul>
   </dd>
+  <dt>beacon.enabled = false</dt>
+  <dd>停止傳送額外的分析數據給網頁伺服器<a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon">詳情</a></dd>
 
+  <dt>browser.safebrowsing.downloads.remote.enabled = false</dt>
+  <dd>阻止 Firefox 傳送已下載的執行檔案到 Google Safe Browsing，該功能會依安全判別是否要封阻。 <a href="https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work#w_what-information-is-sent-to-mozilla-or-its-partners-when-phishing-and-malware-protection-are-enabled">詳情</a></dd>
+
+  <dt>關掉 Firefox 預取頁面功能:</dt>
+  <dd>
+  預取功能容易載入某些網站所放的 cookies 造成原本不要的行為。詳情見 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ">本處</a>  <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control">本處</a>文件說明。
+  <ul>
+    <li>network.dns.disablePrefetch = true</li>
+    <li>network.dns.disablePrefetchFromHTTPS = true</li>
+    <li>network.predictor.enabled = false</li>
+    <li>network.predictor.enable-prefetch = false</li>
+    <li>network.prefetch-next = false</li>
+  </dd>
 
   <dt>network.IDN_show_punycode = true</dt>
   <dd>不會收集 IDNs，否則其 Punycode 等量容易陷入難以察覺的釣魚攻擊。<a href="https://krebsonsecurity.com/2018/03/look-alike-domains-and-visual-confusion/#more-42636">來源出處</a></dd>
+  
+  <dt>想找 TRR, DoH 或 ESNI 的資訊</dt>
+  <dd>它們已被搬移至<a href="/providers/dns/#icanndns"> DNS 頁面</a>.</dd>
+
   
 
 <h3 id="user.js">Firefox user.js 模版</h3>
