@@ -219,22 +219,21 @@
     <p><strong><a href="https://startmail.com">StartMail.com</a></strong>使用標準 OpenPGP 加密，專注安全與隱私的電子郵件服務商。至 <strong>2014</strong>營運以來， StartMail <span class="flag-icon flag-icon-nl"></span> 荷蘭為基地，帳號容量從 10GB 起跳，提供 30天的試用體驗。</p>
 
     <h5>{% include badge.html color="success" text="網域名與別名信箱" %}</h5>
-    <p>個人帳號可使用<a href="https://support.startmail.com/hc/en-us/articles/360007297457-Aliases">自定或隨機的</a>別名，公司帳則可使用<a href="https://support.startmail.com/hc/en-us/articles/360006840058">網域別名</a>。</p>
+    <p>個人帳號可使用<a href="https://support.startmail.com/hc/en-us/articles/360007297457-Aliases">自定或隨機的</a>別名，公司帳號則可使用<a href="https://support.startmail.com/hc/en-us/articles/360006840058">網域別名</a>。</p>
 
     <h5>{% include badge.html color="warning" text="付款方式" %}</h5>
-    <p>StartMail 可收 Visa, MasterCard, American Express 信用卡與 Paypal，StartMail also has other <a href="https://support.startmail.com/hc/en-us/articles/360006620637-Payment-methods">其它付款方式 </a> 如比特幣 (目前僅供個人帳號支付)、 SEPA 直接扣款則須帳號使用滿一年。</p>
+    <p>StartMail 可收 Visa, MasterCard, American Express 信用卡與 Paypal，還可接受 <a href="https://support.startmail.com/hc/en-us/articles/360006620637-Payment-methods">其它付款方式 </a> 如比特幣 (目前僅供個人帳號支付)、 SEPA 直接扣款則須帳號使用滿一年。</p>
 
     <h5>{% include badge.html color="success" text="帳號安全" %}</h5>
     <p>StartMail 僅支援<a href="https://support.startmail.com/hc/en-us/articles/360006682158-Two-factor-authentication-2FA"></a>網頁郵件
     </a>的 <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP</a>雙因子驗證</a>。用戶無法使用<a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">U2F</a> 安全鑰物理驗證。</p>
 
     <h5>{% include badge.html color="warning" text="資料安全" %}</h5>
-    <p>StartMail has <a href="https://www.startmail.com/en/whitepaper/#_Toc458527835">zero access encryption at rest</a>, using their "user vault" system. When a user logs in, the vault is opened, and the email is then moved to the vault out of the queue where it is decrypted by the corresponding private key.</p>
-
+    <p>StartMail 運用其 "user vault" 系統，提供全程的<a href="https://www.startmail.com/en/whitepaper/#_Toc458527835">零存取加密</a>，用戶登入後即會開啟此 vault，並將郵件透過收信人的私鑰解密後移到此區 。</p>
     <p>StartMail 可滙入 <a href="https://support.startmail.com/hc/en-us/articles/360006495557-Import-contacts">聯絡人資料</a>，不過此功能須透過網頁版服務而非利用<a href="https://en.wikipedia.org/wiki/CalDAV">CalDAV</a>之協定。聯絡人的資訊也並非以零知識加密儲存，因此最好對這些資料 <a href="/software/calendar-contacts/">另外採取獨立的保護方式</a> 更為妥當。</p>
 
     <h5>{% include badge.html color="success" text="郵件加密" %}</h5>
-    <p>StartMail 的網頁郵件有 <a href="https://support.startmail.com/hc/en-us/sections/360001889078-Encryption">整合型加密</a>，大大簡化了用戶操作 public OpenPGP 公鑰傳送訊息的麻煩。</p>
+    <p>StartMail 的網頁郵件有 <a href="https://support.startmail.com/hc/en-us/sections/360001889078-Encryption">整合型加密</a>，大大簡化了用戶操作 OpenPGP 公鑰傳送訊息的麻煩。</p>
 
     <h5>{% include badge.html color="danger" text=".onion Service" %}</h5>
     <p>StartMail 無法運作於 Tor 網路 .onion 服務</p>
