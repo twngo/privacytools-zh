@@ -51,10 +51,10 @@ You can submit your suggestions here on GitHub [(Issues)](https://github.com/pri
 
 
 # About Chinese version
-- [privacytools.io 正體中文第一版說明](https://to.twngo.xyz/12272016)
+- [privacytools.io 正體中文第一版說明](https://to.twngo.xyz/12272016) 2016年12月27日
 - [privacytools.io 正體中文 2019年改版說明](https://to.twngo.xyz/01222019)
 - [privacytools.io 正體中文 2020年改版說明](https://to.twngo.xyz/01062020)
-- privacytools.io 正體中文網站
+- [privacytools.io 正體中文 2021年更新說明](http://to.twngo.xyz/01282021)
 - [privacytools.io 簡體中文網站](https://cybermagicsec.github.io/privacytools-zh/)
 
 # License & Notices
